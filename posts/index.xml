@@ -11,5 +11,14 @@
 	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Hello</title>
+      <link>/posts/hello/</link>
+      <pubDate>Wed, 26 Jun 2019 18:14:32 +0800</pubDate>
+      
+      <guid>/posts/hello/</guid>
+      <description>Hello Hugo hello!!!</description>
+    </item>
+    
   </channel>
 </rss>
