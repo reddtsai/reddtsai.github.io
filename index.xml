@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Redd Tsai&#39;s Blog on Redd</title>
-    <link>/</link>
+    <link>https://reddtsai.github.io/</link>
     <description>Recent content in Redd Tsai&#39;s Blog on Redd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <lastBuildDate>Wed, 26 Jun 2019 18:14:32 +0800</lastBuildDate>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://reddtsai.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hello</title>
-      <link>/posts/hello/</link>
+      <link>https://reddtsai.github.io/posts/hello/</link>
       <pubDate>Wed, 26 Jun 2019 18:14:32 +0800</pubDate>
       
-      <guid>/posts/hello/</guid>
+      <guid>https://reddtsai.github.io/posts/hello/</guid>
       <description>Hello Hugo hello!!!</description>
     </item>
     
