@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Redd Tsai  | CentOS 7 如何安裝 Elasticsearch</title>
+    <title>Redd Tsai  | windows 如何安裝 Filebeat 收集 IIS Logs</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -30,27 +30,51 @@
 
     
 
-    <meta property="og:title" content="CentOS 7 如何安裝 Elasticsearch" />
-<meta property="og:description" content="" />
+    <meta property="og:title" content="windows 如何安裝 Filebeat 收集 IIS Logs" />
+<meta property="og:description" content=" windows 如何安裝 Filebeat 收集 IIS Logs  Download Filebeat for Windows
+ 解壓縮至 C:\Program Files\Filebeat，以 admin 角色開啟 PowerShell
+cd &#39;C:\Program Files\Filebeat&#39; .\install-service-filebeat.ps1   設定 Filebeat  編輯 filebeat.yml
+output.elasticsearch: hosts: [&quot;localhost:9200&quot;] setup.kibana: host: &quot;localhost:5601&quot;  設定 Filebeat 模組
+收集 IIS Log
+編輯 filebeat\module\iis\access\manifest.yml
+default.paths: default: - C:/inetpub/logs/LogFiles/*/*.log  啟用 iis 模組
+.\filebeat.exe modules enable iis  啟動 Filebeat 服務
+Start-Service filebeat   " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://reddtsai.github.io/posts/centoselastic/" />
-<meta property="article:published_time" content="2019-06-27T14:37:52&#43;08:00"/>
-<meta property="article:modified_time" content="2019-06-27T14:37:52&#43;08:00"/>
+<meta property="og:url" content="https://reddtsai.github.io/posts/iisfilebeat/" />
+<meta property="article:published_time" content="2019-07-05T11:28:52&#43;08:00"/>
+<meta property="article:modified_time" content="2019-07-05T11:28:52&#43;08:00"/>
 
-<meta itemprop="name" content="CentOS 7 如何安裝 Elasticsearch">
-<meta itemprop="description" content="">
+<meta itemprop="name" content="windows 如何安裝 Filebeat 收集 IIS Logs">
+<meta itemprop="description" content=" windows 如何安裝 Filebeat 收集 IIS Logs  Download Filebeat for Windows
+ 解壓縮至 C:\Program Files\Filebeat，以 admin 角色開啟 PowerShell
+cd &#39;C:\Program Files\Filebeat&#39; .\install-service-filebeat.ps1   設定 Filebeat  編輯 filebeat.yml
+output.elasticsearch: hosts: [&quot;localhost:9200&quot;] setup.kibana: host: &quot;localhost:5601&quot;  設定 Filebeat 模組
+收集 IIS Log
+編輯 filebeat\module\iis\access\manifest.yml
+default.paths: default: - C:/inetpub/logs/LogFiles/*/*.log  啟用 iis 模組
+.\filebeat.exe modules enable iis  啟動 Filebeat 服務
+Start-Service filebeat   ">
 
 
-<meta itemprop="datePublished" content="2019-06-27T14:37:52&#43;08:00" />
-<meta itemprop="dateModified" content="2019-06-27T14:37:52&#43;08:00" />
-<meta itemprop="wordCount" content="122">
+<meta itemprop="datePublished" content="2019-07-05T11:28:52&#43;08:00" />
+<meta itemprop="dateModified" content="2019-07-05T11:28:52&#43;08:00" />
+<meta itemprop="wordCount" content="54">
 
 
 
 <meta itemprop="keywords" content="ELK," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="CentOS 7 如何安裝 Elasticsearch"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="windows 如何安裝 Filebeat 收集 IIS Logs"/>
+<meta name="twitter:description" content=" windows 如何安裝 Filebeat 收集 IIS Logs  Download Filebeat for Windows
+ 解壓縮至 C:\Program Files\Filebeat，以 admin 角色開啟 PowerShell
+cd &#39;C:\Program Files\Filebeat&#39; .\install-service-filebeat.ps1   設定 Filebeat  編輯 filebeat.yml
+output.elasticsearch: hosts: [&quot;localhost:9200&quot;] setup.kibana: host: &quot;localhost:5601&quot;  設定 Filebeat 模組
+收集 IIS Log
+編輯 filebeat\module\iis\access\manifest.yml
+default.paths: default: - C:/inetpub/logs/LogFiles/*/*.log  啟用 iis 模組
+.\filebeat.exe modules enable iis  啟動 Filebeat 服務
+Start-Service filebeat   "/>
 
   </head>
 
@@ -122,95 +146,60 @@
           
         POSTS
       </p>
-      <h1 class="f1 athelas mb1">CentOS 7 如何安裝 Elasticsearch</h1>
+      <h1 class="f1 athelas mb1">windows 如何安裝 Filebeat 收集 IIS Logs</h1>
       
-      <time class="f6 mv4 dib tracked" datetime="2019-06-27T14:37:52&#43;08:00">June 27, 2019</time>
+      <time class="f6 mv4 dib tracked" datetime="2019-07-05T11:28:52&#43;08:00">July 5, 2019</time>
       
       
     </header>
 
-    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><h2 id="安裝-elasticsearch">安裝 Elasticsearch</h2>
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
 
-<h3 id="1-安裝-openjdk">1. 安裝 OpenJDK</h3>
+<h2 id="windows-如何安裝-filebeat-收集-iis-logs">windows 如何安裝 Filebeat 收集 IIS Logs</h2>
 
-<pre><code class="language-bash">sudo yum  install java-1.8.0-openjdk-devel
-java -version
+<ol>
+<li><p>Download <a href="https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.2.0-windows-x86_64.zip">Filebeat</a> for Windows</p></li>
+
+<li><p>解壓縮至 C:\Program Files\Filebeat，以 admin 角色開啟 PowerShell</p>
+
+<pre><code class="language-bash">cd 'C:\Program Files\Filebeat'
+.\install-service-filebeat.ps1
 </code></pre>
 
-<h3 id="2-安裝-elasticsearch-簽章公鑰">2. 安裝 Elasticsearch 簽章公鑰</h3>
+<ol>
+<li>設定 Filebeat</li>
+</ol>
 
-<pre><code class="language-bash">rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
+<p>編輯 filebeat.yml</p>
+
+<pre><code class="language-text">output.elasticsearch:
+    hosts: [&quot;localhost:9200&quot;]
+setup.kibana:
+    host: &quot;localhost:5601&quot;
+</code></pre></li>
+
+<li><p>設定 Filebeat 模組</p>
+
+<p>收集 IIS Log</p>
+
+<p>編輯 filebeat\module\iis\access\manifest.yml</p>
+
+<pre><code class="language-text">default.paths:
+    default:
+        - C:/inetpub/logs/LogFiles/*/*.log
 </code></pre>
 
-<h3 id="3-安裝-elasticsearch">3. 安裝 Elasticsearch</h3>
+<p>啟用 iis 模組</p>
 
-<p>建立 Elasticsearch 套件容器設定檔 /etc/yum.repos.d/elasticsearch.repo</p>
+<pre><code class="language-bash">.\filebeat.exe modules enable iis
+</code></pre></li>
 
-<p>填入套件容器參數</p>
+<li><p>啟動 Filebeat 服務</p>
 
-<pre><code class="language-text">[elasticsearch-6.x]
-name=Elasticsearch repository for 6.x packages
-baseurl=https://artifacts.elastic.co/packages/6.x/yum
-gpgcheck=1
-gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch
-enabled=1
-autorefresh=1
-type=rpm-md
-</code></pre>
-
-<p>安裝 Elasticsearch</p>
-
-<pre><code class="language-bash">sudo yum install elasticsearch
-</code></pre>
-
-<h3 id="4-啟動-elasticsearch-服務">4. 啟動 Elasticsearch 服務</h3>
-
-<pre><code class="language-bash">sudo systemctl enable elasticsearch.service
-sudo systemctl start elasticsearch.service
-</code></pre>
-
-<p>測試 Elasticsearch</p>
-
-<pre><code class="language-bash">sudo systemctl status elasticsearch.service
-
-curl -X GET http://localhost:9200
-</code></pre>
-
-<p>也可檢查服務記錄訊息</p>
-
-<pre><code class="language-bash">sudo journalctl --unit elasticsearch --since  &quot;20 min ago&quot;
-</code></pre>
-
-<h3 id="5-設定防火牆和ip">5. 設定防火牆和IP</h3>
-
-<p>新增</p>
-
-<pre><code class="language-bash">sudo firewall-cmd --new-zone=elasticsearch --permanent
-sudo firewall-cmd --reload
-sudo firewall-cmd --zone=elasticsearch --add-source=&lt;IP_ADDRESS&gt;/32 --permanent
-sudo firewall-cmd --zone=elasticsearch --add-port=9200/tcp --permanent
-sudo firewall-cmd --reload
-</code></pre>
-
-<p>修改</p>
-
-<pre><code class="language-bash">sudo firewall-cmd --zone=elasticsearch --add-source=&lt;IP_ADDRESS&gt; --permanent
-sudo firewall-cmd --reload
-</code></pre>
-
-<h3 id="6-配置-elasticsearch">6. 配置 Elasticsearch</h3>
-
-<p>Elasticsearch 配置檔 /etc/elasticsearch/elasticsearch.yml</p>
-
-<p>Elasticsearch JVM 配置檔 /etc/elasticsearch/jvm.options</p>
-
-<p><strong>◎記憶體配置不可小放實體記憶體50%</strong></p>
-
-<pre><code class="language-text">-Xms2g
--Xmx2g
-
-network.host: 0.0.0.0
-</code></pre><ul class="pa0">
+<pre><code class="language-bash">Start-Service filebeat
+</code></pre></li>
+</ol>
+<ul class="pa0">
   
    <li class="list">
      <a href="/tags/elk" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">ELK</a>
@@ -229,15 +218,7 @@ network.host: 0.0.0.0
 <ul>
 <li>
 <ul>
-<li><a href="#安裝-elasticsearch">安裝 Elasticsearch</a>
-<ul>
-<li><a href="#1-安裝-openjdk">1. 安裝 OpenJDK</a></li>
-<li><a href="#2-安裝-elasticsearch-簽章公鑰">2. 安裝 Elasticsearch 簽章公鑰</a></li>
-<li><a href="#3-安裝-elasticsearch">3. 安裝 Elasticsearch</a></li>
-<li><a href="#4-啟動-elasticsearch-服務">4. 啟動 Elasticsearch 服務</a></li>
-<li><a href="#5-設定防火牆和ip">5. 設定防火牆和IP</a></li>
-<li><a href="#6-配置-elasticsearch">6. 配置 Elasticsearch</a></li>
-</ul></li>
+<li><a href="#windows-如何安裝-filebeat-收集-iis-logs">windows 如何安裝 Filebeat 收集 IIS Logs</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -245,6 +226,21 @@ network.host: 0.0.0.0
 
 
 
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
+    <p class="f5 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/posts/centoskibana/">CentOS 7 如何安裝 Kibana</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/posts/centoselastic/">CentOS 7 如何安裝 Elasticsearch</a>
+        </li>
+	    
+    </ul>
+</div>
 
 </aside>
 

@@ -38,7 +38,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://reddtsai.github.io/" />
 
-<meta property="og:updated_time" content="2019-06-27T14:38:02&#43;08:00"/>
+<meta property="og:updated_time" content="2019-07-05T11:28:52&#43;08:00"/>
 
 <meta itemprop="name" content="Redd Tsai&#39;s Blog">
 <meta itemprop="description" content="">
@@ -149,14 +149,22 @@
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/posts/centoskibana/" class="color-inherit dim link">
-            CentOS 7 如何安裝 Kibana
+          <a href="/posts/iisfilebeat/" class="color-inherit dim link">
+            windows 如何安裝 Filebeat 收集 IIS Logs
             </a>
         </h1>
         <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          
+           windows 如何安裝 Filebeat 收集 IIS Logs  Download Filebeat for Windows
+ 解壓縮至 C:\Program Files\Filebeat，以 admin 角色開啟 PowerShell
+cd 'C:\Program Files\Filebeat' .\install-service-filebeat.ps1   設定 Filebeat  編輯 filebeat.yml
+output.elasticsearch: hosts: [&quot;localhost:9200&quot;] setup.kibana: host: &quot;localhost:5601&quot;  設定 Filebeat 模組
+收集 IIS Log
+編輯 filebeat\module\iis\access\manifest.yml
+default.paths: default: - C:/inetpub/logs/LogFiles/*/*.log  啟用 iis 模組
+.\filebeat.exe modules enable iis  啟動 Filebeat 服務
+Start-Service filebeat   
         </div>
-          <a href="/posts/centoskibana/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+          <a href="/posts/iisfilebeat/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
         
       </div>
     </div>
@@ -173,14 +181,14 @@
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/posts/centoselastic/" class="color-inherit dim link">
-            CentOS 7 如何安裝 Elasticsearch
+          <a href="/posts/centoskibana/" class="color-inherit dim link">
+            CentOS 7 如何安裝 Kibana
             </a>
         </h1>
         <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
           
         </div>
-          <a href="/posts/centoselastic/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+          <a href="/posts/centoskibana/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
         
       </div>
     </div>
@@ -195,6 +203,12 @@
       <section class="w-100">
         <h1 class="f3">More</h1>
         
+        
+          <h2 class="f5 fw4 mb4 dib mr3">
+            <a href="/posts/centoselastic/" class="link black dim">
+              CentOS 7 如何安裝 Elasticsearch
+            </a>
+          </h2>
         
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="/posts/hello/" class="link black dim">

@@ -38,6 +38,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://reddtsai.github.io/tags/" />
 
+<meta property="og:updated_time" content="2019-07-05T11:28:52&#43;08:00"/>
 
 <meta itemprop="name" content="Tags">
 <meta itemprop="description" content="">
@@ -121,6 +122,66 @@
   </article>
   <div class="mw8 center">
     <section class="ph4">
+      
+        <h2 class="f1">
+          <a href="/tags/elk" class="link blue hover-black">
+            Tag: elk
+          </a>
+        </h2>
+        
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/posts/iisfilebeat/" class="link black dim">
+        windows 如何安裝 Filebeat 收集 IIS Logs
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+       windows 如何安裝 Filebeat 收集 IIS Logs  Download Filebeat for Windows
+ 解壓縮至 C:\Program Files\Filebeat，以 admin 角色開啟 PowerShell
+cd 'C:\Program Files\Filebeat' .\install-service-filebeat.ps1   設定 Filebeat  編輯 filebeat.yml
+output.elasticsearch: hosts: [&quot;localhost:9200&quot;] setup.kibana: host: &quot;localhost:5601&quot;  設定 Filebeat 模組
+收集 IIS Log
+編輯 filebeat\module\iis\access\manifest.yml
+default.paths: default: - C:/inetpub/logs/LogFiles/*/*.log  啟用 iis 模組
+.\filebeat.exe modules enable iis  啟動 Filebeat 服務
+Start-Service filebeat   
+    </div>
+  </div>
+</div>
+
+        
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/posts/centoskibana/" class="link black dim">
+        CentOS 7 如何安裝 Kibana
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      
+    </div>
+  </div>
+</div>
+
+        
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/posts/centoselastic/" class="link black dim">
+        CentOS 7 如何安裝 Elasticsearch
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      
+    </div>
+  </div>
+</div>
+
+        
       
     </section>
   </div>

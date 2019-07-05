@@ -43,11 +43,11 @@
 
 <meta itemprop="datePublished" content="2019-06-27T14:38:02&#43;08:00" />
 <meta itemprop="dateModified" content="2019-06-27T14:38:02&#43;08:00" />
-<meta itemprop="wordCount" content="114">
+<meta itemprop="wordCount" content="122">
 
 
 
-<meta itemprop="keywords" content="" />
+<meta itemprop="keywords" content="ELK," />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="CentOS 7 如何安裝 Kibana"/>
 <meta name="twitter:description" content=""/>
@@ -179,7 +179,7 @@ server.host: 0.0.0.0
 <pre><code class="language-bash">sudo firewall-cmd --new-zone=kibana --permanent
 sudo firewall-cmd --reload
 sudo firewall-cmd --zone=kibana --add-source=&lt;IP_ADDRESS&gt;/32 --permanent
-sudo firewall-cmd --zone=kibana --add-port=9200/tcp --permanent
+sudo firewall-cmd --zone=kibana --add-port=5601/tcp --permanent
 sudo firewall-cmd --reload
 </code></pre>
 
@@ -187,6 +187,13 @@ sudo firewall-cmd --reload
 
 <pre><code class="language-bash">sudo firewall-cmd --zone=kibana --add-source=&lt;IP_ADDRESS&gt; --permanent
 sudo firewall-cmd --reload
+</code></pre>
+
+<p>測試</p>
+
+<pre><code class="language-bash">sudo firewall-cmd --zone=kibana --list-all
+
+sudo netstat -plnt
 </code></pre>
 
 <h3 id="6-啟動-kibana-服務">6. 啟動 kibana 服務</h3>
@@ -206,6 +213,10 @@ sudo systemctl start kibana.service
 
 <pre><code class="language-bash">sudo journalctl --unit kibana --since  &quot;20 min ago&quot;
 </code></pre><ul class="pa0">
+  
+   <li class="list">
+     <a href="/tags/elk" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">ELK</a>
+   </li>
   
 </ul>
 <div class="mt6">
@@ -236,6 +247,17 @@ sudo systemctl start kibana.service
 
 
 
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
+    <p class="f5 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/posts/centoselastic/">CentOS 7 如何安裝 Elasticsearch</a>
+        </li>
+	    
+    </ul>
+</div>
 
 </aside>
 
