@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Redd Tsai  | windows 如何安裝 Filebeat 收集 IIS Logs</title>
+    <title>Redd Tsai  | Windows 如何安裝 Filebeat 收集 IIS Logs</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -30,51 +30,27 @@
 
     
 
-    <meta property="og:title" content="windows 如何安裝 Filebeat 收集 IIS Logs" />
-<meta property="og:description" content=" windows 如何安裝 Filebeat 收集 IIS Logs  Download Filebeat for Windows
- 解壓縮至 C:\Program Files\Filebeat，以 admin 角色開啟 PowerShell
-cd &#39;C:\Program Files\Filebeat&#39; .\install-service-filebeat.ps1   設定 Filebeat  編輯 filebeat.yml
-output.elasticsearch: hosts: [&quot;localhost:9200&quot;] setup.kibana: host: &quot;localhost:5601&quot;  設定 Filebeat 模組
-收集 IIS Log
-編輯 filebeat\module\iis\access\manifest.yml
-default.paths: default: - C:/inetpub/logs/LogFiles/*/*.log  啟用 iis 模組
-.\filebeat.exe modules enable iis  啟動 Filebeat 服務
-Start-Service filebeat   " />
+    <meta property="og:title" content="Windows 如何安裝 Filebeat 收集 IIS Logs" />
+<meta property="og:description" content="" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://reddtsai.github.io/posts/iisfilebeat/" />
 <meta property="article:published_time" content="2019-07-05T11:28:52&#43;08:00"/>
 <meta property="article:modified_time" content="2019-07-05T11:28:52&#43;08:00"/>
 
-<meta itemprop="name" content="windows 如何安裝 Filebeat 收集 IIS Logs">
-<meta itemprop="description" content=" windows 如何安裝 Filebeat 收集 IIS Logs  Download Filebeat for Windows
- 解壓縮至 C:\Program Files\Filebeat，以 admin 角色開啟 PowerShell
-cd &#39;C:\Program Files\Filebeat&#39; .\install-service-filebeat.ps1   設定 Filebeat  編輯 filebeat.yml
-output.elasticsearch: hosts: [&quot;localhost:9200&quot;] setup.kibana: host: &quot;localhost:5601&quot;  設定 Filebeat 模組
-收集 IIS Log
-編輯 filebeat\module\iis\access\manifest.yml
-default.paths: default: - C:/inetpub/logs/LogFiles/*/*.log  啟用 iis 模組
-.\filebeat.exe modules enable iis  啟動 Filebeat 服務
-Start-Service filebeat   ">
+<meta itemprop="name" content="Windows 如何安裝 Filebeat 收集 IIS Logs">
+<meta itemprop="description" content="">
 
 
 <meta itemprop="datePublished" content="2019-07-05T11:28:52&#43;08:00" />
 <meta itemprop="dateModified" content="2019-07-05T11:28:52&#43;08:00" />
-<meta itemprop="wordCount" content="54">
+<meta itemprop="wordCount" content="53">
 
 
 
 <meta itemprop="keywords" content="ELK," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="windows 如何安裝 Filebeat 收集 IIS Logs"/>
-<meta name="twitter:description" content=" windows 如何安裝 Filebeat 收集 IIS Logs  Download Filebeat for Windows
- 解壓縮至 C:\Program Files\Filebeat，以 admin 角色開啟 PowerShell
-cd &#39;C:\Program Files\Filebeat&#39; .\install-service-filebeat.ps1   設定 Filebeat  編輯 filebeat.yml
-output.elasticsearch: hosts: [&quot;localhost:9200&quot;] setup.kibana: host: &quot;localhost:5601&quot;  設定 Filebeat 模組
-收集 IIS Log
-編輯 filebeat\module\iis\access\manifest.yml
-default.paths: default: - C:/inetpub/logs/LogFiles/*/*.log  啟用 iis 模組
-.\filebeat.exe modules enable iis  啟動 Filebeat 服務
-Start-Service filebeat   "/>
+<meta name="twitter:title" content="Windows 如何安裝 Filebeat 收集 IIS Logs"/>
+<meta name="twitter:description" content=""/>
 
   </head>
 
@@ -146,16 +122,14 @@ Start-Service filebeat   "/>
           
         POSTS
       </p>
-      <h1 class="f1 athelas mb1">windows 如何安裝 Filebeat 收集 IIS Logs</h1>
+      <h1 class="f1 athelas mb1">Windows 如何安裝 Filebeat 收集 IIS Logs</h1>
       
       <time class="f6 mv4 dib tracked" datetime="2019-07-05T11:28:52&#43;08:00">July 5, 2019</time>
       
       
     </header>
 
-    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
-
-<h2 id="windows-如何安裝-filebeat-收集-iis-logs">windows 如何安裝 Filebeat 收集 IIS Logs</h2>
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><h2 id="安裝-filebeat-收集-iis-logs">安裝 Filebeat 收集 IIS Logs</h2>
 
 <ol>
 <li><p>Download <a href="https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.2.0-windows-x86_64.zip">Filebeat</a> for Windows</p></li>
@@ -197,9 +171,10 @@ setup.kibana:
 <li><p>啟動 Filebeat 服務</p>
 
 <pre><code class="language-bash">Start-Service filebeat
-</code></pre></li>
-</ol>
-<ul class="pa0">
+</code></pre>
+
+<p><img src="/images/filebeat_service.PNG" alt="Alt text" /></p></li>
+</ol><ul class="pa0">
   
    <li class="list">
      <a href="/tags/elk" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">ELK</a>
@@ -218,7 +193,7 @@ setup.kibana:
 <ul>
 <li>
 <ul>
-<li><a href="#windows-如何安裝-filebeat-收集-iis-logs">windows 如何安裝 Filebeat 收集 IIS Logs</a></li>
+<li><a href="#安裝-filebeat-收集-iis-logs">安裝 Filebeat 收集 IIS Logs</a></li>
 </ul></li>
 </ul>
 </nav>

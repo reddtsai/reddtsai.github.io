@@ -12,20 +12,12 @@
     
     
     <item>
-      <title>windows 如何安裝 Filebeat 收集 IIS Logs</title>
+      <title>Windows 如何安裝 Filebeat 收集 IIS Logs</title>
       <link>https://reddtsai.github.io/posts/iisfilebeat/</link>
       <pubDate>Fri, 05 Jul 2019 11:28:52 +0800</pubDate>
       
       <guid>https://reddtsai.github.io/posts/iisfilebeat/</guid>
-      <description> windows 如何安裝 Filebeat 收集 IIS Logs  Download Filebeat for Windows
- 解壓縮至 C:\Program Files\Filebeat，以 admin 角色開啟 PowerShell
-cd &#39;C:\Program Files\Filebeat&#39; .\install-service-filebeat.ps1   設定 Filebeat  編輯 filebeat.yml
-output.elasticsearch: hosts: [&amp;quot;localhost:9200&amp;quot;] setup.kibana: host: &amp;quot;localhost:5601&amp;quot;  設定 Filebeat 模組
-收集 IIS Log
-編輯 filebeat\module\iis\access\manifest.yml
-default.paths: default: - C:/inetpub/logs/LogFiles/*/*.log  啟用 iis 模組
-.\filebeat.exe modules enable iis  啟動 Filebeat 服務
-Start-Service filebeat   </description>
+      <description></description>
     </item>
     
     <item>
