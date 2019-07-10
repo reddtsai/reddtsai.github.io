@@ -43,7 +43,7 @@
 
 <meta itemprop="datePublished" content="2019-07-05T11:28:52&#43;08:00" />
 <meta itemprop="dateModified" content="2019-07-05T11:28:52&#43;08:00" />
-<meta itemprop="wordCount" content="53">
+<meta itemprop="wordCount" content="62">
 
 
 
@@ -131,50 +131,50 @@
 
     <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><h2 id="安裝-filebeat-收集-iis-logs">安裝 Filebeat 收集 IIS Logs</h2>
 
-<ol>
-<li><p>Download <a href="https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.2.0-windows-x86_64.zip">Filebeat</a> for Windows</p></li>
+<h3 id="1-下載-filebeat">1. 下載 Filebeat</h3>
 
-<li><p>解壓縮至 C:\Program Files\Filebeat，以 admin 角色開啟 PowerShell</p>
+<p>Download <a href="https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.2.0-windows-x86_64.zip">Filebeat</a> for Windows</p>
 
-<pre><code class="language-bash">cd 'C:\Program Files\Filebeat'
-.\install-service-filebeat.ps1
+<h3 id="2-安裝-filebeat">2. 安裝 Filebeat</h3>
+
+<p>解壓縮至 C:\Program Files\Filebeat，以 admin 角色開啟 PowerShell</p>
+
+<pre><code class="language-bash">    cd 'C:\Program Files\Filebeat'
+    .\install-service-filebeat.ps1
 </code></pre>
 
-<ol>
-<li>設定 Filebeat</li>
-</ol>
+<h3 id="3-設定-filebeat">3. 設定 Filebeat</h3>
 
 <p>編輯 filebeat.yml</p>
 
-<pre><code class="language-text">output.elasticsearch:
-    hosts: [&quot;localhost:9200&quot;]
-setup.kibana:
-    host: &quot;localhost:5601&quot;
-</code></pre></li>
+<pre><code class="language-text">    output.elasticsearch:
+        hosts: [&quot;localhost:9200&quot;]
+    setup.kibana:
+        host: &quot;localhost:5601&quot;
+</code></pre>
 
-<li><p>設定 Filebeat 模組</p>
+<h3 id="4-設定-filebeat-模組">4. 設定 Filebeat 模組</h3>
 
 <p>收集 IIS Log</p>
 
 <p>編輯 filebeat\module\iis\access\manifest.yml</p>
 
-<pre><code class="language-text">default.paths:
-    default:
-        - C:/inetpub/logs/LogFiles/*/*.log
+<pre><code class="language-text">    default.paths:
+        default:
+            - C:/inetpub/logs/LogFiles/*/*.log
 </code></pre>
 
 <p>啟用 iis 模組</p>
 
-<pre><code class="language-bash">.\filebeat.exe modules enable iis
-</code></pre></li>
-
-<li><p>啟動 Filebeat 服務</p>
-
-<pre><code class="language-bash">Start-Service filebeat
+<pre><code class="language-bash">    .\filebeat.exe modules enable iis
 </code></pre>
 
-<p><img src="/images/filebeat_service.PNG" alt="Alt text" /></p></li>
-</ol><ul class="pa0">
+<h3 id="5-啟動-filebeat-服務">5. 啟動 Filebeat 服務</h3>
+
+<pre><code class="language-bash">    Start-Service filebeat
+</code></pre>
+
+<p><img src="/images/filebeat_service.PNG" alt="Alt text" /></p><ul class="pa0">
   
    <li class="list">
      <a href="/tags/elk" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">ELK</a>
@@ -216,7 +216,14 @@ setup.kibana:
 <ul>
 <li>
 <ul>
-<li><a href="#安裝-filebeat-收集-iis-logs">安裝 Filebeat 收集 IIS Logs</a></li>
+<li><a href="#安裝-filebeat-收集-iis-logs">安裝 Filebeat 收集 IIS Logs</a>
+<ul>
+<li><a href="#1-下載-filebeat">1. 下載 Filebeat</a></li>
+<li><a href="#2-安裝-filebeat">2. 安裝 Filebeat</a></li>
+<li><a href="#3-設定-filebeat">3. 設定 Filebeat</a></li>
+<li><a href="#4-設定-filebeat-模組">4. 設定 Filebeat 模組</a></li>
+<li><a href="#5-啟動-filebeat-服務">5. 啟動 Filebeat 服務</a></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
