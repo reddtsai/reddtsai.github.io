@@ -6,10 +6,19 @@
     <description>Recent content in Redd Tsai&#39;s Blog on Redd Tsai</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Fri, 05 Jul 2019 11:28:52 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 10 Jul 2019 16:14:12 +0800</lastBuildDate>
     
 	<atom:link href="https://reddtsai.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>About</title>
+      <link>https://reddtsai.github.io/about/</link>
+      <pubDate>Wed, 10 Jul 2019 16:14:12 +0800</pubDate>
+      
+      <guid>https://reddtsai.github.io/about/</guid>
+      <description>HI HUGO</description>
+    </item>
     
     <item>
       <title>Windows 如何安裝 Filebeat 收集 IIS Logs</title>
