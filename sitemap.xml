@@ -3,6 +3,39 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://reddtsai.github.io/tags/elk/</loc>
+    <lastmod>2019-07-11T19:01:43+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://reddtsai.github.io/posts/elk/</loc>
+    <lastmod>2019-07-11T19:01:43+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://reddtsai.github.io/</loc>
+    <lastmod>2019-07-11T19:01:43+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://reddtsai.github.io/tags/</loc>
+    <lastmod>2019-07-11T19:01:43+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://reddtsai.github.io/posts/elk_logging/</loc>
+    <lastmod>2019-07-11T18:57:13+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://reddtsai.github.io/about/</loc>
     <lastmod>2019-07-10T16:14:12+08:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -10,40 +43,21 @@
   </url>
   
   <url>
-    <loc>https://reddtsai.github.io/</loc>
-    <lastmod>2019-07-10T16:14:12+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://reddtsai.github.io/tags/elk/</loc>
-    <lastmod>2019-07-05T11:28:52+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://reddtsai.github.io/tags/</loc>
-    <lastmod>2019-07-05T11:28:52+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://reddtsai.github.io/posts/iisfilebeat/</loc>
+    <loc>https://reddtsai.github.io/posts/elk_iisfilebeat/</loc>
     <lastmod>2019-07-05T11:28:52+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://reddtsai.github.io/posts/centoskibana/</loc>
+    <loc>https://reddtsai.github.io/posts/elk_centoskibana/</loc>
     <lastmod>2019-06-27T14:38:02+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://reddtsai.github.io/posts/centoselastic/</loc>
+    <loc>https://reddtsai.github.io/posts/elk_centoselastic/</loc>
     <lastmod>2019-06-27T14:37:52+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
