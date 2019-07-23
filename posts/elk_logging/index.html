@@ -43,7 +43,7 @@
 
 <meta itemprop="datePublished" content="2019-07-11T18:57:13&#43;08:00" />
 <meta itemprop="dateModified" content="2019-07-11T18:57:13&#43;08:00" />
-<meta itemprop="wordCount" content="4">
+<meta itemprop="wordCount" content="15">
 
 
 
@@ -137,11 +137,21 @@
 
     <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><h2 id="elastic-logs">Elastic Logs</h2>
 
-<p><img src="/images/elasticlogs.png" alt="Alt text" /></p>
+<p>當你面對數個虛擬機、資料庫、成百的服務、應用程式生成的日誌，你需要一個能處理這巨量負雜日誌的產品，這裡介紹 Elastic 這個產品來協助你，必免自己造輪子。將由下圖的內容來說明，如何使用 Elastic 處理日誌你的日誌。</p>
 
-<h3 id="日誌收集-分析-監測">日誌收集&amp;分析&amp;監測</h3>
+<p><img src="/images/elastic.png" alt="Alt text" /></p>
 
-<p>log</p><ul class="pa0">
+<h3 id="日誌收集">日誌收集</h3>
+
+<p>首先是如何收集匯整你的日誌？例如你有 IIS、NGINX、MySQL、APP 多種不同類型的日誌，你需要將它們收集起來存放。</p>
+
+<p><img src="/images/beats.svg" alt="Alt text" /> FileBeat</p>
+
+<p><img src="/images/logstash.svg" alt="Alt text" /> Logstash</p>
+
+<h3 id="日誌分析">日誌分析</h3>
+
+<h3 id="日誌監測">日誌監測</h3><ul class="pa0">
   
    <li class="list">
      <a href="/tags/elk" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">ELK</a>
@@ -185,7 +195,9 @@
 <ul>
 <li><a href="#elastic-logs">Elastic Logs</a>
 <ul>
-<li><a href="#日誌收集-分析-監測">日誌收集&amp;分析&amp;監測</a></li>
+<li><a href="#日誌收集">日誌收集</a></li>
+<li><a href="#日誌分析">日誌分析</a></li>
+<li><a href="#日誌監測">日誌監測</a></li>
 </ul></li>
 </ul></li>
 </ul>
