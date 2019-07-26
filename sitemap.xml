@@ -3,8 +3,28 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://reddtsai.github.io/tags/elk/</loc>
-    <lastmod>2019-07-11T19:01:43+08:00</lastmod>
+    <loc>https://reddtsai.github.io/posts/elk_centoselastalert/</loc>
+    <lastmod>2019-07-25T14:06:13+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://reddtsai.github.io/</loc>
+    <lastmod>2019-07-25T14:06:13+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://reddtsai.github.io/tags/</loc>
+    <lastmod>2019-07-25T14:06:13+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://reddtsai.github.io/tags/elastic/</loc>
+    <lastmod>2019-07-25T14:06:13+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -13,19 +33,6 @@
     <lastmod>2019-07-11T19:01:43+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://reddtsai.github.io/</loc>
-    <lastmod>2019-07-11T19:01:43+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://reddtsai.github.io/tags/</loc>
-    <lastmod>2019-07-11T19:01:43+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
