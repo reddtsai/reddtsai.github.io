@@ -43,7 +43,7 @@
 
 <meta itemprop="datePublished" content="2019-06-27T14:38:02&#43;08:00" />
 <meta itemprop="dateModified" content="2019-06-27T14:38:02&#43;08:00" />
-<meta itemprop="wordCount" content="123">
+<meta itemprop="wordCount" content="129">
 
 
 
@@ -135,20 +135,32 @@
       
     </header>
 
-    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><h2 id="安裝-kibana-6">安裝 Kibana 6</h2>
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><h3 id="安裝-kibana-6">安裝 Kibana 6</h3>
 
-<h3 id="1-安裝-openjdk">1. 安裝 OpenJDK</h3>
+<p>版本</p>
+
+<ul>
+<li>Kibana 6.8</li>
+</ul>
+
+<p>環境</p>
+
+<ul>
+<li>CentOS 7</li>
+</ul>
+
+<h4 id="1-安裝-openjdk">1. 安裝 OpenJDK</h4>
 
 <pre><code class="language-bash">sudo yum  install java-1.8.0-openjdk-devel
 java -version
 </code></pre>
 
-<h3 id="2-安裝-elasticsearch-簽章公鑰">2. 安裝 Elasticsearch 簽章公鑰</h3>
+<h4 id="2-安裝-elasticsearch-簽章公鑰">2. 安裝 Elasticsearch 簽章公鑰</h4>
 
 <pre><code class="language-bash">rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
 </code></pre>
 
-<h3 id="3-安裝-kibana">3. 安裝 Kibana</h3>
+<h4 id="3-安裝-kibana">3. 安裝 Kibana</h4>
 
 <p>建立 Kibana 套件容器設定檔 /etc/yum.repos.d/kibana.repo</p>
 
@@ -169,7 +181,7 @@ type=rpm-md
 <pre><code class="language-bash">sudo yum install kibana
 </code></pre>
 
-<h3 id="4-配置-kibana">4. 配置 kibana</h3>
+<h4 id="4-配置-kibana">4. 配置 kibana</h4>
 
 <p>kibana 配置檔 /etc/kibana/kibana.yml</p>
 
@@ -178,7 +190,7 @@ type=rpm-md
 server.host: 0.0.0.0
 </code></pre>
 
-<h3 id="5-設定防火牆和ip">5. 設定防火牆和IP</h3>
+<h4 id="5-設定防火牆和ip">5. 設定防火牆和IP</h4>
 
 <p>新增</p>
 
@@ -202,7 +214,7 @@ sudo firewall-cmd --reload
 sudo netstat -plnt
 </code></pre>
 
-<h3 id="6-啟動-kibana-服務">6. 啟動 kibana 服務</h3>
+<h4 id="6-啟動-kibana-服務">6. 啟動 kibana 服務</h4>
 
 <pre><code class="language-bash">sudo systemctl enable kibana.service
 sudo systemctl start kibana.service
@@ -260,6 +272,8 @@ sudo systemctl start kibana.service
 <ul>
 <li>
 <ul>
+<li>
+<ul>
 <li><a href="#安裝-kibana-6">安裝 Kibana 6</a>
 <ul>
 <li><a href="#1-安裝-openjdk">1. 安裝 OpenJDK</a></li>
@@ -268,6 +282,7 @@ sudo systemctl start kibana.service
 <li><a href="#4-配置-kibana">4. 配置 kibana</a></li>
 <li><a href="#5-設定防火牆和ip">5. 設定防火牆和IP</a></li>
 <li><a href="#6-啟動-kibana-服務">6. 啟動 kibana 服務</a></li>
+</ul></li>
 </ul></li>
 </ul></li>
 </ul>

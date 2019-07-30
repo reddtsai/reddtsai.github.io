@@ -43,7 +43,7 @@
 
 <meta itemprop="datePublished" content="2019-07-25T14:06:13&#43;08:00" />
 <meta itemprop="dateModified" content="2019-07-25T14:06:13&#43;08:00" />
-<meta itemprop="wordCount" content="373">
+<meta itemprop="wordCount" content="385">
 
 
 
@@ -135,7 +135,19 @@
       
     </header>
 
-    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><h2 id="安裝-elastalert-0-2">安裝 ElastAlert 0.2</h2>
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><h3 id="安裝-elastalert-0-2">安裝 ElastAlert 0.2</h3>
+
+<p>版本</p>
+
+<ul>
+<li>ElastAlert 0.2</li>
+</ul>
+
+<p>環境</p>
+
+<ul>
+<li>CentOS 7</li>
+</ul>
 
 <p>安裝需求</p>
 
@@ -149,7 +161,7 @@
 <li><p>dependency Package，參考 ElastAlert requirements.txt</p></li>
 </ul>
 
-<h3 id="安裝-pip-dev">安裝 PIP、DEV</h3>
+<h4 id="1-安裝-pip-dev">1. 安裝 PIP、DEV</h4>
 
 <p>確認是否已安裝 python 2.7</p>
 
@@ -169,7 +181,7 @@ pip --version
 sudo pip install --upgrade pip
 </code></pre>
 
-<h3 id="安裝-elastalert">安裝 ElastAlert</h3>
+<h4 id="2-安裝-elastalert">2. 安裝 ElastAlert</h4>
 
 <p>確認套件，安裝的過程中可能會遇到相依套件的問題，請參考 ElastAlert requirements.txt 中的需求套件清單</p>
 
@@ -191,7 +203,7 @@ sudo pip install --upgrade pip
 <pre><code class="language-bash">sudo pip install elastalert
 </code></pre>
 
-<h3 id="設定-elastalert">設定 ElastAlert</h3>
+<h4 id="3-設定-elastalert">3. 設定 ElastAlert</h4>
 
 <p>在 ElastAlert 目錄下新增設定檔 config.yaml。以我的環境為例 /usr/lib/python2.7/site-packages/elastalert</p>
 
@@ -227,7 +239,7 @@ alert_time_limit:
   days: 2
 </code></pre>
 
-<h3 id="設定-elasticsearch-client">設定 Elasticsearch Client</h3>
+<h4 id="4-設定-elasticsearch-client">4. 設定 Elasticsearch Client</h4>
 
 <p>確認 Elasticsearch Client 的版本和 Elasticsearch 的版本相符。以我的環境為例，需要將 lasticsearch Client 更新至 6.X 版</p>
 
@@ -243,7 +255,7 @@ sudo pip install &quot;elasticsearch&lt;7&quot;
 <pre><code class="language-bash">elastalert-create-index
 </code></pre>
 
-<h3 id="設定通知規則">設定通知規則</h3>
+<h4 id="5-設定通知規則">5. 設定通知規則</h4>
 
 <p>新增通知規則設定檔 filebeat_frequency.yaml。以我的環境為例 /usr/lib/python2.7/site-packages/elastalert/alert_rules</p>
 
@@ -283,7 +295,7 @@ alert:
 <pre><code class="language-bash">elastalert-test-rule alert_rules/filebeat_frequency.yaml
 </code></pre>
 
-<h3 id="設定-elastalert-服務">設定 ElastAlert 服務</h3>
+<h4 id="6-設定-elastalert-服務">6. 設定 ElastAlert 服務</h4>
 
 <p>執行測試</p>
 
@@ -371,14 +383,17 @@ sudo systemctl status elastalert.service
 <ul>
 <li>
 <ul>
+<li>
+<ul>
 <li><a href="#安裝-elastalert-0-2">安裝 ElastAlert 0.2</a>
 <ul>
-<li><a href="#安裝-pip-dev">安裝 PIP、DEV</a></li>
-<li><a href="#安裝-elastalert">安裝 ElastAlert</a></li>
-<li><a href="#設定-elastalert">設定 ElastAlert</a></li>
-<li><a href="#設定-elasticsearch-client">設定 Elasticsearch Client</a></li>
-<li><a href="#設定通知規則">設定通知規則</a></li>
-<li><a href="#設定-elastalert-服務">設定 ElastAlert 服務</a></li>
+<li><a href="#1-安裝-pip-dev">1. 安裝 PIP、DEV</a></li>
+<li><a href="#2-安裝-elastalert">2. 安裝 ElastAlert</a></li>
+<li><a href="#3-設定-elastalert">3. 設定 ElastAlert</a></li>
+<li><a href="#4-設定-elasticsearch-client">4. 設定 Elasticsearch Client</a></li>
+<li><a href="#5-設定通知規則">5. 設定通知規則</a></li>
+<li><a href="#6-設定-elastalert-服務">6. 設定 ElastAlert 服務</a></li>
+</ul></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -393,7 +408,7 @@ sudo systemctl status elastalert.service
     <ul class="pa0 list">
 	   
 	     <li  class="mb2">
-          <a href="/posts/elk/">Elastic</a>
+          <a href="/posts/elk/">Elastic 簡介</a>
         </li>
 	    
 	     <li  class="mb2">

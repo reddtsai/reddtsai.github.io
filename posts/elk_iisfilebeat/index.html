@@ -43,7 +43,7 @@
 
 <meta itemprop="datePublished" content="2019-07-05T11:28:52&#43;08:00" />
 <meta itemprop="dateModified" content="2019-07-05T11:28:52&#43;08:00" />
-<meta itemprop="wordCount" content="60">
+<meta itemprop="wordCount" content="66">
 
 
 
@@ -135,13 +135,25 @@
       
     </header>
 
-    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><h2 id="安裝-filebeat-6">安裝 Filebeat 6</h2>
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><h3 id="安裝-filebeat-6">安裝 Filebeat 6</h3>
 
-<h3 id="1-下載-filebeat">1. 下載 Filebeat</h3>
+<p>版本</p>
+
+<ul>
+<li>Filebeat 6</li>
+</ul>
+
+<p>環境</p>
+
+<ul>
+<li>CentOS 7</li>
+</ul>
+
+<h4 id="1-下載-filebeat">1. 下載 Filebeat</h4>
 
 <p>Download <a href="https://www.elastic.co/cn/downloads/past-releases#filebeat">Filebeat</a> for Windows</p>
 
-<h3 id="2-安裝-filebeat">2. 安裝 Filebeat</h3>
+<h4 id="2-安裝-filebeat">2. 安裝 Filebeat</h4>
 
 <p>解壓縮至 C:\Program Files\Filebeat，以 admin 角色開啟 PowerShell</p>
 
@@ -149,7 +161,7 @@
     .\install-service-filebeat.ps1
 </code></pre>
 
-<h3 id="3-設定-filebeat">3. 設定 Filebeat</h3>
+<h4 id="3-設定-filebeat">3. 設定 Filebeat</h4>
 
 <p>編輯 filebeat.yml</p>
 
@@ -159,7 +171,7 @@
         host: &quot;localhost:5601&quot;
 </code></pre>
 
-<h3 id="4-設定-filebeat-模組">4. 設定 Filebeat 模組</h3>
+<h4 id="4-設定-filebeat-模組">4. 設定 Filebeat 模組</h4>
 
 <p>收集 IIS Log</p>
 
@@ -175,7 +187,7 @@
 <pre><code class="language-bash">    .\filebeat.exe modules enable iis
 </code></pre>
 
-<h3 id="5-啟動-filebeat-服務">5. 啟動 Filebeat 服務</h3>
+<h4 id="5-啟動-filebeat-服務">5. 啟動 Filebeat 服務</h4>
 
 <pre><code class="language-bash">    Start-Service filebeat
 </code></pre>
@@ -222,6 +234,8 @@
 <ul>
 <li>
 <ul>
+<li>
+<ul>
 <li><a href="#安裝-filebeat-6">安裝 Filebeat 6</a>
 <ul>
 <li><a href="#1-下載-filebeat">1. 下載 Filebeat</a></li>
@@ -229,6 +243,7 @@
 <li><a href="#3-設定-filebeat">3. 設定 Filebeat</a></li>
 <li><a href="#4-設定-filebeat-模組">4. 設定 Filebeat 模組</a></li>
 <li><a href="#5-啟動-filebeat-服務">5. 啟動 Filebeat 服務</a></li>
+</ul></li>
 </ul></li>
 </ul></li>
 </ul>
