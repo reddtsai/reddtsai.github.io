@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Redd Tsai  | Windows 如何安裝 Filebeat 收集 IIS Logs</title>
+    <title>Redd Tsai  | 如何使用 Filebeat 收集 Logs</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -30,26 +30,26 @@
 
     
 
-    <meta property="og:title" content="Windows 如何安裝 Filebeat 收集 IIS Logs" />
+    <meta property="og:title" content="如何使用 Filebeat 收集 Logs" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://reddtsai.github.io/posts/elk_iisfilebeat/" />
 <meta property="article:published_time" content="2019-07-05T11:28:52&#43;08:00"/>
 <meta property="article:modified_time" content="2019-07-05T11:28:52&#43;08:00"/>
 
-<meta itemprop="name" content="Windows 如何安裝 Filebeat 收集 IIS Logs">
+<meta itemprop="name" content="如何使用 Filebeat 收集 Logs">
 <meta itemprop="description" content="">
 
 
 <meta itemprop="datePublished" content="2019-07-05T11:28:52&#43;08:00" />
 <meta itemprop="dateModified" content="2019-07-05T11:28:52&#43;08:00" />
-<meta itemprop="wordCount" content="66">
+<meta itemprop="wordCount" content="178">
 
 
 
 <meta itemprop="keywords" content="elastic," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Windows 如何安裝 Filebeat 收集 IIS Logs"/>
+<meta name="twitter:title" content="如何使用 Filebeat 收集 Logs"/>
 <meta name="twitter:description" content=""/>
 
   </head>
@@ -128,71 +128,165 @@
           
         POSTS
       </p>
-      <h1 class="f1 athelas mb1">Windows 如何安裝 Filebeat 收集 IIS Logs</h1>
+      <h1 class="f1 athelas mb1">如何使用 Filebeat 收集 Logs</h1>
       
       <time class="f6 mv4 dib tracked" datetime="2019-07-05T11:28:52&#43;08:00">July 5, 2019</time>
       
       
     </header>
 
-    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><h3 id="安裝-filebeat-6">安裝 Filebeat 6</h3>
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>Filebeat 是個檔案分析工具，最常用來收集日誌檔，收集的過程分為</p>
 
+<ol>
+<li><p>收集數據 (讀取日誌)</p></li>
+
+<li><p>解析數據</p>
+
+<p>常見的日誌格式(IIS、NGINX、MySQL)大多可透過 Filebeat 內建模組來解析，那也可透過新增模組來客製格式。</p></li>
+
+<li><p>傳送數據 (Logstash 或 Elasticsearch 儲存)</p></li>
+</ol>
+
+<blockquote>
 <p>版本</p>
 
 <ul>
 <li>Filebeat 6</li>
 </ul>
 
-<p>環境</p>
+<p>安裝請參考下一篇文章<a href="https://reddtsai.github.io/posts/elk_windowsfilebeat/">Windows 如何安裝 Filebeat</a></p>
+</blockquote>
 
-<ul>
-<li>CentOS 7</li>
-</ul>
+<p>以下為該如何使用 Filebeat 模組</p>
 
-<h4 id="1-下載-filebeat">1. 下載 Filebeat</h4>
+<h4 id="模組設定">模組設定</h4>
 
-<p>Download <a href="https://www.elastic.co/cn/downloads/past-releases#filebeat">Filebeat</a> for Windows</p>
+<p>Filebeat 提供多樣模組來收集常見的日誌，這邊以 IIS 日誌為例，說明如何設定模組。</p>
 
-<h4 id="2-安裝-filebeat">2. 安裝 Filebeat</h4>
+<ol>
+<li><p>設定日誌路徑</p>
 
-<p>解壓縮至 C:\Program Files\Filebeat，以 admin 角色開啟 PowerShell</p>
+<p>加入 IIS 日誌路徑</p>
 
-<pre><code class="language-bash">    cd 'C:\Program Files\Filebeat'
-    .\install-service-filebeat.ps1
-</code></pre>
-
-<h4 id="3-設定-filebeat">3. 設定 Filebeat</h4>
-
-<p>編輯 filebeat.yml</p>
-
-<pre><code class="language-text">    output.elasticsearch:
-        hosts: [&quot;localhost:9200&quot;]
-    setup.kibana:
-        host: &quot;localhost:5601&quot;
-</code></pre>
-
-<h4 id="4-設定-filebeat-模組">4. 設定 Filebeat 模組</h4>
-
-<p>收集 IIS Log</p>
-
-<p>編輯 filebeat\module\iis\access\manifest.yml</p>
+<p>編輯 [Windows 安裝路徑]\filebeat\module\iis\access\manifest.yml</p>
 
 <pre><code class="language-text">    default.paths:
         default:
             - C:/inetpub/logs/LogFiles/*/*.log
 </code></pre>
 
-<p>啟用 iis 模組</p>
+<ol>
+<li>啟用模組</li>
+</ol>
 
-<pre><code class="language-bash">    .\filebeat.exe modules enable iis
+<p>開啟 IIS 模組，在 PowerShell 執行下方命令</p>
+
+<pre><code class="language-bash">cd [Windows 安裝路徑]
+.\filebeat.exe modules enable iis
+</code></pre></li>
+</ol>
+
+<h4 id="新增模組">新增模組</h4>
+
+<p>新增一個模組需透過 Beats 程式碼來逹成，這裡只會說明新模組需要作那些設定，完整資訊請參考 github Beats repository</p>
+
+<p>新增一個模組後，可看到所產生的檔案結構，以下方我所建立的 nlog module 為例</p>
+
+<pre><code class="language-text">filebeat
+├ module
+│   ⎩ nlog
+│       ⎩ app
+│           ├ manifest.yaml
+│           ├ config
+│           │   ⎩ fileset.yml
+│           ⎩ ingest
+│               ⎩ pipeline.json
+├ modules.d
+│   ⎩ nlog.yml.disabled
+
 </code></pre>
 
-<h4 id="5-啟動-filebeat-服務">5. 啟動 Filebeat 服務</h4>
+<h5 id="manifest-yaml">manifest.yaml</h5>
 
-<pre><code class="language-bash">    Start-Service filebeat
+<ul>
+<li><p>模組控制檔</p>
+
+<p>日誌路徑</p>
+
+<p>```text
+var:</p>
+
+<ul>
+<li><p>name: paths
+os.windows</p>
+
+<ul>
+<li><p>C:/log/*.log</p>
+
+<pre><code>
+參考
+
+* 設定日誌路徑
+
+* 設定 Ingest Pipeline
+
+* 指定設定檔
+
+filebeat modules.d
+
+test
+
+```bash
+curl -X DELETE http://elasticsearch:9200/_ingest/pipeline/filebeat-6.7.0-iis-access-default
+</code></pre></li>
+</ul></li>
+</ul></li>
+</ul>
+
+<h4 id="測試模組">測試模組</h4>
+
+<ol>
+<li><p>測試設定檔</p>
+
+<pre><code class="language-bash">.\filebeat.exe test config -c filebeat.yml
+.\filebeat.exe test output filebeat.yml
 </code></pre>
 
-<p><img src="/images/filebeat_service.PNG" alt="Alt text" /></p><ul class="pa0">
+<ol>
+<li>執行 Filebeat</li>
+</ol>
+
+<pre><code class="language-bash">.\filebeat.exe -e -c filebeat.yml -d &quot;*&quot;
+</code></pre>
+
+<blockquote>
+<p>注意<br />
+請先清除前次測試所讀取的記錄，刪除目錄 filebeat\data\registry</p>
+</blockquote></li>
+
+<li><p>檢查 Ingest &amp; Pipeline</p>
+
+<p>透過 elasticsearch api 查詢 Ingest &amp; pipeline (例如 IIS 模組 pipeline filebeat-6.7.0-iis-access-default)</p>
+
+<pre><code class="language-bash">curl -X GET http://elasticsearch:9200/_cat/indices?v
+curl -X GET http://elasticsearch:9200/_ingest/pipeline
+curl -X GET http://elasticsearch:9200/_ingest/pipeline/filebeat-6.7.0-iis-access-default
+</code></pre>
+
+<ol>
+<li>確認資料</li>
+</ol>
+
+<p>開啟 Kibana，透過 Logs 介面，確認是否有顯示 log 資料</p>
+
+<p><img src="/images/kibana_logs.PNG" alt="Alt text" /></p>
+
+<p><br/></p>
+
+<blockquote>
+<p>文章參考來源為 Elastic 官方文檔</p>
+</blockquote></li>
+</ol><ul class="pa0">
   
    <li class="list">
      <a href="/tags/elastic" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">elastic</a>
@@ -236,13 +330,14 @@
 <ul>
 <li>
 <ul>
-<li><a href="#安裝-filebeat-6">安裝 Filebeat 6</a>
+<li>
 <ul>
-<li><a href="#1-下載-filebeat">1. 下載 Filebeat</a></li>
-<li><a href="#2-安裝-filebeat">2. 安裝 Filebeat</a></li>
-<li><a href="#3-設定-filebeat">3. 設定 Filebeat</a></li>
-<li><a href="#4-設定-filebeat-模組">4. 設定 Filebeat 模組</a></li>
-<li><a href="#5-啟動-filebeat-服務">5. 啟動 Filebeat 服務</a></li>
+<li><a href="#模組設定">模組設定</a></li>
+<li><a href="#新增模組">新增模組</a>
+<ul>
+<li><a href="#manifest-yaml">manifest.yaml</a></li>
+</ul></li>
+<li><a href="#測試模組">測試模組</a></li>
 </ul></li>
 </ul></li>
 </ul></li>

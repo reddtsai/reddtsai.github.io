@@ -43,7 +43,7 @@
 
 <meta itemprop="datePublished" content="2019-07-11T18:57:13&#43;08:00" />
 <meta itemprop="dateModified" content="2019-07-11T18:57:13&#43;08:00" />
-<meta itemprop="wordCount" content="57">
+<meta itemprop="wordCount" content="53">
 
 
 
@@ -135,9 +135,7 @@
       
     </header>
 
-    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><h3 id="elastic-logs">Elastic Logs</h3>
-
-<p>當你面對數個虛擬機、資料庫、成百的服務、應用程式生成的日誌，你需要一個能處理這巨量負雜日誌的產品，這裡介紹 Elastic 這個產品來協助你，必免自己造輪子。將由下圖的內容來說明，如何使用 Elastic 處理日誌你的日誌。</p>
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>當你面對數個虛擬機、資料庫、成百的服務、應用程式生成的日誌，你需要一個能處理這巨量負雜日誌的產品，這裡介紹 Elastic 這個產品來協助你，必免自己造輪子。將由下圖的內容來說明，如何使用 Elastic 處理日誌你的日誌。</p>
 
 <p><img src="/images/elastic.png" alt="Alt text" /></p>
 
@@ -148,7 +146,7 @@
 <p><svg xmlns="http://www.w3.org/2000/svg" width="64px" height="64px"><image xlink:href="/images/beats.svg" /></svg> FileBeat 是匯整轉發日誌工具，可使用它內建模組或自訂格式來收集日誌，並將收集來的數據解析發送到 Logstash 或 Elasticsearch 儲存。</p>
 
 <blockquote>
-<p>範例<a href="https://reddtsai.github.io/posts/elk_iisfilebeat/">Windows 如何安裝 Filebeat 收集 IIS Logs</a></p>
+<p>範例<a href="https://reddtsai.github.io/posts/elk_iisfilebeat/">如何使用 Filebeat 收集 Logs</a></p>
 </blockquote>
 
 <p><svg xmlns="http://www.w3.org/2000/svg" width="64px" height="64px"><image xlink:href="/images/logstash.svg" /></svg> Logstash 是接收轉發日誌中介服務，從過濾器接收不同形式的來源，透過建構結構來分析轉換成通用格式，再輸出到 Elasticsearch 或其它儲存設備。</p>
@@ -215,7 +213,7 @@
 <ul>
 <li>
 <ul>
-<li><a href="#elastic-logs">Elastic Logs</a>
+<li>
 <ul>
 <li><a href="#日誌收集">日誌收集</a></li>
 <li><a href="#日誌存儲">日誌存儲</a></li>
@@ -235,7 +233,7 @@
     <ul class="pa0 list">
 	   
 	     <li  class="mb2">
-          <a href="/posts/elk_iisfilebeat/">Windows 如何安裝 Filebeat 收集 IIS Logs</a>
+          <a href="/posts/elk_iisfilebeat/">如何使用 Filebeat 收集 Logs</a>
         </li>
 	    
 	     <li  class="mb2">

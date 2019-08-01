@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Redd Tsai  | CentOS 7 如何安裝 Kibana</title>
+    <title>Redd Tsai  | Windows 如何安裝 Filebeat</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -30,26 +30,26 @@
 
     
 
-    <meta property="og:title" content="CentOS 7 如何安裝 Kibana" />
+    <meta property="og:title" content="Windows 如何安裝 Filebeat" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://reddtsai.github.io/posts/elk_centoskibana/" />
-<meta property="article:published_time" content="2019-06-27T14:38:02&#43;08:00"/>
-<meta property="article:modified_time" content="2019-06-27T14:38:02&#43;08:00"/>
+<meta property="og:url" content="https://reddtsai.github.io/posts/elk_windowsfilebeat/" />
+<meta property="article:published_time" content="2019-07-30T15:59:54&#43;08:00"/>
+<meta property="article:modified_time" content="2019-07-30T15:59:54&#43;08:00"/>
 
-<meta itemprop="name" content="CentOS 7 如何安裝 Kibana">
+<meta itemprop="name" content="Windows 如何安裝 Filebeat">
 <meta itemprop="description" content="">
 
 
-<meta itemprop="datePublished" content="2019-06-27T14:38:02&#43;08:00" />
-<meta itemprop="dateModified" content="2019-06-27T14:38:02&#43;08:00" />
-<meta itemprop="wordCount" content="126">
+<meta itemprop="datePublished" content="2019-07-30T15:59:54&#43;08:00" />
+<meta itemprop="dateModified" content="2019-07-30T15:59:54&#43;08:00" />
+<meta itemprop="wordCount" content="69">
 
 
 
 <meta itemprop="keywords" content="elastic," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="CentOS 7 如何安裝 Kibana"/>
+<meta name="twitter:title" content="Windows 如何安裝 Filebeat"/>
 <meta name="twitter:description" content=""/>
 
   </head>
@@ -128,9 +128,9 @@
           
         POSTS
       </p>
-      <h1 class="f1 athelas mb1">CentOS 7 如何安裝 Kibana</h1>
+      <h1 class="f1 athelas mb1">Windows 如何安裝 Filebeat</h1>
       
-      <time class="f6 mv4 dib tracked" datetime="2019-06-27T14:38:02&#43;08:00">June 27, 2019</time>
+      <time class="f6 mv4 dib tracked" datetime="2019-07-30T15:59:54&#43;08:00">July 30, 2019</time>
       
       
     </header>
@@ -138,97 +138,60 @@
     <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>版本</p>
 
 <ul>
-<li>Kibana 6.8</li>
+<li>Filebeat 6</li>
 </ul>
 
 <p>環境</p>
 
 <ul>
-<li>CentOS 7</li>
+<li>Windows 10</li>
 </ul>
 
-<h4 id="1-安裝-openjdk">1. 安裝 OpenJDK</h4>
+<h4 id="1-下載-filebeat">1. 下載 Filebeat</h4>
 
-<pre><code class="language-bash">sudo yum  install java-1.8.0-openjdk-devel
-java -version
+<p>Download <a href="https://www.elastic.co/cn/downloads/past-releases#filebeat">Filebeat</a> for Windows</p>
+
+<h4 id="2-安裝-filebeat">2. 安裝 Filebeat</h4>
+
+<p>解壓縮至 C:\Program Files\Filebeat，以 admin 角色開啟 PowerShell</p>
+
+<pre><code class="language-bash">    cd 'C:\Program Files\Filebeat'
+    .\install-service-filebeat.ps1
 </code></pre>
 
-<h4 id="2-安裝-elasticsearch-簽章公鑰">2. 安裝 Elasticsearch 簽章公鑰</h4>
+<h4 id="3-設定-filebeat">3. 設定 Filebeat</h4>
 
-<pre><code class="language-bash">rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
+<p>編輯 filebeat.yml，設定 elasticsearch 和 kibana 的位置</p>
+
+<pre><code class="language-text">    output.elasticsearch:
+        hosts: [&quot;localhost:9200&quot;]
+    setup.kibana:
+        host: &quot;localhost:5601&quot;
 </code></pre>
 
-<h4 id="3-安裝-kibana">3. 安裝 Kibana</h4>
+<h4 id="4-設定-filebeat-模組">4. 設定 Filebeat 模組</h4>
 
-<p>建立 Kibana 套件容器設定檔 /etc/yum.repos.d/kibana.repo</p>
+<p>收集 IIS Log</p>
 
-<p>填入套件容器參數</p>
+<p>編輯 filebeat\module\iis\access\manifest.yml</p>
 
-<pre><code class="language-text">[kibana-6.x]
-name=Kibana repository for 6.x packages
-baseurl=https://artifacts.elastic.co/packages/6.x/yum
-gpgcheck=1
-gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch
-enabled=1
-autorefresh=1
-type=rpm-md
+<pre><code class="language-text">    default.paths:
+        default:
+            - C:/inetpub/logs/LogFiles/*/*.log
 </code></pre>
 
-<p>安裝 kibana</p>
+<p>啟用 iis 模組</p>
 
-<pre><code class="language-bash">sudo yum install kibana
+<pre><code class="language-bash">    .\filebeat.exe modules enable iis
 </code></pre>
 
-<h4 id="4-配置-kibana">4. 配置 kibana</h4>
+<h4 id="5-啟動-filebeat-服務">5. 啟動 Filebeat 服務</h4>
 
-<p>kibana 配置檔 /etc/kibana/kibana.yml</p>
-
-<pre><code class="language-text">elasticsearch.hosts: http://localhost:9200
-
-server.host: 0.0.0.0
+<pre><code class="language-bash">    .\filebeat.exe setup
+    Start-Service filebeat
 </code></pre>
 
-<h4 id="5-設定防火牆和ip">5. 設定防火牆和IP</h4>
-
-<p>新增</p>
-
-<pre><code class="language-bash">sudo firewall-cmd --new-zone=kibana --permanent
-sudo firewall-cmd --reload
-sudo firewall-cmd --zone=kibana --add-source=&lt;IP_ADDRESS&gt;/32 --permanent
-sudo firewall-cmd --zone=kibana --add-port=5601/tcp --permanent
-sudo firewall-cmd --reload
-</code></pre>
-
-<p>修改</p>
-
-<pre><code class="language-bash">sudo firewall-cmd --zone=kibana --add-source=&lt;IP_ADDRESS&gt; --permanent
-sudo firewall-cmd --reload
-</code></pre>
-
-<p>測試</p>
-
-<pre><code class="language-bash">sudo firewall-cmd --zone=kibana --list-all
-
-sudo netstat -plnt
-</code></pre>
-
-<h4 id="6-啟動-kibana-服務">6. 啟動 kibana 服務</h4>
-
-<pre><code class="language-bash">sudo systemctl enable kibana.service
-sudo systemctl start kibana.service
-</code></pre>
-
-<p>測試 kibana</p>
-
-<p><a href="http://localhost:5601">http://localhost:5601</a></p>
-
-<pre><code class="language-bash">sudo systemctl status kibana.service
-</code></pre>
-
-<p>也可檢查服務記錄訊息</p>
-
-<pre><code class="language-bash">sudo journalctl --unit kibana --since  &quot;20 min ago&quot;
-</code></pre><ul class="pa0">
+<p><img src="/images/filebeat_service.PNG" alt="Alt text" /></p><ul class="pa0">
   
    <li class="list">
      <a href="/tags/elastic" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">elastic</a>
@@ -274,12 +237,11 @@ sudo systemctl start kibana.service
 <ul>
 <li>
 <ul>
-<li><a href="#1-安裝-openjdk">1. 安裝 OpenJDK</a></li>
-<li><a href="#2-安裝-elasticsearch-簽章公鑰">2. 安裝 Elasticsearch 簽章公鑰</a></li>
-<li><a href="#3-安裝-kibana">3. 安裝 Kibana</a></li>
-<li><a href="#4-配置-kibana">4. 配置 kibana</a></li>
-<li><a href="#5-設定防火牆和ip">5. 設定防火牆和IP</a></li>
-<li><a href="#6-啟動-kibana-服務">6. 啟動 kibana 服務</a></li>
+<li><a href="#1-下載-filebeat">1. 下載 Filebeat</a></li>
+<li><a href="#2-安裝-filebeat">2. 安裝 Filebeat</a></li>
+<li><a href="#3-設定-filebeat">3. 設定 Filebeat</a></li>
+<li><a href="#4-設定-filebeat-模組">4. 設定 Filebeat 模組</a></li>
+<li><a href="#5-啟動-filebeat-服務">5. 啟動 Filebeat 服務</a></li>
 </ul></li>
 </ul></li>
 </ul></li>
@@ -294,6 +256,26 @@ sudo systemctl start kibana.service
     <p class="f5 b mb3">Related</p>
     <ul class="pa0 list">
 	   
+	     <li  class="mb2">
+          <a href="/posts/elk_centoselastalert/">CentOS 7 如何安裝 ElastAlert</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/posts/elk/">Elastic 簡介</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/posts/elk_logging/">如何利用 Elastic 處理日誌</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/posts/elk_iisfilebeat/">如何使用 Filebeat 收集 Logs</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/posts/elk_centoskibana/">CentOS 7 如何安裝 Kibana</a>
+        </li>
+	    
 	     <li  class="mb2">
           <a href="/posts/elk_centoselastic/">CentOS 7 如何安裝 Elasticsearch</a>
         </li>
