@@ -43,7 +43,7 @@
 
 <meta itemprop="datePublished" content="2019-07-05T11:28:52&#43;08:00" />
 <meta itemprop="dateModified" content="2019-07-05T11:28:52&#43;08:00" />
-<meta itemprop="wordCount" content="178">
+<meta itemprop="wordCount" content="201">
 
 
 
@@ -159,12 +159,11 @@
 
 <p>以下為該如何使用 Filebeat 模組</p>
 
-<h4 id="模組設定">模組設定</h4>
+<h4 id="設定模組">設定模組</h4>
 
 <p>Filebeat 提供多樣模組來收集常見的日誌，這邊以 IIS 日誌為例，說明如何設定模組。</p>
 
-<ol>
-<li><p>設定日誌路徑</p>
+<p><strong><strong>設定日誌路徑</strong></strong></p>
 
 <p>加入 IIS 日誌路徑</p>
 
@@ -175,16 +174,13 @@
             - C:/inetpub/logs/LogFiles/*/*.log
 </code></pre>
 
-<ol>
-<li>啟用模組</li>
-</ol>
+<p><strong><strong>啟用模組</strong></strong></p>
 
 <p>開啟 IIS 模組，在 PowerShell 執行下方命令</p>
 
-<pre><code class="language-bash">cd [Windows 安裝路徑]
-.\filebeat.exe modules enable iis
-</code></pre></li>
-</ol>
+<pre><code class="language-bash">    cd [Windows 安裝路徑]
+    .\filebeat.exe modules enable iis
+</code></pre>
 
 <h4 id="新增模組">新增模組</h4>
 
@@ -206,12 +202,12 @@
 
 </code></pre>
 
-<h5 id="manifest-yaml">manifest.yaml</h5>
+<p><strong><strong>manifest.yaml</strong></strong></p>
+
+<p>模組控制檔</p>
 
 <ul>
-<li><p>模組控制檔</p>
-
-<p>日誌路徑</p>
+<li><p>日誌路徑</p>
 
 <p>```text
 var:</p>
@@ -224,17 +220,27 @@ os.windows</p>
 <li><p>C:/log/*.log</p>
 
 <pre><code>
-參考
+* template 參考路徑
 
-* 設定日誌路徑
+`input: config/fileset.yml`
 
-* 設定 Ingest Pipeline
+* Ingest Pipeline 參考路徑
 
-* 指定設定檔
+`ingest_pipeline: ingest/pipeline.json`
 
-filebeat modules.d
+__**fileset.yml**__
 
-test
+input configurations，設定輸入位置、排除輸入檔案、排除輸入行及多行組合
+
+例如排除 .gz 檔
+
+`exclude_files: [&quot;.gz$&quot;]`
+
+__**pipeline.json**__
+
+Elasticsearch ingest node pipeline configurations
+
+如果測試 pipeline 有問題，修改完 pipeline.json，需要刪除舊的 pipeline.json，透過 elasticsearch api
 
 ```bash
 curl -X DELETE http://elasticsearch:9200/_ingest/pipeline/filebeat-6.7.0-iis-access-default
@@ -243,7 +249,13 @@ curl -X DELETE http://elasticsearch:9200/_ingest/pipeline/filebeat-6.7.0-iis-acc
 </ul></li>
 </ul>
 
+<p><strong><strong>modules.yml.disabled</strong></strong></p>
+
+<p>模組開關</p>
+
 <h4 id="測試模組">測試模組</h4>
+
+<p>新增或設定好模組，先由測試確認完後再上線</p>
 
 <ol>
 <li><p>測試設定檔</p>
@@ -332,11 +344,8 @@ curl -X GET http://elasticsearch:9200/_ingest/pipeline/filebeat-6.7.0-iis-access
 <ul>
 <li>
 <ul>
-<li><a href="#模組設定">模組設定</a></li>
-<li><a href="#新增模組">新增模組</a>
-<ul>
-<li><a href="#manifest-yaml">manifest.yaml</a></li>
-</ul></li>
+<li><a href="#設定模組">設定模組</a></li>
+<li><a href="#新增模組">新增模組</a></li>
 <li><a href="#測試模組">測試模組</a></li>
 </ul></li>
 </ul></li>
