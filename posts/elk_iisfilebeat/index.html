@@ -21,6 +21,8 @@
     
 
     
+      <link rel="stylesheet" href="/css/redd.css">
+    
 
     
       
@@ -43,7 +45,7 @@
 
 <meta itemprop="datePublished" content="2019-07-05T11:28:52&#43;08:00" />
 <meta itemprop="dateModified" content="2019-07-05T11:28:52&#43;08:00" />
-<meta itemprop="wordCount" content="201">
+<meta itemprop="wordCount" content="199">
 
 
 
@@ -54,7 +56,7 @@
 
   </head>
 
-  <body class="ma0 avenir bg-near-white">
+  <body class="ma0 yahei bg-white">
 
     
    
@@ -209,44 +211,40 @@
 <ul>
 <li><p>日誌路徑</p>
 
-<p>```text
-var:</p>
+<pre><code class="language-text">var:
+  － name: paths
+    os.windows
+      － C:/log/*.log
+</code></pre>
 
 <ul>
-<li><p>name: paths
-os.windows</p>
+<li>template 參考路徑</li>
+</ul>
+
+<p><code>input: config/fileset.yml</code></p>
 
 <ul>
-<li><p>C:/log/*.log</p>
+<li>Ingest Pipeline 參考路徑</li>
+</ul>
 
-<pre><code>
-* template 參考路徑
+<p><code>ingest_pipeline: ingest/pipeline.json</code></p>
 
-`input: config/fileset.yml`
+<p><strong><strong>fileset.yml</strong></strong></p>
 
-* Ingest Pipeline 參考路徑
+<p>input configurations，設定輸入位置、排除輸入檔案、排除輸入行及多行組合</p>
 
-`ingest_pipeline: ingest/pipeline.json`
+<p>例如排除 .gz 檔</p>
 
-__**fileset.yml**__
+<p><code>exclude_files: [&quot;.gz$&quot;]</code></p>
 
-input configurations，設定輸入位置、排除輸入檔案、排除輸入行及多行組合
+<p><strong><strong>pipeline.json</strong></strong></p>
 
-例如排除 .gz 檔
+<p>Elasticsearch ingest node pipeline configurations</p>
 
-`exclude_files: [&quot;.gz$&quot;]`
+<p>如果測試 pipeline 有問題，修改完 pipeline.json，需要刪除舊的 pipeline.json，透過 elasticsearch api</p>
 
-__**pipeline.json**__
-
-Elasticsearch ingest node pipeline configurations
-
-如果測試 pipeline 有問題，修改完 pipeline.json，需要刪除舊的 pipeline.json，透過 elasticsearch api
-
-```bash
-curl -X DELETE http://elasticsearch:9200/_ingest/pipeline/filebeat-6.7.0-iis-access-default
+<pre><code class="language-bash">curl -X DELETE http://elasticsearch:9200/_ingest/pipeline/filebeat-6.7.0-iis-access-default
 </code></pre></li>
-</ul></li>
-</ul></li>
 </ul>
 
 <p><strong><strong>modules.yml.disabled</strong></strong></p>
