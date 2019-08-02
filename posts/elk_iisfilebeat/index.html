@@ -45,7 +45,7 @@
 
 <meta itemprop="datePublished" content="2019-07-05T11:28:52&#43;08:00" />
 <meta itemprop="dateModified" content="2019-07-05T11:28:52&#43;08:00" />
-<meta itemprop="wordCount" content="202">
+<meta itemprop="wordCount" content="196">
 
 
 
@@ -187,7 +187,7 @@ default.paths:
 
 <p>新增一個模組後，可看到所產生的檔案結構，以下方我所建立的 nlog module 為例</p>
 
-<pre><code class="language-text">filebeat
+<pre><code class="language-file">filebeat
 ├ module
 │   ⎩ nlog
 │       ⎩ app
@@ -212,24 +212,24 @@ default.paths:
 
 <p>manifest 控制檔，設定模組參考位置</p>
 
-<p>text
-    #日誌路徑
-    var:
-      － name: paths
-        os.windows
-          － C:/log/*.log<br />
-    #template 參考路徑
-    input: config/fileset.yml<br />
-    #Ingest Pipeline 參考路徑
-    ingest_pipeline: ingest/pipeline.json</p></li>
+<pre><code>#日誌路徑
+var:
+  － name: paths
+    os.windows
+      － C:/log/*.log  
+#template 參考路徑
+input: config/fileset.yml  
+#Ingest Pipeline 參考路徑
+ingest_pipeline: ingest/pipeline.json
+</code></pre></li>
 
 <li><p>fileset.yml</p>
 
 <p>fileset 輸入組態檔，設定輸入位置、排除輸入檔案、排除輸入行及多行組合</p>
 
-<p>text
-    #排除 .gz 檔
-    exclude_files: [&ldquo;.gz$&rdquo;]</p></li>
+<pre><code>#排除 .gz 檔
+exclude_files: [&quot;.gz$&quot;]
+</code></pre></li>
 
 <li><p>pipeline.json</p>
 
@@ -247,14 +247,14 @@ default.paths:
 <ol>
 <li><p>測試設定檔</p>
 
-<p>bash
-    .\filebeat.exe test config -c filebeat.yml
-    .\filebeat.exe test output filebeat.yml</p></li>
+<pre><code>.\filebeat.exe test config -c filebeat.yml
+.\filebeat.exe test output filebeat.yml
+</code></pre></li>
 
 <li><p>執行 Filebeat</p>
 
-<p>bash
-    .\filebeat.exe -e -c filebeat.yml -d &ldquo;*&rdquo;</p>
+<pre><code>.\filebeat.exe -e -c filebeat.yml -d &quot;*&quot;
+</code></pre>
 
 <blockquote>
 <p>注意<br />
@@ -265,15 +265,17 @@ default.paths:
 
 <p>透過 elasticsearch api 查詢 Ingest &amp; pipeline (例如 IIS 模組 pipeline filebeat-6.7.0-iis-access-default)</p>
 
-<p>bash
-    curl -X GET <a href="http://elasticsearch:9200/_cat/indices?v">http://elasticsearch:9200/_cat/indices?v</a>
-    curl -X GET <a href="http://elasticsearch:9200/_ingest/pipeline">http://elasticsearch:9200/_ingest/pipeline</a>
-    curl -X GET <a href="http://elasticsearch:9200/_ingest/pipeline/filebeat-6.7.0-iis-access-default">http://elasticsearch:9200/_ingest/pipeline/filebeat-6.7.0-iis-access-default</a></p>
+<pre><code>curl -X GET http://elasticsearch:9200/_cat/indices?v
+curl -X GET http://elasticsearch:9200/_ingest/pipeline
+curl -X GET http://elasticsearch:9200/_ingest/pipeline/filebeat-6.7.0-iis-access-default
+</code></pre>
 
+<blockquote>
 <p>如果測試 pipeline 有問題，需要刪除舊的 pipeline.json</p>
+</blockquote>
 
-<p>bash
-    curl -X DELETE <a href="http://elasticsearch:9200/_ingest/pipeline/filebeat-6.7.0-iis-access-default">http://elasticsearch:9200/_ingest/pipeline/filebeat-6.7.0-iis-access-default</a></p></li>
+<pre><code>curl -X DELETE http://elasticsearch:9200/_ingest/pipeline/filebeat-6.7.0-iis-access-default
+</code></pre></li>
 
 <li><p>確認資料</p>
 
