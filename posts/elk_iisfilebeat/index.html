@@ -45,7 +45,7 @@
 
 <meta itemprop="datePublished" content="2019-07-05T11:28:52&#43;08:00" />
 <meta itemprop="dateModified" content="2019-07-05T11:28:52&#43;08:00" />
-<meta itemprop="wordCount" content="203">
+<meta itemprop="wordCount" content="201">
 
 
 
@@ -255,18 +255,10 @@ exclude_files: [&quot;.gz$&quot;]
 <ol>
 <li><p>測試設定檔</p>
 
-<pre><code class="language-bash">.\filebeat.exe test config -c filebeat.yml
-.\filebeat.exe test output filebeat.yml
-</code></pre>
+<p>.\filebeat.exe test config -c filebeat.yml
+.\filebeat.exe test output filebeat.yml</p></li>
 
-<blockquote>
-<p>注意<br />
-123</p>
-</blockquote>
-
-<ol>
-<li>執行 Filebeat</li>
-</ol>
+<li><p>執行 Filebeat</p>
 
 <pre><code class="language-bash">.\filebeat.exe -e -c filebeat.yml -d &quot;*&quot;
 </code></pre>
@@ -274,9 +266,11 @@ exclude_files: [&quot;.gz$&quot;]
 <blockquote>
 <p>注意<br />
 請先清除前次測試所讀取的記錄，刪除目錄 filebeat\data\registry</p>
-</blockquote></li>
+</blockquote>
 
-<li><p>檢查 Ingest &amp; Pipeline</p>
+<ol>
+<li>檢查 Ingest &amp; Pipeline</li>
+</ol>
 
 <p>透過 elasticsearch api 查詢 Ingest &amp; pipeline (例如 IIS 模組 pipeline filebeat-6.7.0-iis-access-default)</p>
 
@@ -288,25 +282,25 @@ curl -X GET http://elasticsearch:9200/_ingest/pipeline/filebeat-6.7.0-iis-access
 <p>如果測試 pipeline 有問題，修改完 pipeline.json，需要刪除舊的 pipeline.json，透過 elasticsearch api</p>
 
 <pre><code class="language-bash">curl -X DELETE http://elasticsearch:9200/_ingest/pipeline/filebeat-6.7.0-iis-access-default
-</code></pre></li>
-</ol>
+</code></pre>
 
 <!-- end of list -->
 
 <ol>
-<li><p>確認資料</p>
+<li>確認資料</li>
+</ol>
 
 <p>開啟 Kibana，透過 Logs 介面，確認是否有顯示 log 資料</p>
 
-<p><img src="/images/kibana_logs.PNG" alt="Alt text" /></p></li>
-</ol>
+<p><img src="/images/kibana_logs.PNG" alt="Alt text" /></p>
 
 <p><br/></p>
 
 <blockquote>
 <p>文章參考來源為 Elastic 官方文檔
-test 5511</p>
-</blockquote><ul class="pa0">
+test 6666</p>
+</blockquote></li>
+</ol><ul class="pa0">
   
    <li class="list">
      <a href="/tags/elastic" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">elastic</a>
