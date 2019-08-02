@@ -45,7 +45,7 @@
 
 <meta itemprop="datePublished" content="2019-07-05T11:28:52&#43;08:00" />
 <meta itemprop="dateModified" content="2019-07-05T11:28:52&#43;08:00" />
-<meta itemprop="wordCount" content="201">
+<meta itemprop="wordCount" content="204">
 
 
 
@@ -168,29 +168,19 @@
 
 <p>編輯 [Windows 安裝路徑]\filebeat\module\iis\access\manifest.yml</p>
 
-<pre><code class="language-text">#加入 IIS 日誌路徑
-default.paths:
-    default:
-        - C:/inetpub/logs/LogFiles/*/*.log
-</code></pre>
+<p>text
+    #加入 IIS 日誌路徑
+    default.paths:
+      default:
+        - C:/inetpub/logs/LogFiles/<em>/</em>.log</p></li>
 
-<!-- end of list -->
-
-<!-- end of list -->
-
-<ul>
-<li>啟用模組</li>
-</ul>
+<li><p>啟用模組</p>
 
 <p>開啟 IIS 模組，在 PowerShell 執行下方命令</p>
 
-<pre><code class="language-bash">cd [Windows 安裝路徑]
-.\filebeat.exe modules enable iis
-</code></pre>
-
-<!-- end of list -->
-
-<!-- end of list --></li>
+<p>bash
+    cd [Windows 安裝路徑]
+    .\filebeat.exe modules enable iis</p></li>
 </ul>
 
 <h3 id="新增模組">新增模組</h3>
@@ -217,38 +207,38 @@ default.paths:
 
 <hr />
 
-<p><strong><strong>manifest.yaml</strong></strong></p>
+<ul>
+<li><p>manifest.yaml</p>
 
 <p>manifest 控制檔，設定模組參考位置</p>
 
-<pre><code class="language-text">#日誌路徑
-var:
-  － name: paths
-    os.windows
-      － C:/log/*.log
+<p>text
+    #日誌路徑
+    var:
+      － name: paths
+        os.windows
+          － C:/log/*.log<br />
+    #template 參考路徑
+    input: config/fileset.yml<br />
+    #Ingest Pipeline 參考路徑
+    ingest_pipeline: ingest/pipeline.json</p></li>
 
-#template 參考路徑
-input: config/fileset.yml
-
-#Ingest Pipeline 參考路徑
-ingest_pipeline: ingest/pipeline.json
-</code></pre>
-
-<p><strong><strong>fileset.yml</strong></strong></p>
+<li><p>fileset.yml</p>
 
 <p>fileset 輸入組態檔，設定輸入位置、排除輸入檔案、排除輸入行及多行組合</p>
 
-<pre><code class="language-text">#排除 .gz 檔
-exclude_files: [&quot;.gz$&quot;]
-</code></pre>
+<p>text
+    #排除 .gz 檔
+    exclude_files: [&ldquo;.gz$&rdquo;]</p></li>
 
-<p><strong><strong>pipeline.json</strong></strong></p>
+<li><p>pipeline.json</p>
 
-<p>Elasticsearch ingest node pipeline configurations</p>
+<p>lasticsearch ingest node pipeline configurations</p></li>
 
-<p><strong><strong>modules.yml.disabled</strong></strong></p>
+<li><p>modules.yml.disabled</p>
 
-<p>模組開關</p>
+<p>模組開關</p></li>
+</ul>
 
 <h3 id="測試模組">測試模組</h3>
 
@@ -257,53 +247,46 @@ exclude_files: [&quot;.gz$&quot;]
 <ol>
 <li><p>測試設定檔</p>
 
-<pre><code>.\filebeat.exe test config -c filebeat.yml
-.\filebeat.exe test output filebeat.yml
-</code></pre></li>
+<p>bash
+    .\filebeat.exe test config -c filebeat.yml
+    .\filebeat.exe test output filebeat.yml</p></li>
 
 <li><p>執行 Filebeat</p>
 
-<pre><code class="language-bash">.\filebeat.exe -e -c filebeat.yml -d &quot;*&quot;
-</code></pre>
+<p>bash
+    .\filebeat.exe -e -c filebeat.yml -d &ldquo;*&rdquo;</p>
 
 <blockquote>
 <p>注意<br />
 請先清除前次測試所讀取的記錄，刪除目錄 filebeat\data\registry</p>
-</blockquote>
+</blockquote></li>
 
-<ol>
-<li>檢查 Ingest &amp; Pipeline</li>
-</ol>
+<li><p>檢查 Ingest &amp; Pipeline</p>
 
 <p>透過 elasticsearch api 查詢 Ingest &amp; pipeline (例如 IIS 模組 pipeline filebeat-6.7.0-iis-access-default)</p>
 
-<pre><code class="language-bash">curl -X GET http://elasticsearch:9200/_cat/indices?v
-curl -X GET http://elasticsearch:9200/_ingest/pipeline
-curl -X GET http://elasticsearch:9200/_ingest/pipeline/filebeat-6.7.0-iis-access-default
-</code></pre>
+<p>bash
+    curl -X GET <a href="http://elasticsearch:9200/_cat/indices?v">http://elasticsearch:9200/_cat/indices?v</a>
+    curl -X GET <a href="http://elasticsearch:9200/_ingest/pipeline">http://elasticsearch:9200/_ingest/pipeline</a>
+    curl -X GET <a href="http://elasticsearch:9200/_ingest/pipeline/filebeat-6.7.0-iis-access-default">http://elasticsearch:9200/_ingest/pipeline/filebeat-6.7.0-iis-access-default</a></p>
 
-<p>如果測試 pipeline 有問題，修改完 pipeline.json，需要刪除舊的 pipeline.json，透過 elasticsearch api</p>
+<p>如果測試 pipeline 有問題，需要刪除舊的 pipeline.json</p>
 
-<pre><code class="language-bash">curl -X DELETE http://elasticsearch:9200/_ingest/pipeline/filebeat-6.7.0-iis-access-default
-</code></pre>
+<p>bash
+    curl -X DELETE <a href="http://elasticsearch:9200/_ingest/pipeline/filebeat-6.7.0-iis-access-default">http://elasticsearch:9200/_ingest/pipeline/filebeat-6.7.0-iis-access-default</a></p></li>
 
-<!-- end of list -->
-
-<ol>
-<li>確認資料</li>
-</ol>
+<li><p>確認資料</p>
 
 <p>開啟 Kibana，透過 Logs 介面，確認是否有顯示 log 資料</p>
 
-<p><img src="/images/kibana_logs.PNG" alt="Alt text" /></p>
+<p><img src="/images/kibana_logs.PNG" alt="Alt text" /></p></li>
+</ol>
 
 <p><br/></p>
 
 <blockquote>
-<p>文章參考來源為 Elastic 官方文檔
-test eeee</p>
-</blockquote></li>
-</ol><ul class="pa0">
+<p>文章參考來源為 Elastic 官方文檔</p>
+</blockquote><ul class="pa0">
   
    <li class="list">
      <a href="/tags/elastic" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">elastic</a>
