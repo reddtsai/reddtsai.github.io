@@ -45,7 +45,7 @@
 
 <meta itemprop="datePublished" content="2019-07-05T11:28:52&#43;08:00" />
 <meta itemprop="dateModified" content="2019-07-05T11:28:52&#43;08:00" />
-<meta itemprop="wordCount" content="201">
+<meta itemprop="wordCount" content="203">
 
 
 
@@ -204,7 +204,7 @@
 
 <p><strong><strong>manifest.yaml</strong></strong></p>
 
-<p>模組控制檔</p>
+<p>manifest 控制檔，設定模組參考位置</p>
 
 <pre><code class="language-text">#日誌路徑
 var:
@@ -221,21 +221,15 @@ ingest_pipeline: ingest/pipeline.json
 
 <p><strong><strong>fileset.yml</strong></strong></p>
 
-<p>input configurations，設定輸入位置、排除輸入檔案、排除輸入行及多行組合</p>
+<p>fileset 輸入組態檔，設定輸入位置、排除輸入檔案、排除輸入行及多行組合</p>
 
-<p>例如排除 .gz 檔</p>
-
-<pre><code class="language-text">exclude_files: [&quot;.gz$&quot;]
+<pre><code class="language-text">#排除 .gz 檔
+exclude_files: [&quot;.gz$&quot;]
 </code></pre>
 
 <p><strong><strong>pipeline.json</strong></strong></p>
 
 <p>Elasticsearch ingest node pipeline configurations</p>
-
-<p>如果測試 pipeline 有問題，修改完 pipeline.json，需要刪除舊的 pipeline.json，透過 elasticsearch api</p>
-
-<pre><code class="language-bash">curl -X DELETE http://elasticsearch:9200/_ingest/pipeline/filebeat-6.7.0-iis-access-default
-</code></pre>
 
 <p><strong><strong>modules.yml.disabled</strong></strong></p>
 
@@ -253,7 +247,8 @@ ingest_pipeline: ingest/pipeline.json
 </code></pre>
 
 <blockquote>
-<p>注意</p>
+<p>注意<br />
+123</p>
 </blockquote>
 
 <ol>
@@ -277,23 +272,28 @@ curl -X GET http://elasticsearch:9200/_ingest/pipeline
 curl -X GET http://elasticsearch:9200/_ingest/pipeline/filebeat-6.7.0-iis-access-default
 </code></pre>
 
+<p>如果測試 pipeline 有問題，修改完 pipeline.json，需要刪除舊的 pipeline.json，透過 elasticsearch api</p>
+
+<pre><code class="language-bash">curl -X DELETE http://elasticsearch:9200/_ingest/pipeline/filebeat-6.7.0-iis-access-default
+</code></pre></li>
+</ol>
+
 <!-- end of list -->
 
 <ol>
-<li>確認資料</li>
-</ol>
+<li><p>確認資料</p>
 
 <p>開啟 Kibana，透過 Logs 介面，確認是否有顯示 log 資料</p>
 
-<p><img src="/images/kibana_logs.PNG" alt="Alt text" /></p>
+<p><img src="/images/kibana_logs.PNG" alt="Alt text" /></p></li>
+</ol>
 
 <p><br/></p>
 
 <blockquote>
 <p>文章參考來源為 Elastic 官方文檔
-test 9</p>
-</blockquote></li>
-</ol><ul class="pa0">
+test 20</p>
+</blockquote><ul class="pa0">
   
    <li class="list">
      <a href="/tags/elastic" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">elastic</a>
