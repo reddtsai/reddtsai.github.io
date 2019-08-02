@@ -166,16 +166,15 @@
 <ul>
 <li><p>設定日誌路徑</p>
 
-<p>加入 IIS 日誌路徑</p>
-
 <p>編輯 [Windows 安裝路徑]\filebeat\module\iis\access\manifest.yml</p>
 
-<pre><code class="language-text">default.paths:
+<pre><code class="language-text">#加入 IIS 日誌路徑
+default.paths:
     default:
         - C:/inetpub/logs/LogFiles/*/*.log
 </code></pre>
 
-<!---->
+<!-- end of list -->
 
 <ul>
 <li>啟用模組</li>
@@ -185,7 +184,11 @@
 
 <pre><code class="language-bash">cd [Windows 安裝路徑]
 .\filebeat.exe modules enable iis
-</code></pre></li>
+</code></pre>
+
+<!-- end of list -->
+
+<!-- end of list --></li>
 </ul>
 
 <h3 id="新增模組">新增模組</h3>
@@ -298,7 +301,7 @@ curl -X GET http://elasticsearch:9200/_ingest/pipeline/filebeat-6.7.0-iis-access
 
 <blockquote>
 <p>文章參考來源為 Elastic 官方文檔
-test 333</p>
+test 444</p>
 </blockquote><ul class="pa0">
   
    <li class="list">
