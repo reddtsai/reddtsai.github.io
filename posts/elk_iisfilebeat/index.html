@@ -43,7 +43,7 @@
 
 <meta itemprop="datePublished" content="2019-07-05T11:28:52&#43;08:00" />
 <meta itemprop="dateModified" content="2019-07-05T11:28:52&#43;08:00" />
-<meta itemprop="wordCount" content="202">
+<meta itemprop="wordCount" content="199">
 
 
 
@@ -207,15 +207,14 @@
 <p>模組控制檔</p>
 
 <ul>
-<li><p>日誌路徑</p>
+<li>日誌路徑</li>
+</ul>
 
 <pre><code class="language-text">var:
   － name: paths
-    os.windows
-      － C:/log/*.log
+     os.windows
+       － C:/log/*.log
 </code></pre>
-
-<p>1</p>
 
 <ul>
 <li>template 參考路徑</li>
@@ -223,15 +222,11 @@
 
 <p><code>input: config/fileset.yml</code></p>
 
-<p>1</p>
-
 <ul>
 <li>Ingest Pipeline 參考路徑</li>
 </ul>
 
 <p><code>ingest_pipeline: ingest/pipeline.json</code></p>
-
-<p>1</p>
 
 <p><strong><strong>fileset.yml</strong></strong></p>
 
@@ -248,8 +243,7 @@
 <p>如果測試 pipeline 有問題，修改完 pipeline.json，需要刪除舊的 pipeline.json，透過 elasticsearch api</p>
 
 <pre><code class="language-bash">curl -X DELETE http://elasticsearch:9200/_ingest/pipeline/filebeat-6.7.0-iis-access-default
-</code></pre></li>
-</ul>
+</code></pre>
 
 <p><strong><strong>modules.yml.disabled</strong></strong></p>
 
