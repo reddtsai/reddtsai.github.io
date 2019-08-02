@@ -43,7 +43,7 @@
 
 <meta itemprop="datePublished" content="2019-07-05T11:28:52&#43;08:00" />
 <meta itemprop="dateModified" content="2019-07-05T11:28:52&#43;08:00" />
-<meta itemprop="wordCount" content="200">
+<meta itemprop="wordCount" content="203">
 
 
 
@@ -207,31 +207,36 @@
 <p>模組控制檔</p>
 
 <ul>
-<li><p>日誌路徑</p>
-
-<!-- end of list -->
-
-<pre><code class="language-text">var:
-－ name: paths
-    os.windows
-    － C:/log/*.log
-</code></pre>
-
-<ul>
-<li>template 參考路徑</li>
+<li>日誌路徑</li>
 </ul>
 
 <!-- end of list -->
 
-<pre><code class="language-text">input: config/fileset.yml
-</code></pre></li>
+<pre><code>```text
+var:
+－ name: paths
+    os.windows
+    － C:/log/*.log
+```
+</code></pre>
 
-<li><p>Ingest Pipeline 參考路徑</p>
+<ul>
+<li><p>template 參考路徑</p>
+
+<!-- end of list -->
+
+<pre><code class="language-text">input: config/fileset.yml
+</code></pre>
+
+<ul>
+<li>Ingest Pipeline 參考路徑</li>
+</ul>
 
 <!-- end of list -->
 
 <pre><code class="language-text">ingest_pipeline: ingest/pipeline.json
-</code></pre>
+</code></pre></li>
+</ul>
 
 <p><strong><strong>fileset.yml</strong></strong></p>
 
@@ -248,8 +253,7 @@
 <p>如果測試 pipeline 有問題，修改完 pipeline.json，需要刪除舊的 pipeline.json，透過 elasticsearch api</p>
 
 <pre><code class="language-bash">curl -X DELETE http://elasticsearch:9200/_ingest/pipeline/filebeat-6.7.0-iis-access-default
-</code></pre></li>
-</ul>
+</code></pre>
 
 <p><strong><strong>modules.yml.disabled</strong></strong></p>
 
@@ -303,7 +307,7 @@ curl -X GET http://elasticsearch:9200/_ingest/pipeline/filebeat-6.7.0-iis-access
 
 <blockquote>
 <p>文章參考來源為 Elastic 官方文檔
-test1</p>
+test 2</p>
 </blockquote></li>
 </ol><ul class="pa0">
   
