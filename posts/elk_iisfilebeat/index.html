@@ -163,24 +163,30 @@
 
 <p>Filebeat 提供多樣模組來收集常見的日誌，這邊以 IIS 日誌為例，說明如何設定模組。</p>
 
-<p><strong><strong>設定日誌路徑</strong></strong></p>
+<ul>
+<li><p>設定日誌路徑</p>
 
 <p>加入 IIS 日誌路徑</p>
 
 <p>編輯 [Windows 安裝路徑]\filebeat\module\iis\access\manifest.yml</p>
 
-<pre><code class="language-text">    default.paths:
-        default:
-            - C:/inetpub/logs/LogFiles/*/*.log
+<pre><code class="language-text">default.paths:
+    default:
+        - C:/inetpub/logs/LogFiles/*/*.log
 </code></pre>
 
-<p><strong><strong>啟用模組</strong></strong></p>
+<!---->
+
+<ul>
+<li>啟用模組</li>
+</ul>
 
 <p>開啟 IIS 模組，在 PowerShell 執行下方命令</p>
 
-<pre><code class="language-bash">    cd [Windows 安裝路徑]
-    .\filebeat.exe modules enable iis
-</code></pre>
+<pre><code class="language-bash">cd [Windows 安裝路徑]
+.\filebeat.exe modules enable iis
+</code></pre></li>
+</ul>
 
 <h3 id="新增模組">新增模組</h3>
 
@@ -292,7 +298,7 @@ curl -X GET http://elasticsearch:9200/_ingest/pipeline/filebeat-6.7.0-iis-access
 
 <blockquote>
 <p>文章參考來源為 Elastic 官方文檔
-test 20</p>
+test 333</p>
 </blockquote><ul class="pa0">
   
    <li class="list">
