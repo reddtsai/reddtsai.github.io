@@ -21,6 +21,8 @@
     
 
     
+      <link rel="stylesheet" href="/css/redd.css">
+    
 
     
       
@@ -43,7 +45,7 @@
 
 <meta itemprop="datePublished" content="2019-07-05T11:28:52&#43;08:00" />
 <meta itemprop="dateModified" content="2019-07-05T11:28:52&#43;08:00" />
-<meta itemprop="wordCount" content="200">
+<meta itemprop="wordCount" content="201">
 
 
 
@@ -157,7 +159,7 @@
 <p>安裝請參考下一篇文章<a href="https://reddtsai.github.io/posts/elk_windowsfilebeat/">Windows 如何安裝 Filebeat</a></p>
 </blockquote>
 
-<h4 id="設定模組">設定模組</h4>
+<h3 id="設定模組">設定模組</h3>
 
 <p>Filebeat 提供多樣模組來收集常見的日誌，這邊以 IIS 日誌為例，說明如何設定模組。</p>
 
@@ -180,7 +182,7 @@
     .\filebeat.exe modules enable iis
 </code></pre>
 
-<h4 id="新增模組">新增模組</h4>
+<h3 id="新增模組">新增模組</h3>
 
 <p>新增一個模組需透過 Beats 程式碼來逹成，這裡只會說明新模組需要作那些設定，完整資訊請參考 github Beats repository</p>
 
@@ -204,12 +206,11 @@
 
 <p>模組控制檔</p>
 
-<blockquote>
 <pre><code class="language-text">#日誌路徑
 var:
- － name: paths
-   os.windows
-     － C:/log/*.log
+  － name: paths
+    os.windows
+      － C:/log/*.log
 
 #template 參考路徑
 input: config/fileset.yml
@@ -217,52 +218,47 @@ input: config/fileset.yml
 #Ingest Pipeline 參考路徑
 ingest_pipeline: ingest/pipeline.json
 </code></pre>
-</blockquote>
 
 <p><strong><strong>fileset.yml</strong></strong></p>
 
-<blockquote>
 <p>input configurations，設定輸入位置、排除輸入檔案、排除輸入行及多行組合</p>
 
 <p>例如排除 .gz 檔</p>
 
 <pre><code class="language-text">exclude_files: [&quot;.gz$&quot;]
 </code></pre>
-</blockquote>
 
 <p><strong><strong>pipeline.json</strong></strong></p>
 
-<blockquote>
 <p>Elasticsearch ingest node pipeline configurations</p>
 
 <p>如果測試 pipeline 有問題，修改完 pipeline.json，需要刪除舊的 pipeline.json，透過 elasticsearch api</p>
 
 <pre><code class="language-bash">curl -X DELETE http://elasticsearch:9200/_ingest/pipeline/filebeat-6.7.0-iis-access-default
 </code></pre>
-</blockquote>
 
 <p><strong><strong>modules.yml.disabled</strong></strong></p>
 
-<blockquote>
 <p>模組開關</p>
-</blockquote>
 
-<h4 id="測試模組">測試模組</h4>
+<h3 id="測試模組">測試模組</h3>
 
 <p>新增或設定好模組，先由測試確認完後再上線</p>
 
 <ol>
-<li>測試設定檔</li>
-</ol>
+<li><p>測試設定檔</p>
 
-<blockquote>
 <pre><code class="language-bash">.\filebeat.exe test config -c filebeat.yml
 .\filebeat.exe test output filebeat.yml
 </code></pre>
+
+<blockquote>
+<p>注意</p>
 </blockquote>
 
 <ol>
-<li><p>執行 Filebeat</p>
+<li>執行 Filebeat</li>
+</ol>
 
 <pre><code class="language-bash">.\filebeat.exe -e -c filebeat.yml -d &quot;*&quot;
 </code></pre>
@@ -270,36 +266,34 @@ ingest_pipeline: ingest/pipeline.json
 <blockquote>
 <p>注意<br />
 請先清除前次測試所讀取的記錄，刪除目錄 filebeat\data\registry</p>
-</blockquote>
+</blockquote></li>
 
-<ol>
-<li>檢查 Ingest &amp; Pipeline</li>
-</ol>
+<li><p>檢查 Ingest &amp; Pipeline</p>
 
 <p>透過 elasticsearch api 查詢 Ingest &amp; pipeline (例如 IIS 模組 pipeline filebeat-6.7.0-iis-access-default)</p>
 
 <pre><code class="language-bash">curl -X GET http://elasticsearch:9200/_cat/indices?v
 curl -X GET http://elasticsearch:9200/_ingest/pipeline
 curl -X GET http://elasticsearch:9200/_ingest/pipeline/filebeat-6.7.0-iis-access-default
-</code></pre></li>
-</ol>
+</code></pre>
 
 <!-- end of list -->
 
 <ol>
-<li><p>確認資料</p>
+<li>確認資料</li>
+</ol>
 
 <p>開啟 Kibana，透過 Logs 介面，確認是否有顯示 log 資料</p>
 
-<p><img src="/images/kibana_logs.PNG" alt="Alt text" /></p></li>
-</ol>
+<p><img src="/images/kibana_logs.PNG" alt="Alt text" /></p>
 
 <p><br/></p>
 
 <blockquote>
 <p>文章參考來源為 Elastic 官方文檔
-test 7</p>
-</blockquote><ul class="pa0">
+test 9</p>
+</blockquote></li>
+</ol><ul class="pa0">
   
    <li class="list">
      <a href="/tags/elastic" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">elastic</a>
@@ -343,12 +337,9 @@ test 7</p>
 <ul>
 <li>
 <ul>
-<li>
-<ul>
 <li><a href="#設定模組">設定模組</a></li>
 <li><a href="#新增模組">新增模組</a></li>
 <li><a href="#測試模組">測試模組</a></li>
-</ul></li>
 </ul></li>
 </ul></li>
 </ul>

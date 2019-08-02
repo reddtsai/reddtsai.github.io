@@ -1,3 +1,5 @@
-.yahei {
-    font-family: FangSong, sans-serif;
-  }
+article section h2,
+article section h3 {
+    border-bottom: 1px solid #eaecef;
+    padding-bottom: .3em;
+}
