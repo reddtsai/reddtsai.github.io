@@ -43,7 +43,7 @@
 
 <meta itemprop="datePublished" content="2019-07-05T11:28:52&#43;08:00" />
 <meta itemprop="dateModified" content="2019-07-05T11:28:52&#43;08:00" />
-<meta itemprop="wordCount" content="200">
+<meta itemprop="wordCount" content="221">
 
 
 
@@ -205,50 +205,50 @@
 <p>模組控制檔</p>
 
 <ul>
-<li><p>日誌路徑</p>
-
-<pre><code class="language-text">var:
-  － name: paths
-    os.windows
-      － C:/log/*.log
-</code></pre>
+<li>日誌路徑</li>
+</ul>
 
 <blockquote>
-</blockquote>
+<pre><code class="language-text">&gt;var:
+&gt;  － name: paths
+&gt;    os.windows
+&gt;      － C:/log/*.log
+&gt;```
 
-<ul>
-<li>template 參考路徑</li>
-</ul>
+* template 參考路徑
 
-<!-- end of list -->
+    &lt;!-- end of list --&gt;
 
-<pre><code class="language-text">input: config/fileset.yml
-</code></pre></li>
+    ```text
+    input: config/fileset.yml
+    ```
 
-<li><p>Ingest Pipeline 參考路徑</p>
+* Ingest Pipeline 參考路徑
 
-<!-- end of list -->
+    &lt;!-- end of list --&gt;
 
-<pre><code class="language-text">ingest_pipeline: ingest/pipeline.json
+    ```text
+    ingest_pipeline: ingest/pipeline.json
+    ```
+
+__**fileset.yml**__
+
+input configurations，設定輸入位置、排除輸入檔案、排除輸入行及多行組合
+
+例如排除 .gz 檔
+
+`exclude_files: [&quot;.gz$&quot;]`
+
+__**pipeline.json**__
+
+Elasticsearch ingest node pipeline configurations
+
+如果測試 pipeline 有問題，修改完 pipeline.json，需要刪除舊的 pipeline.json，透過 elasticsearch api
+
+```bash
+curl -X DELETE http://elasticsearch:9200/_ingest/pipeline/filebeat-6.7.0-iis-access-default
 </code></pre>
-
-<p><strong><strong>fileset.yml</strong></strong></p>
-
-<p>input configurations，設定輸入位置、排除輸入檔案、排除輸入行及多行組合</p>
-
-<p>例如排除 .gz 檔</p>
-
-<p><code>exclude_files: [&quot;.gz$&quot;]</code></p>
-
-<p><strong><strong>pipeline.json</strong></strong></p>
-
-<p>Elasticsearch ingest node pipeline configurations</p>
-
-<p>如果測試 pipeline 有問題，修改完 pipeline.json，需要刪除舊的 pipeline.json，透過 elasticsearch api</p>
-
-<pre><code class="language-bash">curl -X DELETE http://elasticsearch:9200/_ingest/pipeline/filebeat-6.7.0-iis-access-default
-</code></pre></li>
-</ul>
+</blockquote>
 
 <p><strong><strong>modules.yml.disabled</strong></strong></p>
 
@@ -302,7 +302,7 @@ curl -X GET http://elasticsearch:9200/_ingest/pipeline/filebeat-6.7.0-iis-access
 
 <blockquote>
 <p>文章參考來源為 Elastic 官方文檔
-test 555</p>
+test 6</p>
 </blockquote></li>
 </ol><ul class="pa0">
   
