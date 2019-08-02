@@ -21,8 +21,6 @@
     
 
     
-      <link rel="stylesheet" href="/css/redd.css">
-    
 
     
       
@@ -137,7 +135,9 @@
       
     </header>
 
-    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>Filebeat 是個檔案分析工具，最常用來收集日誌檔，收集的過程分為</p>
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><hr />
+
+<p>Filebeat 是個檔案分析工具，最常用來收集日誌檔，收集的過程分為</p>
 
 <ol>
 <li><p>收集數據 (讀取日誌)</p></li>
@@ -160,6 +160,8 @@
 </blockquote>
 
 <h3 id="設定模組">設定模組</h3>
+
+<hr />
 
 <p>Filebeat 提供多樣模組來收集常見的日誌，這邊以 IIS 日誌為例，說明如何設定模組。</p>
 
@@ -185,9 +187,11 @@ default.paths:
 
 <h3 id="新增模組">新增模組</h3>
 
+<hr />
+
 <p>新增一個模組後，可看到所產生的檔案結構，以下方我所建立的 nlog module 為例</p>
 
-<pre><code class="language-file">filebeat
+<pre><code>filebeat
 ├ module
 │   ⎩ nlog
 │       ⎩ app
@@ -198,14 +202,11 @@ default.paths:
 │               ⎩ pipeline.json
 ├ modules.d
 │   ⎩ nlog.yml.disabled
-
 </code></pre>
 
 <blockquote>
 <p>新增一個模組需透過 Beats 程式碼來逹成，這裡只會說明新模組需要作那些設定，完整資訊請參考 github Beats repository</p>
 </blockquote>
-
-<hr />
 
 <ul>
 <li><p>manifest.yaml</p>
@@ -241,6 +242,8 @@ exclude_files: [&quot;.gz$&quot;]
 </ul>
 
 <h3 id="測試模組">測試模組</h3>
+
+<hr />
 
 <p>新增或設定好模組，先由測試確認完後再上線</p>
 
