@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>如何使用 Kibana 分享日誌</title>
+      <link>https://reddtsai.github.io/posts/elk_kibana/</link>
+      <pubDate>Fri, 02 Aug 2019 11:49:01 +0800</pubDate>
+      
+      <guid>https://reddtsai.github.io/posts/elk_kibana/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Windows 如何安裝 Filebeat</title>
       <link>https://reddtsai.github.io/posts/elk_windowsfilebeat/</link>
       <pubDate>Tue, 30 Jul 2019 15:59:54 +0800</pubDate>

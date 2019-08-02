@@ -6,10 +6,19 @@
     <description>Recent content in elastic on Redd Tsai</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Tue, 30 Jul 2019 15:59:54 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 02 Aug 2019 11:49:01 +0800</lastBuildDate>
     
 	<atom:link href="https://reddtsai.github.io/tags/elastic/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>如何使用 Kibana 分享日誌</title>
+      <link>https://reddtsai.github.io/posts/elk_kibana/</link>
+      <pubDate>Fri, 02 Aug 2019 11:49:01 +0800</pubDate>
+      
+      <guid>https://reddtsai.github.io/posts/elk_kibana/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Windows 如何安裝 Filebeat</title>

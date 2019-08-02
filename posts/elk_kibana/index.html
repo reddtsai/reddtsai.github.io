@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Redd Tsai  | Posts</title>
+    <title>Redd Tsai  | 如何使用 Kibana 分享日誌</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -29,22 +29,27 @@
     
 
     
-      <link href="https://reddtsai.github.io/posts/index.xml" rel="alternate" type="application/rss+xml" title="Redd Tsai" />
-      <link href="https://reddtsai.github.io/posts/index.xml" rel="feed" type="application/rss+xml" title="Redd Tsai" />
-    
 
-    <meta property="og:title" content="Posts" />
+    <meta property="og:title" content="如何使用 Kibana 分享日誌" />
 <meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://reddtsai.github.io/posts/" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://reddtsai.github.io/posts/elk_kibana/" />
+<meta property="article:published_time" content="2019-08-02T11:49:01&#43;08:00"/>
+<meta property="article:modified_time" content="2019-08-02T11:49:01&#43;08:00"/>
 
-<meta property="og:updated_time" content="2019-06-26T18:13:56&#43;08:00"/>
-
-<meta itemprop="name" content="Posts">
+<meta itemprop="name" content="如何使用 Kibana 分享日誌">
 <meta itemprop="description" content="">
 
+
+<meta itemprop="datePublished" content="2019-08-02T11:49:01&#43;08:00" />
+<meta itemprop="dateModified" content="2019-08-02T11:49:01&#43;08:00" />
+<meta itemprop="wordCount" content="31">
+
+
+
+<meta itemprop="keywords" content="elastic," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Posts"/>
+<meta name="twitter:title" content="如何使用 Kibana 分享日誌"/>
 <meta name="twitter:description" content=""/>
 
   </head>
@@ -52,11 +57,11 @@
   <body class="ma0 biaukai bg-near-white">
 
     
+   
+  
 
-  
-  
-  <header class="cover bg-top" style="background-image: url('https://reddtsai.github.io/images/whole_life.jpg');">
-    <div class="pb3-m pb6-l bg-black-60">
+  <header>
+    <div class="bg-black">
       <nav class="pv3 ph3 ph4-ns" role="navigation">
   <div class="flex-l justify-between items-center center">
     <a href="https://reddtsai.github.io" class="f3 fw2 hover-white no-underline white-90 dib">
@@ -108,113 +113,161 @@
   </div>
 </nav>
 
-      <div class="tc-l pv4 pv6-l ph3 ph4-ns">
-        <h1 class="f2 f-subheadline-l fw2 white-90 mb0 lh-title">
-          
-        </h1>
-        
-      </div>
     </div>
   </header>
 
 
+
     <main class="pb7" role="main">
       
-  <article class="pa3 pa4-ns nested-copy-line-height nested-img">
-    <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray"></section>
-    <section class="flex-ns flex-wrap justify-around mt5">
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
+          
+        POSTS
+      </p>
+      <h1 class="f1 athelas mb1">如何使用 Kibana 分享日誌</h1>
       
-        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Posts</span>
-    <h1 class="f3 near-black">
-      <a href="/posts/elk_centoskibana/" class="link black dim">
-        CentOS 7 如何安裝 Kibana
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <time class="f6 mv4 dib tracked" datetime="2019-08-02T11:49:01&#43;08:00">August 2, 2019</time>
       
-    </div>
-  </div>
-</div>
-</div>
       
-        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Posts</span>
-    <h1 class="f3 near-black">
-      <a href="/posts/elk_centoselastic/" class="link black dim">
-        CentOS 7 如何安裝 Elasticsearch
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
+    </header>
+
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><hr />
+
+<p>Kibana 是一個強大的 UI 介面，透過它能更有效的分享與呈現 Elasticsearch 中的數據，接下來會以本身使用的案例，來介紹如何使用 Kibana。</p>
+
+<blockquote>
+<p>版本</p>
+
+<ul>
+<li>Kibana 6</li>
+</ul>
+
+<p>安裝請參考下一篇文章<a href="https://reddtsai.github.io/posts/elk_centoskibana/">CentOS 7 如何安裝 Kibana</a></p>
+</blockquote>
+
+<h4 id="discover-page">Discover Page</h4>
+
+<hr />
+
+<p>數據探索功能，使用 Elasticsearch Index、Time Range 和 Query DSL 過濾搜索，顯示數據計數和內䆟</p>
+
+<p><img src="/images/kibana_discover.PNG" alt="Alt text" /></p>
+
+<h4 id="dashboard-page">Dashboard Page</h4>
+
+<hr />
+
+<p>儀表版功能，Kibana 提供多樣視覺化圖表，儀表版可幫助你收集管理這些圖表</p>
+
+<p><img src="/images/kibana_dashboard.PNG" alt="Alt text" /></p>
+
+<h4 id="logs-page">Logs Page</h4>
+
+<hr />
+
+<p>數據功能，顯示匯入的數據</p>
+
+<p><img src="/images/kibana_logs.PNG" alt="Alt text" /></p><ul class="pa0">
+  
+   <li class="list">
+     <a href="/tags/elastic" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">elastic</a>
+   </li>
+  
+</ul>
+<div class="mt6">
       
-    </div>
-  </div>
-</div>
-</div>
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "reddtsai" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
       
-        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Posts</span>
-    <h1 class="f3 near-black">
-      <a href="/posts/hello/" class="link black dim">
-        Hello
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      
-    </div>
-  </div>
-</div>
-</div>
-      
+      <div id="commento"></div>
+<script defer src="https://cdn.commento.io/js/commento.js"></script>
+
+      </div>
     </section>
 
-<ul class="pagination">
-    
-    <li class="page-item">
-        <a href="/posts/" class="page-link" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
-    </li>
-    
-    <li class="page-item">
-    <a href="/posts/" class="page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
-    </li>
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    <li class="page-item"><a class="page-link" href="/posts/">1</a></li>
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    <li class="page-item active"><a class="page-link" href="/posts/page/2/">2</a></li>
-    
-    
-    <li class="page-item disabled">
-    <a href="" class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
-    </li>
-    
-    <li class="page-item">
-        <a href="/posts/page/2/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
-    </li>
-    
+    <aside class="w-30-l mt6-l"><div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
+    <p class="f5 b mb3">What&#39;s in this posts</p>
+      <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#discover-page">Discover Page</a></li>
+<li><a href="#dashboard-page">Dashboard Page</a></li>
+<li><a href="#logs-page">Logs Page</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
 </ul>
-</article>
+</nav>
+  </div>
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
+    <p class="f5 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/posts/elk_windowsfilebeat/">Windows 如何安裝 Filebeat</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/posts/elk_centoselastalert/">CentOS 7 如何安裝 ElastAlert</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/posts/elk/">Elastic 簡介</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/posts/elk_logging/">如何利用 Elastic 處理日誌</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/posts/elk_iisfilebeat/">如何使用 Filebeat 收集日誌</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/posts/elk_centoskibana/">CentOS 7 如何安裝 Kibana</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/posts/elk_centoselastic/">CentOS 7 如何安裝 Elasticsearch</a>
+        </li>
+	    
+    </ul>
+</div>
+
+</aside>
+
+  </article>
 
     </main>
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
