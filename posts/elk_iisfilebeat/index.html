@@ -45,7 +45,7 @@
 
 <meta itemprop="datePublished" content="2019-07-05T11:28:52&#43;08:00" />
 <meta itemprop="dateModified" content="2019-07-05T11:28:52&#43;08:00" />
-<meta itemprop="wordCount" content="204">
+<meta itemprop="wordCount" content="202">
 
 
 
@@ -168,19 +168,19 @@
 
 <p>編輯 [Windows 安裝路徑]\filebeat\module\iis\access\manifest.yml</p>
 
-<p>text
-    #加入 IIS 日誌路徑
-    default.paths:
-      default:
-        - C:/inetpub/logs/LogFiles/<em>/</em>.log</p></li>
+<pre><code>#加入 IIS 日誌路徑
+default.paths:
+  default:
+    - C:/inetpub/logs/LogFiles/*/*.log
+</code></pre></li>
 
 <li><p>啟用模組</p>
 
 <p>開啟 IIS 模組，在 PowerShell 執行下方命令</p>
 
-<p>bash
-    cd [Windows 安裝路徑]
-    .\filebeat.exe modules enable iis</p></li>
+<pre><code>cd [Windows 安裝路徑]
+.\filebeat.exe modules enable iis
+</code></pre></li>
 </ul>
 
 <h3 id="新增模組">新增模組</h3>
