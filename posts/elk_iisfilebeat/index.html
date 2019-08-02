@@ -43,7 +43,7 @@
 
 <meta itemprop="datePublished" content="2019-07-05T11:28:52&#43;08:00" />
 <meta itemprop="dateModified" content="2019-07-05T11:28:52&#43;08:00" />
-<meta itemprop="wordCount" content="203">
+<meta itemprop="wordCount" content="200">
 
 
 
@@ -142,7 +142,7 @@
 
 <li><p>解析數據</p>
 
-<p>常見的日誌格式(IIS、NGINX、MySQL)大多可透過 Filebeat 內建模組來解析，那也可透過新增模組來客製格式。</p></li>
+<p>常見的日誌格式(IIS、NGINX、MySQL)大多可透過 Filebeat 內建模組來解析，也可透過新增模組來客製格式，以下會說明該如何新增或設定 Filebeat 模組。</p></li>
 
 <li><p>傳送數據 (Logstash 或 Elasticsearch 儲存)</p></li>
 </ol>
@@ -156,8 +156,6 @@
 
 <p>安裝請參考下一篇文章<a href="https://reddtsai.github.io/posts/elk_windowsfilebeat/">Windows 如何安裝 Filebeat</a></p>
 </blockquote>
-
-<p>以下為該如何使用 Filebeat 模組</p>
 
 <h4 id="設定模組">設定模組</h4>
 
@@ -207,36 +205,33 @@
 <p>模組控制檔</p>
 
 <ul>
-<li>日誌路徑</li>
-</ul>
+<li><p>日誌路徑</p>
 
-<!-- end of list -->
-
-<pre><code>```text
-var:
+<pre><code class="language-text">var:
 － name: paths
     os.windows
     － C:/log/*.log
-```
 </code></pre>
 
+<!-- end of list -->
+
+<!-- end of list -->
+
 <ul>
-<li><p>template 參考路徑</p>
+<li>template 參考路徑</li>
+</ul>
 
 <!-- end of list -->
 
 <pre><code class="language-text">input: config/fileset.yml
-</code></pre>
+</code></pre></li>
 
-<ul>
-<li>Ingest Pipeline 參考路徑</li>
-</ul>
+<li><p>Ingest Pipeline 參考路徑</p>
 
 <!-- end of list -->
 
 <pre><code class="language-text">ingest_pipeline: ingest/pipeline.json
-</code></pre></li>
-</ul>
+</code></pre>
 
 <p><strong><strong>fileset.yml</strong></strong></p>
 
@@ -253,7 +248,8 @@ var:
 <p>如果測試 pipeline 有問題，修改完 pipeline.json，需要刪除舊的 pipeline.json，透過 elasticsearch api</p>
 
 <pre><code class="language-bash">curl -X DELETE http://elasticsearch:9200/_ingest/pipeline/filebeat-6.7.0-iis-access-default
-</code></pre>
+</code></pre></li>
+</ul>
 
 <p><strong><strong>modules.yml.disabled</strong></strong></p>
 
@@ -307,7 +303,7 @@ curl -X GET http://elasticsearch:9200/_ingest/pipeline/filebeat-6.7.0-iis-access
 
 <blockquote>
 <p>文章參考來源為 Elastic 官方文檔
-test 2</p>
+test 3</p>
 </blockquote></li>
 </ol><ul class="pa0">
   
