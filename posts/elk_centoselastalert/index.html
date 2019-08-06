@@ -43,7 +43,7 @@
 
 <meta itemprop="datePublished" content="2019-07-25T14:06:13&#43;08:00" />
 <meta itemprop="dateModified" content="2019-07-25T14:06:13&#43;08:00" />
-<meta itemprop="wordCount" content="382">
+<meta itemprop="wordCount" content="387">
 
 
 
@@ -135,9 +135,7 @@
       
     </header>
 
-    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><hr />
-
-<p>版本</p>
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>版本</p>
 
 <ul>
 <li>ElastAlert 0.2</li>
@@ -161,6 +159,8 @@
 <li><p>dependency Package，參考 ElastAlert requirements.txt</p></li>
 </ul>
 
+<hr />
+
 <h4 id="1-安裝-pip-dev">1. 安裝 PIP、DEV</h4>
 
 <p>確認是否已安裝 python 2.7</p>
@@ -180,6 +180,8 @@ pip --version
 
 sudo pip install --upgrade pip
 </code></pre>
+
+<hr />
 
 <h4 id="2-安裝-elastalert">2. 安裝 ElastAlert</h4>
 
@@ -202,6 +204,8 @@ sudo pip install --upgrade pip
 
 <pre><code class="language-bash">sudo pip install elastalert
 </code></pre>
+
+<hr />
 
 <h4 id="3-設定-elastalert">3. 設定 ElastAlert</h4>
 
@@ -239,6 +243,8 @@ alert_time_limit:
   days: 2
 </code></pre>
 
+<hr />
+
 <h4 id="4-設定-elasticsearch-client">4. 設定 Elasticsearch Client</h4>
 
 <p>確認 Elasticsearch Client 的版本和 Elasticsearch 的版本相符。以我的環境為例，需要將 lasticsearch Client 更新至 6.X 版</p>
@@ -254,6 +260,8 @@ sudo pip install &quot;elasticsearch&lt;7&quot;
 
 <pre><code class="language-bash">elastalert-create-index
 </code></pre>
+
+<hr />
 
 <h4 id="5-設定通知規則">5. 設定通知規則</h4>
 
@@ -294,6 +302,8 @@ alert:
 
 <pre><code class="language-bash">elastalert-test-rule alert_rules/filebeat_frequency.yaml
 </code></pre>
+
+<hr />
 
 <h4 id="6-設定-elastalert-服務">6. 設定 ElastAlert 服務</h4>
 
@@ -341,7 +351,15 @@ WantedBy=multi-user.target
 <pre><code class="language-bash">sudo systemctl enable elastalert.service
 sudo systemctl start elastalert.service
 sudo systemctl status elastalert.service
-</code></pre><ul class="pa0">
+</code></pre>
+
+<hr />
+
+<h4 id="參考">參考</h4>
+
+<p><a href="https://github.com/Yelp/elastalert">ElastAlert Repo</a></p>
+
+<p><a href="https://elastalert.readthedocs.io/en/latest/">ElastAlert Doc</a></p><ul class="pa0">
   
    <li class="list">
      <a href="/tags/elastic" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">elastic</a>
@@ -393,6 +411,7 @@ sudo systemctl status elastalert.service
 <li><a href="#4-設定-elasticsearch-client">4. 設定 Elasticsearch Client</a></li>
 <li><a href="#5-設定通知規則">5. 設定通知規則</a></li>
 <li><a href="#6-設定-elastalert-服務">6. 設定 ElastAlert 服務</a></li>
+<li><a href="#參考">參考</a></li>
 </ul></li>
 </ul></li>
 </ul></li>

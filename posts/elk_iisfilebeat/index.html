@@ -43,7 +43,7 @@
 
 <meta itemprop="datePublished" content="2019-07-05T11:28:52&#43;08:00" />
 <meta itemprop="dateModified" content="2019-07-05T11:28:52&#43;08:00" />
-<meta itemprop="wordCount" content="193">
+<meta itemprop="wordCount" content="196">
 
 
 
@@ -135,9 +135,7 @@
       
     </header>
 
-    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><hr />
-
-<p>Filebeat 是個檔案分析工具，最常用來收集日誌檔，收集的過程分為</p>
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>Filebeat 是個檔案分析工具，最常用來收集日誌檔，收集的過程分為</p>
 
 <ol>
 <li><p>收集數據 (讀取日誌)</p></li>
@@ -159,9 +157,9 @@
 <p>安裝請參考下一篇文章<a href="https://reddtsai.github.io/posts/elk_windowsfilebeat/">Windows 如何安裝 Filebeat</a></p>
 </blockquote>
 
-<h3 id="設定模組">設定模組</h3>
-
 <hr />
+
+<h3 id="設定模組">設定模組</h3>
 
 <p>Filebeat 提供多樣模組來收集常見的日誌，這邊以 IIS 日誌為例，說明如何設定模組。</p>
 
@@ -185,9 +183,9 @@ default.paths:
 </code></pre></li>
 </ul>
 
-<h3 id="新增模組">新增模組</h3>
-
 <hr />
+
+<h3 id="新增模組">新增模組</h3>
 
 <p>新增一個模組後，可看到所產生的檔案結構，以下方我所建立的 nlog module 為例</p>
 
@@ -241,9 +239,9 @@ exclude_files: [&quot;.gz$&quot;]
 <p>模組開關</p></li>
 </ul>
 
-<h3 id="測試模組">測試模組</h3>
-
 <hr />
+
+<h3 id="測試模組">測試模組</h3>
 
 <p>新增或設定好模組，先由測試確認完後再上線</p>
 
@@ -285,7 +283,13 @@ curl -X GET http://elasticsearch:9200/_ingest/pipeline/filebeat-6.7.0-iis-access
 <p>開啟 Kibana，透過 Logs 介面，確認是否有顯示 log 資料</p>
 
 <p><img src="/images/kibana_logs.PNG" alt="Alt text" /></p></li>
-</ol><ul class="pa0">
+</ol>
+
+<hr />
+
+<h3 id="參考">參考</h3>
+
+<p><a href="https://www.elastic.co/cn/">Elastic 官網</a></p><ul class="pa0">
   
    <li class="list">
      <a href="/tags/elastic" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">elastic</a>
@@ -332,6 +336,7 @@ curl -X GET http://elasticsearch:9200/_ingest/pipeline/filebeat-6.7.0-iis-access
 <li><a href="#設定模組">設定模組</a></li>
 <li><a href="#新增模組">新增模組</a></li>
 <li><a href="#測試模組">測試模組</a></li>
+<li><a href="#參考">參考</a></li>
 </ul></li>
 </ul></li>
 </ul>

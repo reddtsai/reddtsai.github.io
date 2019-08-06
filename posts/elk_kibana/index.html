@@ -43,7 +43,7 @@
 
 <meta itemprop="datePublished" content="2019-08-02T11:49:01&#43;08:00" />
 <meta itemprop="dateModified" content="2019-08-02T11:49:01&#43;08:00" />
-<meta itemprop="wordCount" content="31">
+<meta itemprop="wordCount" content="124">
 
 
 
@@ -135,9 +135,7 @@
       
     </header>
 
-    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><hr />
-
-<p>Kibana 是一個強大的 UI 介面，透過它能更有效的分享與呈現 Elasticsearch 中的數據，接下來會以本身使用的案例，來介紹如何使用 Kibana。</p>
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>Elastic 提供一個強大的 UI 介面 Kibana，透過它能更有效的分享與呈現 Elasticsearch 中的數據，接下來會以本身使用的案例，來介紹如何使用 Kibana。</p>
 
 <blockquote>
 <p>版本</p>
@@ -149,29 +147,96 @@
 <p>安裝請參考下一篇文章<a href="https://reddtsai.github.io/posts/elk_centoskibana/">CentOS 7 如何安裝 Kibana</a></p>
 </blockquote>
 
-<h4 id="discover-page">Discover Page</h4>
-
 <hr />
+
+<h4 id="discover-page">Discover Page</h4>
 
 <p>數據探索功能，使用 Elasticsearch Index、Time Range 和 Query DSL 過濾搜索，顯示數據計數和內䆟</p>
 
 <p><img src="/images/kibana_discover.PNG" alt="Alt text" /></p>
 
-<h4 id="dashboard-page">Dashboard Page</h4>
+<blockquote>
+<p>注意</p>
+
+<p>如果遇到 no cached mapping for this field</p>
+
+<p>試著在 Management，Refresh field list</p>
+</blockquote>
 
 <hr />
+
+<h4 id="dashboard-page">Dashboard Page</h4>
 
 <p>儀表版功能，Kibana 提供多樣視覺化圖表，儀表版可幫助你收集管理這些圖表</p>
 
 <p><img src="/images/kibana_dashboard.PNG" alt="Alt text" /></p>
 
-<h4 id="logs-page">Logs Page</h4>
-
 <hr />
+
+<h4 id="logs-page">Logs Page</h4>
 
 <p>數據功能，顯示匯入的數據</p>
 
-<p><img src="/images/kibana_logs.PNG" alt="Alt text" /></p><ul class="pa0">
+<p><img src="/images/kibana_logs.PNG" alt="Alt text" /></p>
+
+<hr />
+
+<h4 id="query-dsl">Query DSL</h4>
+
+<p>Elastic 提供了一套查詢語法 DSL (Domain Specific Language)，可透過 RESTful 或 Kibana 的介面來使用，這邊介紹幾個範例</p>
+
+<ul>
+<li><p>Match</p>
+
+<p>例如查詢 IIS 中，有那些 Request 回應 500</p>
+
+<pre><code>GET /_search
+{
+    &quot;query&quot;: {
+        &quot;match&quot;: {
+            &quot;iis.access.response_code&quot;: {
+                &quot;query&quot;: 500,
+                &quot;type&quot;: &quot;phrase&quot;
+            }
+        }
+    }
+}
+</code></pre></li>
+
+<li><p>Wildcard</p>
+
+<p>例如查詢 IIS 中，有那些 Request url like */app/</p>
+
+<pre><code>GET /_search
+{
+    &quot;query&quot;: {
+        &quot;wildcard&quot;: {
+            &quot;iis.access.url&quot;: &quot;*/app&quot;
+        }
+    }
+}
+</code></pre></li>
+
+<li><p>Prefix</p>
+
+<p>例如查詢 IIS 中，url 以 /en/app 開頭的 Request 有那些</p>
+
+<pre><code>GET /_search
+{
+    &quot;query&quot;: {
+        &quot;prefix&quot;: {
+            &quot;iis.access.url&quot;: &quot;/en/app&quot;
+        }
+    }
+}
+</code></pre></li>
+</ul>
+
+<hr />
+
+<h4 id="參考">參考</h4>
+
+<p><a href="https://www.elastic.co/cn/">Elastic 官網</a></p><ul class="pa0">
   
    <li class="list">
      <a href="/tags/elastic" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">elastic</a>
@@ -220,6 +285,8 @@
 <li><a href="#discover-page">Discover Page</a></li>
 <li><a href="#dashboard-page">Dashboard Page</a></li>
 <li><a href="#logs-page">Logs Page</a></li>
+<li><a href="#query-dsl">Query DSL</a></li>
+<li><a href="#參考">參考</a></li>
 </ul></li>
 </ul></li>
 </ul></li>
