@@ -57,13 +57,6 @@
   </url>
   
   <url>
-    <loc>https://reddtsai.github.io/about/</loc>
-    <lastmod>2019-07-10T16:14:12+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://reddtsai.github.io/posts/elk_iisfilebeat/</loc>
     <lastmod>2019-07-05T11:28:52+08:00</lastmod>
     <changefreq>monthly</changefreq>

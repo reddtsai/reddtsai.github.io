@@ -74,8 +74,8 @@
         <ul class="pl0 mr3">
           
           <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white no-underline white-90" href="/about/" title="About page">
-              About
+            <a class="hover-white no-underline white-90" href="https://www.cakeresume.com/s--Tm0H9lc43gg5_Xt49g_pUQ--/reddtsai" title="Me page">
+              Me
             </a>
           </li>
           
@@ -153,10 +153,14 @@
 java -version
 </code></pre>
 
+<hr />
+
 <h4 id="2-安裝-elasticsearch-簽章公鑰">2. 安裝 Elasticsearch 簽章公鑰</h4>
 
 <pre><code class="language-bash">rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
 </code></pre>
+
+<hr />
 
 <h4 id="3-安裝-elasticsearch">3. 安裝 Elasticsearch</h4>
 
@@ -179,6 +183,8 @@ type=rpm-md
 <pre><code class="language-bash">sudo yum install elasticsearch
 </code></pre>
 
+<hr />
+
 <h4 id="4-啟動-elasticsearch-服務">4. 啟動 Elasticsearch 服務</h4>
 
 <pre><code class="language-bash">sudo systemctl enable elasticsearch.service
@@ -196,6 +202,8 @@ curl -X GET http://localhost:9200
 
 <pre><code class="language-bash">sudo journalctl --unit elasticsearch --since  &quot;20 min ago&quot;
 </code></pre>
+
+<hr />
 
 <h4 id="5-設定防火牆和ip">5. 設定防火牆和IP</h4>
 
@@ -221,6 +229,8 @@ sudo firewall-cmd --reload
 sudo netstat -plnt
 </code></pre>
 
+<hr />
+
 <h4 id="6-配置-elasticsearch">6. 配置 Elasticsearch</h4>
 
 <p>Elasticsearch 配置檔 /etc/elasticsearch/elasticsearch.yml</p>
@@ -234,6 +244,8 @@ sudo netstat -plnt
 
 network.host: 0.0.0.0
 </code></pre>
+
+<hr />
 
 <h4 id="參考">參考</h4>
 
