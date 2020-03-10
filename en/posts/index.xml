@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Posts on Redd&#39;s Side Project</title>
+    <link>https://reddtsai.github.io/en/posts/</link>
+    <description>Recent content in Posts on Redd&#39;s Side Project</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>reddtsai@gmail.com (蔡文杰)</managingEditor>
+    <webMaster>reddtsai@gmail.com (蔡文杰)</webMaster>
+    <copyright>©{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Wed, 26 Jun 2019 18:13:56 +0800</lastBuildDate>
+    
+        <atom:link href="https://reddtsai.github.io/en/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>開始使用微服務</title>
+        <link>https://reddtsai.github.io/en/posts/microservice/</link>
+        <pubDate>Mon, 19 Aug 2019 12:12:01 +0800</pubDate>
+        <author>reddtsai@gmail.com (蔡文杰)</author>
+        <atom:modified>Mon, 19 Aug 2019 12:12:01 +0800</atom:modified>
+        <guid>https://reddtsai.github.io/en/posts/microservice/</guid>
+        <description></description>
+        
+        <dc:creator>蔡文杰</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>microservice</category>
+            
+          
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>如何使用 Kibana 分享日誌</title>
+        <link>https://reddtsai.github.io/en/posts/elk_kibana/</link>
+        <pubDate>Fri, 02 Aug 2019 11:49:01 +0800</pubDate>
+        <author>reddtsai@gmail.com (蔡文杰)</author>
+        <atom:modified>Fri, 02 Aug 2019 11:49:01 +0800</atom:modified>
+        <guid>https://reddtsai.github.io/en/posts/elk_kibana/</guid>
+        <description></description>
+        
+        <dc:creator>蔡文杰</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>elastic</category>
+            
+          
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>Windows 如何安裝 Filebeat</title>
+        <link>https://reddtsai.github.io/en/posts/elk_windowsfilebeat/</link>
+        <pubDate>Tue, 30 Jul 2019 15:59:54 +0800</pubDate>
+        <author>reddtsai@gmail.com (蔡文杰)</author>
+        <atom:modified>Tue, 30 Jul 2019 15:59:54 +0800</atom:modified>
+        <guid>https://reddtsai.github.io/en/posts/elk_windowsfilebeat/</guid>
+        <description></description>
+        
+        <dc:creator>蔡文杰</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>elastic</category>
+            
+          
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>CentOS 7 如何安裝 ElastAlert</title>
+        <link>https://reddtsai.github.io/en/posts/elk_centoselastalert/</link>
+        <pubDate>Thu, 25 Jul 2019 14:06:13 +0800</pubDate>
+        <author>reddtsai@gmail.com (蔡文杰)</author>
+        <atom:modified>Thu, 25 Jul 2019 14:06:13 +0800</atom:modified>
+        <guid>https://reddtsai.github.io/en/posts/elk_centoselastalert/</guid>
+        <description></description>
+        
+        <dc:creator>蔡文杰</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>elastic</category>
+            
+          
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>Elastic 簡介</title>
+        <link>https://reddtsai.github.io/en/posts/elk/</link>
+        <pubDate>Thu, 11 Jul 2019 19:01:43 +0800</pubDate>
+        <author>reddtsai@gmail.com (蔡文杰)</author>
+        <atom:modified>Thu, 11 Jul 2019 19:01:43 +0800</atom:modified>
+        <guid>https://reddtsai.github.io/en/posts/elk/</guid>
+        <description></description>
+        
+        <dc:creator>蔡文杰</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>elastic</category>
+            
+          
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>如何利用 Elastic 處理日誌</title>
+        <link>https://reddtsai.github.io/en/posts/elk_logging/</link>
+        <pubDate>Thu, 11 Jul 2019 18:57:13 +0800</pubDate>
+        <author>reddtsai@gmail.com (蔡文杰)</author>
+        <atom:modified>Thu, 11 Jul 2019 18:57:13 +0800</atom:modified>
+        <guid>https://reddtsai.github.io/en/posts/elk_logging/</guid>
+        <description></description>
+        
+        <dc:creator>蔡文杰</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>elastic</category>
+            
+          
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>如何使用 Filebeat 收集日誌</title>
+        <link>https://reddtsai.github.io/en/posts/elk_iisfilebeat/</link>
+        <pubDate>Fri, 05 Jul 2019 11:28:52 +0800</pubDate>
+        <author>reddtsai@gmail.com (蔡文杰)</author>
+        <atom:modified>Fri, 05 Jul 2019 11:28:52 +0800</atom:modified>
+        <guid>https://reddtsai.github.io/en/posts/elk_iisfilebeat/</guid>
+        <description></description>
+        
+        <dc:creator>蔡文杰</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>elastic</category>
+            
+          
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>CentOS 7 如何安裝 Kibana</title>
+        <link>https://reddtsai.github.io/en/posts/elk_centoskibana/</link>
+        <pubDate>Thu, 27 Jun 2019 14:38:02 +0800</pubDate>
+        <author>reddtsai@gmail.com (蔡文杰)</author>
+        <atom:modified>Thu, 27 Jun 2019 14:38:02 +0800</atom:modified>
+        <guid>https://reddtsai.github.io/en/posts/elk_centoskibana/</guid>
+        <description></description>
+        
+        <dc:creator>蔡文杰</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>elastic</category>
+            
+          
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>CentOS 7 如何安裝 Elasticsearch</title>
+        <link>https://reddtsai.github.io/en/posts/elk_centoselastic/</link>
+        <pubDate>Thu, 27 Jun 2019 14:37:52 +0800</pubDate>
+        <author>reddtsai@gmail.com (蔡文杰)</author>
+        <atom:modified>Thu, 27 Jun 2019 14:37:52 +0800</atom:modified>
+        <guid>https://reddtsai.github.io/en/posts/elk_centoselastic/</guid>
+        <description></description>
+        
+        <dc:creator>蔡文杰</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>elastic</category>
+            
+          
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>Hello</title>
+        <link>https://reddtsai.github.io/en/posts/hello/</link>
+        <pubDate>Wed, 26 Jun 2019 18:14:32 +0800</pubDate>
+        <author>reddtsai@gmail.com (蔡文杰)</author>
+        <atom:modified>Wed, 26 Jun 2019 18:14:32 +0800</atom:modified>
+        <guid>https://reddtsai.github.io/en/posts/hello/</guid>
+        <description></description>
+        
+        <dc:creator>蔡文杰</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

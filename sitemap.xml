@@ -1,112 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-  <url>
-    <loc>https://reddtsai.github.io/</loc>
-    <lastmod>2019-08-19T12:12:01+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://reddtsai.github.io/tags/</loc>
-    <lastmod>2019-08-19T12:12:01+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://reddtsai.github.io/tags/microservice/</loc>
-    <lastmod>2019-08-19T12:12:01+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://reddtsai.github.io/posts/microservice/</loc>
-    <lastmod>2019-08-19T12:12:01+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://reddtsai.github.io/tags/elastic/</loc>
-    <lastmod>2019-08-02T11:49:01+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://reddtsai.github.io/posts/elk_kibana/</loc>
-    <lastmod>2019-08-02T11:49:01+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://reddtsai.github.io/posts/elk_windowsfilebeat/</loc>
-    <lastmod>2019-07-30T15:59:54+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://reddtsai.github.io/posts/elk_centoselastalert/</loc>
-    <lastmod>2019-07-25T14:06:13+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://reddtsai.github.io/posts/elk/</loc>
-    <lastmod>2019-07-11T19:01:43+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://reddtsai.github.io/posts/elk_logging/</loc>
-    <lastmod>2019-07-11T18:57:13+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://reddtsai.github.io/posts/elk_iisfilebeat/</loc>
-    <lastmod>2019-07-05T11:28:52+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://reddtsai.github.io/posts/elk_centoskibana/</loc>
-    <lastmod>2019-06-27T14:38:02+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://reddtsai.github.io/posts/elk_centoselastic/</loc>
-    <lastmod>2019-06-27T14:37:52+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://reddtsai.github.io/posts/hello/</loc>
-    <lastmod>2019-06-26T18:14:32+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://reddtsai.github.io/posts/</loc>
-    <lastmod>2019-06-26T18:13:56+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://reddtsai.github.io/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-</urlset>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	
+	<sitemap>
+	   	<loc>https://reddtsai.github.io/en/sitemap.xml</loc>
+		
+	   	<lastmod>2019-08-19T12:12:01+08:00</lastmod>
+		
+	</sitemap>
+	
+	<sitemap>
+	   	<loc>https://reddtsai.github.io/zh/sitemap.xml</loc>
+		
+	</sitemap>
+	
+</sitemapindex>

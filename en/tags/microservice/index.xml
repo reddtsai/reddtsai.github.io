@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>microservice on Redd&#39;s Side Project</title>
+    <link>https://reddtsai.github.io/en/tags/microservice/</link>
+    <description>Recent content in microservice on Redd&#39;s Side Project</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>reddtsai@gmail.com (蔡文杰)</managingEditor>
+    <webMaster>reddtsai@gmail.com (蔡文杰)</webMaster>
+    <copyright>©{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Mon, 19 Aug 2019 12:12:01 +0800</lastBuildDate>
+    
+        <atom:link href="https://reddtsai.github.io/en/tags/microservice/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>開始使用微服務</title>
+        <link>https://reddtsai.github.io/en/posts/microservice/</link>
+        <pubDate>Mon, 19 Aug 2019 12:12:01 +0800</pubDate>
+        <author>reddtsai@gmail.com (蔡文杰)</author>
+        <atom:modified>Mon, 19 Aug 2019 12:12:01 +0800</atom:modified>
+        <guid>https://reddtsai.github.io/en/posts/microservice/</guid>
+        <description></description>
+        
+        <dc:creator>蔡文杰</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>microservice</category>
+            
+          
+        
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>
