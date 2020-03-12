@@ -6,15 +6,15 @@
   xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
-    <title>Posts on 蔡文杰 Side Project</title>
+    <title>Posts on Redd Tsai</title>
     <link>https://reddtsai.github.io/zh/posts/</link>
-    <description>Recent content in Posts on 蔡文杰 Side Project</description>
+    <description>Recent content in Posts on Redd Tsai</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <managingEditor>reddtsai@gmail.com (蔡文杰)</managingEditor>
     <webMaster>reddtsai@gmail.com (蔡文杰)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Wed, 26 Jun 2019 18:13:56 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 11 Mar 2020 13:38:34 +0800</lastBuildDate>
     
         <atom:link href="https://reddtsai.github.io/zh/posts/index.xml" rel="self" type="application/rss+xml" />
     
@@ -23,25 +23,31 @@
 
       
       <item>
-        <title>開始使用微服務</title>
-        <link>https://reddtsai.github.io/zh/posts/microservice/</link>
-        <pubDate>Mon, 19 Aug 2019 12:12:01 +0800</pubDate>
+        <title>建立免費的個人博客 By HUGO</title>
+        <link>https://reddtsai.github.io/zh/posts/hugo_hello/</link>
+        <pubDate>Wed, 11 Mar 2020 13:38:34 +0800</pubDate>
         <author>reddtsai@gmail.com (蔡文杰)</author>
-        <atom:modified>Mon, 19 Aug 2019 12:12:01 +0800</atom:modified>
-        <guid>https://reddtsai.github.io/zh/posts/microservice/</guid>
-        <description></description>
+        <atom:modified>Wed, 11 Mar 2020 13:38:34 +0800</atom:modified>
+        <guid>https://reddtsai.github.io/zh/posts/hugo_hello/</guid>
+        <description>&lt;p&gt;身為一位軟體工程師怎麼可以沒有 Blog，再加上工程師最愛挖洞給自己跳，所以一定要自己架Blog😭😭😭。這裡跟大家介紹個靜態網站生成引擎 HUGO，接著透過 HUGO 來建立一個美美又免費的Blog。&lt;/p&gt;</description>
         
-        <dc:creator>蔡文杰</dc:creator>
+        <dc:creator>Redd Tsai</dc:creator>
         
         
         
         
           
             
-              <category>microservice</category>
+              <category>Hugo</category>
             
           
         
+        
+          
+            
+              <category>Hugo</category>
+            
+          
         
         
       </item>
@@ -55,17 +61,23 @@
         <guid>https://reddtsai.github.io/zh/posts/elk_kibana/</guid>
         <description></description>
         
-        <dc:creator>蔡文杰</dc:creator>
+        <dc:creator>Redd Tsai</dc:creator>
         
         
         
         
           
             
-              <category>elastic</category>
+              <category>Kibana</category>
             
           
         
+        
+          
+            
+              <category>Elastic</category>
+            
+          
         
         
       </item>
@@ -79,17 +91,23 @@
         <guid>https://reddtsai.github.io/zh/posts/elk_windowsfilebeat/</guid>
         <description></description>
         
-        <dc:creator>蔡文杰</dc:creator>
+        <dc:creator>Redd Tsai</dc:creator>
         
         
         
         
           
             
-              <category>elastic</category>
+              <category>Filebeat</category>
             
           
         
+        
+          
+            
+              <category>Elastic</category>
+            
+          
         
         
       </item>
@@ -103,17 +121,23 @@
         <guid>https://reddtsai.github.io/zh/posts/elk_centoselastalert/</guid>
         <description></description>
         
-        <dc:creator>蔡文杰</dc:creator>
+        <dc:creator>Redd Tsai</dc:creator>
         
         
         
         
           
             
-              <category>elastic</category>
+              <category>ElastAlert</category>
             
           
         
+        
+          
+            
+              <category>Elastic</category>
+            
+          
         
         
       </item>
@@ -127,17 +151,23 @@
         <guid>https://reddtsai.github.io/zh/posts/elk/</guid>
         <description></description>
         
-        <dc:creator>蔡文杰</dc:creator>
+        <dc:creator>Redd Tsai</dc:creator>
         
         
         
         
           
             
-              <category>elastic</category>
+              <category>Elastic</category>
             
           
         
+        
+          
+            
+              <category>Elastic</category>
+            
+          
         
         
       </item>
@@ -151,17 +181,23 @@
         <guid>https://reddtsai.github.io/zh/posts/elk_logging/</guid>
         <description></description>
         
-        <dc:creator>蔡文杰</dc:creator>
+        <dc:creator>Redd Tsai</dc:creator>
         
         
         
         
           
             
-              <category>elastic</category>
+              <category>Elastic</category>
             
           
         
+        
+          
+            
+              <category>Elastic</category>
+            
+          
         
         
       </item>
@@ -175,17 +211,23 @@
         <guid>https://reddtsai.github.io/zh/posts/elk_iisfilebeat/</guid>
         <description></description>
         
-        <dc:creator>蔡文杰</dc:creator>
+        <dc:creator>Redd Tsai</dc:creator>
         
         
         
         
           
             
-              <category>elastic</category>
+              <category>Filebeat</category>
             
           
         
+        
+          
+            
+              <category>Elastic</category>
+            
+          
         
         
       </item>
@@ -199,17 +241,23 @@
         <guid>https://reddtsai.github.io/zh/posts/elk_centoskibana/</guid>
         <description></description>
         
-        <dc:creator>蔡文杰</dc:creator>
+        <dc:creator>Redd Tsai</dc:creator>
         
         
         
         
           
             
-              <category>elastic</category>
+              <category>Kibana</category>
             
           
         
+        
+          
+            
+              <category>Elastic</category>
+            
+          
         
         
       </item>
@@ -223,35 +271,23 @@
         <guid>https://reddtsai.github.io/zh/posts/elk_centoselastic/</guid>
         <description></description>
         
-        <dc:creator>蔡文杰</dc:creator>
+        <dc:creator>Redd Tsai</dc:creator>
         
         
         
         
           
             
-              <category>elastic</category>
+              <category>Elasticsearch</category>
             
           
         
         
-        
-      </item>
-      
-      <item>
-        <title>Hello</title>
-        <link>https://reddtsai.github.io/zh/posts/hello/</link>
-        <pubDate>Wed, 26 Jun 2019 18:14:32 +0800</pubDate>
-        <author>reddtsai@gmail.com (蔡文杰)</author>
-        <atom:modified>Wed, 26 Jun 2019 18:14:32 +0800</atom:modified>
-        <guid>https://reddtsai.github.io/zh/posts/hello/</guid>
-        <description></description>
-        
-        <dc:creator>蔡文杰</dc:creator>
-        
-        
-        
-        
+          
+            
+              <category>Elastic</category>
+            
+          
         
         
       </item>

@@ -6,20 +6,57 @@
   xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
-    <title>Categories on 蔡文杰 Side Project</title>
+    <title>Categories on Redd Tsai</title>
     <link>https://reddtsai.github.io/zh/categories/</link>
-    <description>Recent content in Categories on 蔡文杰 Side Project</description>
+    <description>Recent content in Categories on Redd Tsai</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <managingEditor>reddtsai@gmail.com (蔡文杰)</managingEditor>
     <webMaster>reddtsai@gmail.com (蔡文杰)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Wed, 11 Mar 2020 13:38:34 +0800</lastBuildDate>
     
         <atom:link href="https://reddtsai.github.io/zh/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>Hugo</title>
+        <link>https://reddtsai.github.io/zh/categories/hugo/</link>
+        <pubDate>Wed, 11 Mar 2020 13:38:34 +0800</pubDate>
+        <author>reddtsai@gmail.com (蔡文杰)</author>
+        
+        <guid>https://reddtsai.github.io/zh/categories/hugo/</guid>
+        <description></description>
+        
+        <dc:creator>蔡文杰</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>Elastic</title>
+        <link>https://reddtsai.github.io/zh/categories/elastic/</link>
+        <pubDate>Fri, 02 Aug 2019 11:49:01 +0800</pubDate>
+        <author>reddtsai@gmail.com (蔡文杰)</author>
+        
+        <guid>https://reddtsai.github.io/zh/categories/elastic/</guid>
+        <description></description>
+        
+        <dc:creator>蔡文杰</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
 
     

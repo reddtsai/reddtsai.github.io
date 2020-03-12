@@ -6,15 +6,15 @@
   xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
-    <title>Tags on 蔡文杰 Side Project</title>
+    <title>Tags on Redd Tsai</title>
     <link>https://reddtsai.github.io/zh/tags/</link>
-    <description>Recent content in Tags on 蔡文杰 Side Project</description>
+    <description>Recent content in Tags on Redd Tsai</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <managingEditor>reddtsai@gmail.com (蔡文杰)</managingEditor>
     <webMaster>reddtsai@gmail.com (蔡文杰)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Mon, 19 Aug 2019 12:12:01 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 11 Mar 2020 13:38:34 +0800</lastBuildDate>
     
         <atom:link href="https://reddtsai.github.io/zh/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -23,12 +23,12 @@
 
       
       <item>
-        <title>microservice</title>
-        <link>https://reddtsai.github.io/zh/tags/microservice/</link>
-        <pubDate>Mon, 19 Aug 2019 12:12:01 +0800</pubDate>
+        <title>Hugo</title>
+        <link>https://reddtsai.github.io/zh/tags/hugo/</link>
+        <pubDate>Wed, 11 Mar 2020 13:38:34 +0800</pubDate>
         <author>reddtsai@gmail.com (蔡文杰)</author>
         
-        <guid>https://reddtsai.github.io/zh/tags/microservice/</guid>
+        <guid>https://reddtsai.github.io/zh/tags/hugo/</guid>
         <description></description>
         
         <dc:creator>蔡文杰</dc:creator>
@@ -41,12 +41,102 @@
       </item>
       
       <item>
-        <title>elastic</title>
-        <link>https://reddtsai.github.io/zh/tags/elastic/</link>
+        <title>Kibana</title>
+        <link>https://reddtsai.github.io/zh/tags/kibana/</link>
         <pubDate>Fri, 02 Aug 2019 11:49:01 +0800</pubDate>
         <author>reddtsai@gmail.com (蔡文杰)</author>
         
+        <guid>https://reddtsai.github.io/zh/tags/kibana/</guid>
+        <description></description>
+        
+        <dc:creator>蔡文杰</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>Filebeat</title>
+        <link>https://reddtsai.github.io/zh/tags/filebeat/</link>
+        <pubDate>Tue, 30 Jul 2019 15:59:54 +0800</pubDate>
+        <author>reddtsai@gmail.com (蔡文杰)</author>
+        
+        <guid>https://reddtsai.github.io/zh/tags/filebeat/</guid>
+        <description></description>
+        
+        <dc:creator>蔡文杰</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>ElastAlert</title>
+        <link>https://reddtsai.github.io/zh/tags/elastalert/</link>
+        <pubDate>Thu, 25 Jul 2019 14:06:13 +0800</pubDate>
+        <author>reddtsai@gmail.com (蔡文杰)</author>
+        
+        <guid>https://reddtsai.github.io/zh/tags/elastalert/</guid>
+        <description></description>
+        
+        <dc:creator>蔡文杰</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>Elastic</title>
+        <link>https://reddtsai.github.io/zh/tags/elastic/</link>
+        <pubDate>Thu, 11 Jul 2019 19:01:43 +0800</pubDate>
+        <author>reddtsai@gmail.com (蔡文杰)</author>
+        
         <guid>https://reddtsai.github.io/zh/tags/elastic/</guid>
+        <description></description>
+        
+        <dc:creator>蔡文杰</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>Elasticsearch</title>
+        <link>https://reddtsai.github.io/zh/tags/elasticsearch/</link>
+        <pubDate>Thu, 27 Jun 2019 14:37:52 +0800</pubDate>
+        <author>reddtsai@gmail.com (蔡文杰)</author>
+        
+        <guid>https://reddtsai.github.io/zh/tags/elasticsearch/</guid>
+        <description></description>
+        
+        <dc:creator>蔡文杰</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>index</title>
+        <link>https://reddtsai.github.io/zh/tags/index/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>reddtsai@gmail.com (蔡文杰)</author>
+        
+        <guid>https://reddtsai.github.io/zh/tags/index/</guid>
         <description></description>
         
         <dc:creator>蔡文杰</dc:creator>
