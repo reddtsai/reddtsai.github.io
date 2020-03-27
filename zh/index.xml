@@ -44,6 +44,40 @@
 
       
       <item>
+        <title>在雲上使用 MySQL</title>
+        <link>https://reddtsai.github.io/zh/posts/gcp_mysql/</link>
+        <pubDate>Tue, 17 Mar 2020 15:25:22 +0800</pubDate>
+        <author>reddtsai@gmail.com (蔡文杰)</author>
+        <atom:modified>Tue, 17 Mar 2020 15:25:22 +0800</atom:modified>
+        <guid>https://reddtsai.github.io/zh/posts/gcp_mysql/</guid>
+        <description>不論公司 project 或個人 side project，都會遇到資料儲存的需求，這時可能就是 求 DBA 自己安裝 向 Infra 申請 開始學 SQL Google Why Cloud SQl 我為什麼選擇 Cloud SQl？原因只有一個</description>
+        
+        <dc:creator>Redd Tsai</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>MySQL</category>
+            
+          
+        
+        
+          
+            
+              <category>GCP</category>
+            
+          
+            
+              <category>Database</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
         <title>建立免費的個人博客 By HUGO</title>
         <link>https://reddtsai.github.io/zh/posts/hugo_hello/</link>
         <pubDate>Wed, 11 Mar 2020 13:38:34 +0800</pubDate>
@@ -157,6 +191,36 @@
           
             
               <category>Elastic</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
+        <title>前端？後端？後端工程師搞什麼？</title>
+        <link>https://reddtsai.github.io/zh/posts/backend_skill/</link>
+        <pubDate>Thu, 25 Jul 2019 14:06:13 +0800</pubDate>
+        <author>reddtsai@gmail.com (蔡文杰)</author>
+        <atom:modified>Thu, 25 Jul 2019 14:06:13 +0800</atom:modified>
+        <guid>https://reddtsai.github.io/zh/posts/backend_skill/</guid>
+        <description>&lt;p&gt;從事軟體工程師的工作十年了，被稱過軟體工程師(PG)、研發工程師(RD)、後端工程師(Backend)、系統設計師(SD)、系統架構師(SA) &amp;hellip;，雖然職稱一直再變，但自己感覺工作內容並無太大的改變，最近剛好看到一篇有趣的文章，是關於軟體開發者的 Roadmap，並跟自己作個比較。&lt;/p&gt;</description>
+        
+        <dc:creator>Redd Tsai</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>Backend</category>
+            
+          
+        
+        
+          
+            
+              <category>Backend</category>
             
           
         

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>MySQL on Redd Tsai</title>
+    <link>https://reddtsai.github.io/zh/tags/mysql/</link>
+    <description>Recent content in MySQL on Redd Tsai</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <managingEditor>reddtsai@gmail.com (蔡文杰)</managingEditor>
+    <webMaster>reddtsai@gmail.com (蔡文杰)</webMaster>
+    <copyright>©{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 17 Mar 2020 15:25:22 +0800</lastBuildDate>
+    
+        <atom:link href="https://reddtsai.github.io/zh/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>在雲上使用 MySQL</title>
+        <link>https://reddtsai.github.io/zh/posts/gcp_mysql/</link>
+        <pubDate>Tue, 17 Mar 2020 15:25:22 +0800</pubDate>
+        <author>reddtsai@gmail.com (蔡文杰)</author>
+        <atom:modified>Tue, 17 Mar 2020 15:25:22 +0800</atom:modified>
+        <guid>https://reddtsai.github.io/zh/posts/gcp_mysql/</guid>
+        <description>不論公司 project 或個人 side project，都會遇到資料儲存的需求，這時可能就是 求 DBA 自己安裝 向 Infra 申請 開始學 SQL Google Why Cloud SQl 我為什麼選擇 Cloud SQl？原因只有一個</description>
+        
+        <dc:creator>Redd Tsai</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>MySQL</category>
+            
+          
+        
+        
+          
+            
+              <category>GCP</category>
+            
+          
+            
+              <category>Database</category>
+            
+          
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>
