@@ -118,6 +118,16 @@
   </url>
   
   <url>
+    <loc>https://reddtsai.github.io/zh/categories/os/</loc>
+    <lastmod>2019-07-30T15:59:54+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://reddtsai.github.io/zh/tags/windows/</loc>
+    <lastmod>2019-07-30T15:59:54+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://reddtsai.github.io/zh/posts/elk_windowsfilebeat/</loc>
     <lastmod>2019-07-30T15:59:54+08:00</lastmod>
   </url>
@@ -129,6 +139,11 @@
   
   <url>
     <loc>https://reddtsai.github.io/zh/categories/backend/</loc>
+    <lastmod>2019-07-25T14:06:13+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://reddtsai.github.io/zh/tags/centos/</loc>
     <lastmod>2019-07-25T14:06:13+08:00</lastmod>
   </url>
   

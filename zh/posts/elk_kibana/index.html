@@ -1584,8 +1584,8 @@
 </blockquote>
 <hr />
 <h4 id="discover-page">Discover Page</h4>
-<p>數據探索功能，使用 Elasticsearch Index、Time Range 和 Query DSL 過濾搜索，顯示數據計數和內䆟</p>
-<p><img src="/images/kibana_discover.PNG" alt="Alt text" /></p>
+<p>數據探索功能，使用 Elasticsearch Index、Time Range 和 Query DSL 過濾搜索，顯示數據計數和內䆟<br />
+<img src="/images/kibana_discover.PNG" alt="Alt text" /></p>
 <blockquote>
 <p>注意</p>
 <p>如果遇到 no cached mapping for this field</p>
@@ -1593,19 +1593,19 @@
 </blockquote>
 <hr />
 <h4 id="dashboard-page">Dashboard Page</h4>
-<p>儀表版功能，Kibana 提供多樣視覺化圖表，儀表版可幫助你收集管理這些圖表</p>
-<p><img src="/images/kibana_dashboard.PNG" alt="Alt text" /></p>
+<p>儀表版功能，Kibana 提供多樣視覺化圖表，儀表版可幫助你收集管理這些圖表<br />
+<img src="/images/kibana_dashboard.PNG" alt="Alt text" /></p>
 <hr />
 <h4 id="logs-page">Logs Page</h4>
-<p>數據功能，顯示匯入的數據</p>
-<p><img src="/images/kibana_logs.PNG" alt="Alt text" /></p>
+<p>數據功能，顯示匯入的數據<br />
+<img src="/images/kibana_logs.PNG" alt="Alt text" /></p>
 <hr />
 <h4 id="query-dsl">Query DSL</h4>
 <p>Elastic 提供了一套查詢語法 DSL (Domain Specific Language)，可透過 RESTful 或 Kibana 的介面來使用，這邊介紹幾個範例</p>
 <ul>
 <li>
-<p>Match</p>
-<p>例如查詢 IIS 中，有那些 Request 回應 500</p>
+<p>Match<br />
+例如查詢 IIS 中，有那些 Request 回應 500</p>
 <pre><code>  GET /_search
   {
       &quot;query&quot;: {
@@ -1620,8 +1620,8 @@
 </code></pre>
 </li>
 <li>
-<p>Wildcard</p>
-<p>例如查詢 IIS 中，有那些 Request url like */app/</p>
+<p>Wildcard<br />
+例如查詢 IIS 中，有那些 Request url like */app/</p>
 <pre><code>  GET /_search
   {
       &quot;query&quot;: {
@@ -1633,8 +1633,8 @@
 </code></pre>
 </li>
 <li>
-<p>Prefix</p>
-<p>例如查詢 IIS 中，url 以 /en/app 開頭的 Request 有那些</p>
+<p>Prefix<br />
+例如查詢 IIS 中，url 以 /en/app 開頭的 Request 有那些</p>
 <pre><code>  GET /_search
   {
       &quot;query&quot;: {

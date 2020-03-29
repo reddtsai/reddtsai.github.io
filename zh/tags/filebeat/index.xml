@@ -41,11 +41,19 @@
               <category>Filebeat</category>
             
           
+            
+              <category>Windows</category>
+            
+          
         
         
           
             
               <category>Elastic</category>
+            
+          
+            
+              <category>OS</category>
             
           
         

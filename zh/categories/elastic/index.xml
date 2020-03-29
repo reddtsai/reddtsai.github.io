@@ -71,11 +71,19 @@
               <category>Filebeat</category>
             
           
+            
+              <category>Windows</category>
+            
+          
         
         
           
             
               <category>Elastic</category>
+            
+          
+            
+              <category>OS</category>
             
           
         
@@ -101,11 +109,19 @@
               <category>ElastAlert</category>
             
           
+            
+              <category>CentOS</category>
+            
+          
         
         
           
             
               <category>Elastic</category>
+            
+          
+            
+              <category>OS</category>
             
           
         
@@ -221,11 +237,19 @@
               <category>Kibana</category>
             
           
+            
+              <category>CentOS</category>
+            
+          
         
         
           
             
               <category>Elastic</category>
+            
+          
+            
+              <category>OS</category>
             
           
         
@@ -251,11 +275,19 @@
               <category>Elasticsearch</category>
             
           
+            
+              <category>CentOS</category>
+            
+          
         
         
           
             
               <category>Elastic</category>
+            
+          
+            
+              <category>OS</category>
             
           
         

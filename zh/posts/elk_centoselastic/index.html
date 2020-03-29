@@ -1198,7 +1198,7 @@
 <meta name="description" content="介紹在 CentOS 中安裝 Elasticsearch" />
 
 
-<meta name="keywords" content="Elasticsearch">
+<meta name="keywords" content="Elasticsearch,CentOS">
 
 <meta name="created" content="2019-06-27T14:37:52&#43;0800">
 <meta name="modified" content="2019-06-27T14:37:52&#43;0800">
@@ -1254,7 +1254,7 @@
     "dateModified": "2019-06-27T14:37:52+08:00",
     "url" : "https://reddtsai.github.io/zh/posts/elk_centoselastic/",
     "description": "介紹在 CentOS 中安裝 Elasticsearch",
-    "keywords": ["Elasticsearch"],
+    "keywords": ["Elasticsearch","CentOS"],
     "author": {
       "@type": "Person",
       "name": "Redd Tsai"
@@ -1550,6 +1550,11 @@
     <li><a href="https://reddtsai.github.io/zh/tags/elasticsearch/" class="single__tag" title="Elasticsearch">#Elasticsearch</a></li>
   
 
+  
+  
+    <li><a href="https://reddtsai.github.io/zh/tags/centos/" class="single__tag" title="CentOS">#CentOS</a></li>
+  
+
 </div>
     </div>
     <article class="single__contents" data-dir="ltr" data-ani="true">
@@ -1605,8 +1610,8 @@ java -version
 </div>
 </div><hr />
 <h4 id="3-安裝-elasticsearch">3. 安裝 Elasticsearch</h4>
-<p>建立 Elasticsearch 套件容器設定檔 /etc/yum.repos.d/elasticsearch.repo</p>
-<p>填入套件容器參數</p>
+<p>建立 Elasticsearch 套件容器設定檔 /etc/yum.repos.d/elasticsearch.repo<br />
+填入套件容器參數</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1655,11 +1660,9 @@ sudo systemctl start elasticsearch.service
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
-</span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-bash" data-lang="bash">sudo systemctl status elasticsearch.service
-
 curl -X GET http://localhost:9200
 </code></pre></td></tr></table>
 </div>
@@ -1707,37 +1710,33 @@ sudo firewall-cmd --reload
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
-</span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-bash" data-lang="bash">sudo firewall-cmd --zone<span class="o">=</span>kibana --list-all
-
 sudo netstat -plnt
 </code></pre></td></tr></table>
 </div>
 </div><hr />
 <h4 id="6-配置-elasticsearch">6. 配置 Elasticsearch</h4>
-<p>Elasticsearch 配置檔 /etc/elasticsearch/elasticsearch.yml</p>
-<p>Elasticsearch JVM 配置檔 /etc/elasticsearch/jvm.options</p>
+<p>Elasticsearch 配置檔 /etc/elasticsearch/elasticsearch.yml<br />
+Elasticsearch JVM 配置檔 /etc/elasticsearch/jvm.options</p>
 <p><strong><em>✳︎記憶體配置不可小放實體記憶體50%</em></strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
-</span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-text" data-lang="text">-Xms2g
 -Xmx2g
-
 network.host: 0.0.0.0
 </code></pre></td></tr></table>
 </div>
 </div><hr />
 <h4 id="參考">參考</h4>
-<p><a href="https://www.elastic.co/cn/">Elastic 官網</a></p>
-<p><a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/settings.html">參考官方說明</a></p>
+<p><a href="https://www.elastic.co/cn/">Elastic 官網</a><br />
+<a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/settings.html">參考官方說明</a></p>
     </article>
     
     <script>
@@ -1804,7 +1803,7 @@ network.host: 0.0.0.0
       
     
       
-        <a href="https://twitter.com/intent/tweet?text=CentOS%207%20%e5%a6%82%e4%bd%95%e5%ae%89%e8%a3%9d%20Elasticsearch&url=https%3a%2f%2freddtsai.github.io%2fzh%2fposts%2felk_centoselastic%2f&hashtags=Elasticsearch&via=Redd%20Tsai" title="Twitter" aria-label="Twitter Share Button" class="donation__item" target="_blank" rel="noreferrer" data-type="share">
+        <a href="https://twitter.com/intent/tweet?text=CentOS%207%20%e5%a6%82%e4%bd%95%e5%ae%89%e8%a3%9d%20Elasticsearch&url=https%3a%2f%2freddtsai.github.io%2fzh%2fposts%2felk_centoselastic%2f&hashtags=Elasticsearch%2cCentOS&via=Redd%20Tsai" title="Twitter" aria-label="Twitter Share Button" class="donation__item" target="_blank" rel="noreferrer" data-type="share">
           <svg data-name="twitter" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="35" height="35" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m21.534 7.113c.976-.693 1.797-1.558 2.466-2.554v-.001c-.893.391-1.843.651-2.835.777 1.02-.609 1.799-1.566 2.165-2.719-.951.567-2.001.967-3.12 1.191-.903-.962-2.19-1.557-3.594-1.557-2.724 0-4.917 2.211-4.917 4.921 0 .39.033.765.114 1.122-4.09-.2-7.71-2.16-10.142-5.147-.424.737-.674 1.58-.674 2.487 0 1.704.877 3.214 2.186 4.089-.791-.015-1.566-.245-2.223-.606v.054c0 2.391 1.705 4.377 3.942 4.835-.401.11-.837.162-1.29.162-.315 0-.633-.018-.931-.084.637 1.948 2.447 3.381 4.597 3.428-1.674 1.309-3.8 2.098-6.101 2.098-.403 0-.79-.018-1.177-.067 2.18 1.405 4.762 2.208 7.548 2.208 8.683 0 14.342-7.244 13.986-14.637z"/></svg>
         </a>
       

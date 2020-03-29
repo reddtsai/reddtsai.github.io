@@ -1198,7 +1198,7 @@
 <meta name="description" content="介紹在 CentOS 中安裝 ElastAlert" />
 
 
-<meta name="keywords" content="ElastAlert">
+<meta name="keywords" content="ElastAlert,CentOS">
 
 <meta name="created" content="2019-07-25T14:06:13&#43;0800">
 <meta name="modified" content="2019-07-25T14:06:13&#43;0800">
@@ -1254,7 +1254,7 @@
     "dateModified": "2019-07-25T14:06:13+08:00",
     "url" : "https://reddtsai.github.io/zh/posts/elk_centoselastalert/",
     "description": "介紹在 CentOS 中安裝 ElastAlert",
-    "keywords": ["ElastAlert"],
+    "keywords": ["ElastAlert","CentOS"],
     "author": {
       "@type": "Person",
       "name": "Redd Tsai"
@@ -1550,6 +1550,11 @@
     <li><a href="https://reddtsai.github.io/zh/tags/elastalert/" class="single__tag" title="ElastAlert">#ElastAlert</a></li>
   
 
+  
+  
+    <li><a href="https://reddtsai.github.io/zh/tags/centos/" class="single__tag" title="CentOS">#CentOS</a></li>
+  
+
 </div>
     </div>
     <article class="single__contents" data-dir="ltr" data-ani="true">
@@ -1584,18 +1589,10 @@
 </ul>
 <p>安裝需求</p>
 <ul>
-<li>
-<p>python 2.7</p>
-</li>
-<li>
-<p>python-dev</p>
-</li>
-<li>
-<p>python-pip</p>
-</li>
-<li>
-<p>dependency Package，參考 ElastAlert requirements.txt</p>
-</li>
+<li>python 2.7</li>
+<li>python-dev</li>
+<li>python-pip</li>
+<li>dependency Package，參考 ElastAlert requirements.txt</li>
 </ul>
 <hr />
 <h4 id="1-安裝-pipdev">1. 安裝 PIP、DEV</h4>
@@ -1616,20 +1613,12 @@
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-bash" data-lang="bash">sudo yum -y install python-devel
-
 sudo yum -y install epel-release
-
 sudo yum -y install python-pip
-
 pip --version
-
 sudo pip install --upgrade pip
 </code></pre></td></tr></table>
 </div>
@@ -1673,8 +1662,8 @@ sudo pip install --upgrade pip
 </div>
 </div><hr />
 <h4 id="3-設定-elastalert">3. 設定 ElastAlert</h4>
-<p>在 ElastAlert 目錄下新增設定檔 config.yaml。以我的環境為例 /usr/lib/python2.7/site-packages/elastalert</p>
-<p>建議複製 ElastAlert config.yaml.example</p>
+<p>在 ElastAlert 目錄下新增設定檔 config.yaml。以我的環境為例 /usr/lib/python2.7/site-packages/elastalert<br />
+建議複製 ElastAlert config.yaml.example</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -1745,14 +1734,10 @@ sudo pip install --upgrade pip
 <pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-bash" data-lang="bash">pip list
-
 sudo pip uninstall elasticsearch
-
 sudo pip install <span class="s2">&#34;elasticsearch&lt;7&#34;</span>
 </code></pre></td></tr></table>
 </div>
@@ -1767,8 +1752,8 @@ sudo pip install <span class="s2">&#34;elasticsearch&lt;7&#34;</span>
 </div>
 </div><hr />
 <h4 id="5-設定通知規則">5. 設定通知規則</h4>
-<p>新增通知規則設定檔 filebeat_frequency.yaml。以我的環境為例 /usr/lib/python2.7/site-packages/elastalert/alert_rules</p>
-<p>這裡以 IIS Log 為例，當 http status != 200 時，發送一個訊息至 Slack</p>
+<p>新增通知規則設定檔 filebeat_frequency.yaml。以我的環境為例 /usr/lib/python2.7/site-packages/elastalert/alert_rules<br />
+這裡以 IIS Log 為例，當 http status != 200 時，發送一個訊息至 Slack</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -1864,9 +1849,9 @@ sudo cp /usr/lib/python2.7/site-packages/elastalert/config.yaml config.yaml
 sudo cp /usr/lib/python2.7/site-packages/elastalert/alert_rules/filebeat_frequency.yaml rules/filebeat_frequency.yaml
 </code></pre></td></tr></table>
 </div>
-</div><p>修改 config.yaml</p>
-<p>rules_folder: /etc/elastalert/rules</p>
-<p>新增服務設定檔</p>
+</div><p>修改 config.yaml<br />
+rules_folder: /etc/elastalert/rules<br />
+新增服務設定檔</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1923,8 +1908,8 @@ sudo systemctl status elastalert.service
 </div>
 </div><hr />
 <h4 id="參考">參考</h4>
-<p><a href="https://github.com/Yelp/elastalert">ElastAlert Repo</a></p>
-<p><a href="https://elastalert.readthedocs.io/en/latest/">ElastAlert Doc</a></p>
+<p><a href="https://github.com/Yelp/elastalert">ElastAlert Repo</a><br />
+<a href="https://elastalert.readthedocs.io/en/latest/">ElastAlert Doc</a></p>
     </article>
     
     <script>
@@ -1991,7 +1976,7 @@ sudo systemctl status elastalert.service
       
     
       
-        <a href="https://twitter.com/intent/tweet?text=CentOS%207%20%e5%a6%82%e4%bd%95%e5%ae%89%e8%a3%9d%20ElastAlert&url=https%3a%2f%2freddtsai.github.io%2fzh%2fposts%2felk_centoselastalert%2f&hashtags=ElastAlert&via=Redd%20Tsai" title="Twitter" aria-label="Twitter Share Button" class="donation__item" target="_blank" rel="noreferrer" data-type="share">
+        <a href="https://twitter.com/intent/tweet?text=CentOS%207%20%e5%a6%82%e4%bd%95%e5%ae%89%e8%a3%9d%20ElastAlert&url=https%3a%2f%2freddtsai.github.io%2fzh%2fposts%2felk_centoselastalert%2f&hashtags=ElastAlert%2cCentOS&via=Redd%20Tsai" title="Twitter" aria-label="Twitter Share Button" class="donation__item" target="_blank" rel="noreferrer" data-type="share">
           <svg data-name="twitter" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="35" height="35" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m21.534 7.113c.976-.693 1.797-1.558 2.466-2.554v-.001c-.893.391-1.843.651-2.835.777 1.02-.609 1.799-1.566 2.165-2.719-.951.567-2.001.967-3.12 1.191-.903-.962-2.19-1.557-3.594-1.557-2.724 0-4.917 2.211-4.917 4.921 0 .39.033.765.114 1.122-4.09-.2-7.71-2.16-10.142-5.147-.424.737-.674 1.58-.674 2.487 0 1.704.877 3.214 2.186 4.089-.791-.015-1.566-.245-2.223-.606v.054c0 2.391 1.705 4.377 3.942 4.835-.401.11-.837.162-1.29.162-.315 0-.633-.018-.931-.084.637 1.948 2.447 3.381 4.597 3.428-1.674 1.309-3.8 2.098-6.101 2.098-.403 0-.79-.018-1.177-.067 2.18 1.405 4.762 2.208 7.548 2.208 8.683 0 14.342-7.244 13.986-14.637z"/></svg>
         </a>
       
@@ -2120,6 +2105,25 @@ sudo systemctl status elastalert.service
 
     <section class="related">
     
+    
+    <h1 class="related__title">
+      <hr class="hr-dots"/>
+      <div>
+        相关内容
+      </div>
+      <hr class="hr-dots"/>
+    </h1>
+    <ul class="related-ul">
+        
+        <li>
+          <a href="/zh/posts/elk_centoskibana/" class="related__link">CentOS 7 如何安裝 Kibana</a>
+        </li>
+        
+        <li>
+          <a href="/zh/posts/elk_centoselastic/" class="related__link">CentOS 7 如何安裝 Elasticsearch</a>
+        </li>
+        
+    </ul>
     
   </section>
     <div class="grow"></div>

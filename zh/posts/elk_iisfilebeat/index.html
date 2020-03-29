@@ -1579,16 +1579,10 @@
 
       <p>Filebeat 是個檔案分析工具，最常用來收集日誌檔，收集的過程分為</p>
 <ol>
-<li>
-<p>收集數據 (讀取日誌)</p>
-</li>
-<li>
-<p>解析數據</p>
-<p>常見的日誌格式(IIS、NGINX、MySQL)大多可透過 Filebeat 內建模組來解析，也可透過新增模組來客製格式，以下會說明該如何新增或設定 Filebeat 模組。</p>
-</li>
-<li>
-<p>傳送數據 (Logstash 或 Elasticsearch 儲存)</p>
-</li>
+<li>收集數據 (讀取日誌)</li>
+<li>解析數據<br />
+常見的日誌格式(IIS、NGINX、MySQL)大多可透過 Filebeat 內建模組來解析，也可透過新增模組來客製格式，以下會說明該如何新增或設定 Filebeat 模組。</li>
+<li>傳送數據 (Logstash 或 Elasticsearch 儲存)</li>
 </ol>
 <blockquote>
 <p>版本</p>
@@ -1602,8 +1596,8 @@
 <p>Filebeat 提供多樣模組來收集常見的日誌，這邊以 IIS 日誌為例，說明如何設定模組。</p>
 <ul>
 <li>
-<p>設定日誌路徑</p>
-<p>編輯 [Windows 安裝路徑]\filebeat\module\iis\access\manifest.yml</p>
+<p>設定日誌路徑<br />
+編輯 [Windows 安裝路徑]\filebeat\module\iis\access\manifest.yml</p>
 <pre><code>  #加入 IIS 日誌路徑
   default.paths:
     default:
@@ -1611,8 +1605,8 @@
 </code></pre>
 </li>
 <li>
-<p>啟用模組</p>
-<p>開啟 IIS 模組，在 PowerShell 執行下方命令</p>
+<p>啟用模組<br />
+開啟 IIS 模組，在 PowerShell 執行下方命令</p>
 <pre><code>  cd [Windows 安裝路徑]
   .\filebeat.exe modules enable iis
 </code></pre>
@@ -1620,26 +1614,25 @@
 </ul>
 <hr />
 <h3 id="新增模組">新增模組</h3>
-<p>新增一個模組後，可看到所產生的檔案結構，以下方我所建立的 nlog module 為例</p>
-<pre><code>filebeat
-├ module
-│   ⎩ nlog
-│       ⎩ app
-│           ├ manifest.yaml
-│           ├ config
-│           │   ⎩ fileset.yml
-│           ⎩ ingest
-│               ⎩ pipeline.json
-├ modules.d
-│   ⎩ nlog.yml.disabled
-</code></pre>
+<p>新增一個模組後，可看到所產生的檔案結構，以下方我所建立的 nlog module 為例<br />
+filebeat<br />
+├ module<br />
+│   ⎩ nlog<br />
+│       ⎩ app<br />
+│           ├ manifest.yaml<br />
+│           ├ config<br />
+│           │   ⎩ fileset.yml<br />
+│           ⎩ ingest<br />
+│               ⎩ pipeline.json<br />
+├ modules.d<br />
+│   ⎩ nlog.yml.disabled</p>
 <blockquote>
 <p>新增一個模組需透過 Beats 程式碼來逹成，這裡只會說明新模組需要作那些設定，完整資訊請參考 github Beats repository</p>
 </blockquote>
 <ul>
 <li>
-<p>manifest.yaml</p>
-<p>manifest 控制檔，設定模組參考位置</p>
+<p>manifest.yaml<br />
+manifest 控制檔，設定模組參考位置</p>
 <pre><code>  #日誌路徑
   var:
     － name: paths
@@ -1652,19 +1645,19 @@
 </code></pre>
 </li>
 <li>
-<p>fileset.yml</p>
-<p>fileset 輸入組態檔，設定輸入位置、排除輸入檔案、排除輸入行及多行組合</p>
+<p>fileset.yml<br />
+fileset 輸入組態檔，設定輸入位置、排除輸入檔案、排除輸入行及多行組合</p>
 <pre><code>  #排除 .gz 檔
   exclude_files: [&quot;.gz$&quot;]
 </code></pre>
 </li>
 <li>
-<p>pipeline.json</p>
-<p>lasticsearch ingest node pipeline configurations</p>
+<p>pipeline.json<br />
+lasticsearch ingest node pipeline configurations</p>
 </li>
 <li>
-<p>modules.yml.disabled</p>
-<p>模組開關</p>
+<p>modules.yml.disabled<br />
+模組開關</p>
 </li>
 </ul>
 <hr />
@@ -1672,27 +1665,24 @@
 <p>新增或設定好模組，先由測試確認完後再上線</p>
 <ol>
 <li>
-<p>測試設定檔</p>
-<pre><code> .\filebeat.exe test config -c filebeat.yml
- .\filebeat.exe test output filebeat.yml
-</code></pre>
+<p>測試設定檔<br />
+.\filebeat.exe test config -c filebeat.yml<br />
+.\filebeat.exe test output filebeat.yml</p>
 </li>
 <li>
-<p>執行 Filebeat</p>
-<pre><code> .\filebeat.exe -e -c filebeat.yml -d &quot;*&quot;
-</code></pre>
+<p>執行 Filebeat<br />
+.\filebeat.exe -e -c filebeat.yml -d &ldquo;*&rdquo;</p>
 <blockquote>
 <p>注意<br />
 請先清除前次測試所讀取的記錄，刪除目錄 filebeat\data\registry</p>
 </blockquote>
 </li>
 <li>
-<p>檢查 Ingest &amp; Pipeline</p>
-<p>透過 elasticsearch api 查詢 Ingest &amp; pipeline (例如 IIS 模組 pipeline filebeat-6.7.0-iis-access-default)</p>
-<pre><code> curl -X GET http://elasticsearch:9200/_cat/indices?v
- curl -X GET http://elasticsearch:9200/_ingest/pipeline
- curl -X GET http://elasticsearch:9200/_ingest/pipeline/filebeat-6.7.0-iis-access-default
-</code></pre>
+<p>檢查 Ingest &amp; Pipeline<br />
+透過 elasticsearch api 查詢 Ingest &amp; pipeline (例如 IIS 模組 pipeline filebeat-6.7.0-iis-access-default)<br />
+curl -X GET http://elasticsearch:9200/_cat/indices?v<br />
+curl -X GET http://elasticsearch:9200/_ingest/pipeline<br />
+curl -X GET http://elasticsearch:9200/_ingest/pipeline/filebeat-6.7.0-iis-access-default</p>
 <blockquote>
 <p>如果測試 pipeline 有問題，需要刪除舊的 pipeline.json</p>
 </blockquote>
@@ -1700,9 +1690,9 @@
 </code></pre>
 </li>
 <li>
-<p>確認資料</p>
-<p>開啟 Kibana，透過 Logs 介面，確認是否有顯示 log 資料</p>
-<p><img src="/images/kibana_logs.PNG" alt="Alt text" /></p>
+<p>確認資料<br />
+開啟 Kibana，透過 Logs 介面，確認是否有顯示 log 資料<br />
+<img src="/images/kibana_logs.PNG" alt="Alt text" /></p>
 </li>
 </ol>
 <hr />
