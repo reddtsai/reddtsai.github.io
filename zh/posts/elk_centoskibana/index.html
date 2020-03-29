@@ -1581,10 +1581,8 @@
 
       <p>版本</p>
 <ul>
-<li>Kibana 6.8</li>
-</ul>
-<p>環境</p>
-<ul>
+<li>Kibana 6.8<br />
+環境</li>
 <li>CentOS 7</li>
 </ul>
 <hr />
@@ -1611,8 +1609,8 @@ java -version
 </div>
 </div><hr />
 <h4 id="3-安裝-kibana">3. 安裝 Kibana</h4>
-<p>建立 Kibana 套件容器設定檔 /etc/yum.repos.d/kibana.repo</p>
-<p>填入套件容器參數</p>
+<p>建立 Kibana 套件容器設定檔 /etc/yum.repos.d/kibana.repo<br />
+填入套件容器參數</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1651,11 +1649,9 @@ type=rpm-md
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
-</span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-text" data-lang="text">elasticsearch.hosts: http://localhost:9200
-
 server.host: 0.0.0.0
 </code></pre></td></tr></table>
 </div>
@@ -1694,11 +1690,9 @@ sudo firewall-cmd --reload
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
-</span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-bash" data-lang="bash">sudo firewall-cmd --zone<span class="o">=</span>kibana --list-all
-
 sudo netstat -plnt
 </code></pre></td></tr></table>
 </div>
@@ -1714,8 +1708,8 @@ sudo netstat -plnt
 sudo systemctl start kibana.service
 </code></pre></td></tr></table>
 </div>
-</div><p>測試 kibana</p>
-<p>http://localhost:5601</p>
+</div><p>測試 kibana<br />
+http://localhost:5601</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
