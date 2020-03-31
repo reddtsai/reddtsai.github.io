@@ -44,6 +44,40 @@
 
       
       <item>
+        <title>系統服務 In Debian</title>
+        <link>https://reddtsai.github.io/zh/posts/os_debiandaemon/</link>
+        <pubDate>Sun, 29 Mar 2020 15:22:21 +0800</pubDate>
+        <author>reddtsai@gmail.com (蔡文杰)</author>
+        <atom:modified>Sun, 29 Mar 2020 15:22:21 +0800</atom:modified>
+        <guid>https://reddtsai.github.io/zh/posts/os_debiandaemon/</guid>
+        <description>後端工程師的工作中很常需要一個常駐程式，幫我們處理非即時的工作或例行性的排程工作，在 Windows Sever 中有大家熟悉的服務和工作排程，那 Unix-Like Server 呢？？在 Unix-Like 系統中</description>
+        
+        <dc:creator>Redd Tsai</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>Daemon</category>
+            
+          
+            
+              <category>Debian</category>
+            
+          
+        
+        
+          
+            
+              <category>OS</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
         <title>在雲上使用 MySQL</title>
         <link>https://reddtsai.github.io/zh/posts/gcp_mysql/</link>
         <pubDate>Tue, 17 Mar 2020 15:25:22 +0800</pubDate>
