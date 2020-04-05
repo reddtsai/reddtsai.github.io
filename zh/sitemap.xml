@@ -3,11 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://reddtsai.github.io/zh/categories/.net/</loc>
-    <lastmod>2020-04-04T15:32:00+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://reddtsai.github.io/zh/categories/</loc>
     <lastmod>2020-04-04T15:32:00+08:00</lastmod>
     <xhtml:link
@@ -20,6 +15,11 @@
                 hreflang="zh"
                 href="https://reddtsai.github.io/zh/categories/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://reddtsai.github.io/zh/categories/dotnet/</loc>
+    <lastmod>2020-04-04T15:32:00+08:00</lastmod>
   </url>
   
   <url>

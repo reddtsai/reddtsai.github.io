@@ -6,9 +6,9 @@
   xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
-    <title>EF on Redd Tsai</title>
-    <link>https://reddtsai.github.io/zh/tags/ef/</link>
-    <description>Recent content in EF on Redd Tsai</description>
+    <title>dotnet on Redd Tsai</title>
+    <link>https://reddtsai.github.io/zh/categories/dotnet/</link>
+    <description>Recent content in dotnet on Redd Tsai</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <managingEditor>reddtsai@gmail.com (蔡文杰)</managingEditor>
@@ -16,7 +16,7 @@
     <copyright>©{year}, All Rights Reserved</copyright>
     <lastBuildDate>Sat, 04 Apr 2020 15:32:00 +0800</lastBuildDate>
     
-        <atom:link href="https://reddtsai.github.io/zh/tags/ef/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://reddtsai.github.io/zh/categories/dotnet/index.xml" rel="self" type="application/rss+xml" />
     
     
     
