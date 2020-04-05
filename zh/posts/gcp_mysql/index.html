@@ -1596,9 +1596,9 @@
 </ol>
 <p>這裡會用 GCP 提供的 Cloud SQl 來說明，當然也可以選擇 AWS、Azure、阿里雲的產品。</p>
 <h3 id="install-mysql">Install MySQL</h3>
-<p>安裝快，只需幾分鐘就能建立一台 DB。開始安裝前你需要先有</p>
+<p>安裝快，只需幾分鐘就能建立一台 DB。開始安裝前你需要先有：</p>
 <ol>
-<li>google 的帳號並啟用 GCP</li>
+<li>啟用 <a href="https://cloud.google.com/gcp/getting-started">Google Cloud</a> (你需要一組 Google 帳戶和一張信用卡)</li>
 <li>安裝 cloud SDK</li>
 </ol>
 <div class="highlight"><div class="chroma">
@@ -1632,7 +1632,7 @@
 </li>
 </ul>
 </blockquote>
-<p>你不習慣冷冰冰的命令，GCP 也提供 <a href="https://console.cloud.google.com">UI</a> 介面讓你設定。</p>
+<p>另外，你不習慣冷冰冰的命令，GCP 也提供 <a href="https://console.cloud.google.com">UI</a> 介面讓你設定。</p>
 <p><img src="/images/createMysqlInstance.png" alt="Alt text" /></p>
 <h3 id="connection">Connection</h3>
 <p>上手快，你可快速連至 cloud database，官方提供多種方式及各程式語言的完整範例說明，減少你摸索的時間。<br />
@@ -1649,7 +1649,7 @@
 </div>
 </div><p>如下圖所示，你可以找到 INSTANCE_CONNECTION_NAME</p>
 <p><img src="/images/mysqlInstance.png" alt="Alt text" /><br />
-再來使用 MySQL workbench 來作個本機連線測試，如果你還沒安裝，可透過以下命令。</p>
+再來使用 MySQL workbench 來作個本機連線測試，如果你還沒安裝，請先透過以下命令來安裝。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1662,7 +1662,7 @@
 <h3 id="replication">Replication</h3>
 <p>擴展快、運維快，當你初步認識 SQL 後，再進階就是效能跟穏定，最長聽到的就是 HA(high availability)，而在 cloud sql 你也只需要作簡單的設定來逹成 HA，讓你的 DB 擁有備援。</p>
 <p><img src="/images/mysqlInstanceHA.png" alt="Alt text" /></p>
-<p>效能的部分，這裡拿 cloud sql 其中一個例子作試範，你想將 DB 新增一個讀取位置，增加分流。</p>
+<p>另一個例子，在 cloud sql 新增一個讀取位置，分散流量來提升效能。</p>
 <p><img src="/images/mysqlInstanceRead1.png" alt="Alt text" /></p>
 <p><img src="/images/mysqlInstanceRead2.png" alt="Alt text" /></p>
 <h3 id="reference">Reference</h3>
