@@ -14,13 +14,31 @@
     <managingEditor>reddtsai@gmail.com (蔡文杰)</managingEditor>
     <webMaster>reddtsai@gmail.com (蔡文杰)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Sat, 04 Apr 2020 15:32:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 04 Apr 2020 15:35:18 +0800</lastBuildDate>
     
         <atom:link href="https://reddtsai.github.io/zh/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>dotnet</title>
+        <link>https://reddtsai.github.io/zh/tags/dotnet/</link>
+        <pubDate>Sat, 04 Apr 2020 15:35:18 +0800</pubDate>
+        <author>reddtsai@gmail.com (蔡文杰)</author>
+        
+        <guid>https://reddtsai.github.io/zh/tags/dotnet/</guid>
+        <description></description>
+        
+        <dc:creator>蔡文杰</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
       <item>
         <title>EF</title>

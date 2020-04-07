@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>dotnet on Redd Tsai</title>
+    <link>https://reddtsai.github.io/zh/tags/dotnet/</link>
+    <description>Recent content in dotnet on Redd Tsai</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <managingEditor>reddtsai@gmail.com (蔡文杰)</managingEditor>
+    <webMaster>reddtsai@gmail.com (蔡文杰)</webMaster>
+    <copyright>©{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 04 Apr 2020 15:35:18 +0800</lastBuildDate>
+    
+        <atom:link href="https://reddtsai.github.io/zh/tags/dotnet/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>Dotnet_tool</title>
+        <link>https://reddtsai.github.io/zh/posts/dotnet_tool/</link>
+        <pubDate>Sat, 04 Apr 2020 15:35:18 +0800</pubDate>
+        <author>reddtsai@gmail.com (蔡文杰)</author>
+        <atom:modified>Sat, 04 Apr 2020 15:35:18 +0800</atom:modified>
+        <guid>https://reddtsai.github.io/zh/posts/dotnet_tool/</guid>
+        <description>至從開始使用 dotnet core 後，個人的開發方式也從 Visual Studio on Windows，轉換為 Visual Studio Code on Mac，轉變的過程有很多值得記錄。例如最近開發上需要安裝一個 dotnet 工具</description>
+        
+        <dc:creator>Redd Tsai</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>dotnet</category>
+            
+          
+        
+        
+          
+            
+              <category>dotnet</category>
+            
+          
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://reddtsai.github.io/zh/categories/</loc>
-    <lastmod>2020-04-04T15:32:00+08:00</lastmod>
+    <lastmod>2020-04-04T15:35:18+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -18,23 +18,28 @@
   </url>
   
   <url>
-    <loc>https://reddtsai.github.io/zh/categories/dotnet/</loc>
-    <lastmod>2020-04-04T15:32:00+08:00</lastmod>
+    <loc>https://reddtsai.github.io/zh/tags/dotnet/</loc>
+    <lastmod>2020-04-04T15:35:18+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://reddtsai.github.io/zh/tags/ef/</loc>
-    <lastmod>2020-04-04T15:32:00+08:00</lastmod>
+    <loc>https://reddtsai.github.io/zh/categories/dotnet/</loc>
+    <lastmod>2020-04-04T15:35:18+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://reddtsai.github.io/zh/posts/dotnet_tool/</loc>
+    <lastmod>2020-04-04T15:35:18+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://reddtsai.github.io/zh/posts/</loc>
-    <lastmod>2020-04-04T15:32:00+08:00</lastmod>
+    <lastmod>2020-04-04T15:35:18+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://reddtsai.github.io/zh/tags/</loc>
-    <lastmod>2020-04-04T15:32:00+08:00</lastmod>
+    <lastmod>2020-04-04T15:35:18+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -45,6 +50,11 @@
                 hreflang="zh"
                 href="https://reddtsai.github.io/zh/tags/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://reddtsai.github.io/zh/tags/ef/</loc>
+    <lastmod>2020-04-04T15:32:00+08:00</lastmod>
   </url>
   
   <url>
