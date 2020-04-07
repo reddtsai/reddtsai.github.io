@@ -28,11 +28,6 @@
   </url>
   
   <url>
-    <loc>https://reddtsai.github.io/zh/posts/dotnet_tool/</loc>
-    <lastmod>2020-04-04T15:35:18+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://reddtsai.github.io/zh/posts/</loc>
     <lastmod>2020-04-04T15:35:18+08:00</lastmod>
   </url>
@@ -50,6 +45,11 @@
                 hreflang="zh"
                 href="https://reddtsai.github.io/zh/tags/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://reddtsai.github.io/zh/posts/dotnet_tool/</loc>
+    <lastmod>2020-04-04T15:35:18+08:00</lastmod>
   </url>
   
   <url>
