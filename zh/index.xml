@@ -44,6 +44,36 @@
 
       
       <item>
+        <title>快樂上雲端</title>
+        <link>https://reddtsai.github.io/zh/posts/gcp/</link>
+        <pubDate>Sat, 11 Apr 2020 14:20:41 +0800</pubDate>
+        <author>reddtsai@gmail.com (蔡文杰)</author>
+        <atom:modified>Sat, 11 Apr 2020 14:20:41 +0800</atom:modified>
+        <guid>https://reddtsai.github.io/zh/posts/gcp/</guid>
+        <description>隨著雲端時代的到來，讓軟體開發與雲端平台變得密不可分。雲端有那些好處？該選那個雲端供應商 AWS、Azure、GCP、阿里云？？網上有很多論述</description>
+        
+        <dc:creator>Redd Tsai</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>GCP</category>
+            
+          
+        
+        
+          
+            
+              <category>Backend</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
         <title>在 Mac 上安裝 dotnet tool</title>
         <link>https://reddtsai.github.io/zh/posts/dotnet_tool/</link>
         <pubDate>Sat, 04 Apr 2020 15:35:18 +0800</pubDate>
