@@ -1727,7 +1727,7 @@ gcloud compute instances create <span class="nv">$MY_INSTANCE_NAME</span> <span 
 </span><span class="lnt">21
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">gcloud config <span class="nb">set</span> compute/zone asia-east1-a
+<pre class="chroma"><code class="language-shell" data-lang="shell">gcloud config <span class="nb">set</span> compute/zone asia-east1-a
 
 gcloud config <span class="nb">set</span> compute/region asia-east1
 
@@ -1762,7 +1762,7 @@ gcloud compute forwarding-rules create lb-prd <span class="se">\
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">gcloud compute forwarding-rules delete <span class="o">[</span>loadbalance<span class="o">]</span> 
+<pre class="chroma"><code class="language-shell" data-lang="shell">gcloud compute forwarding-rules delete <span class="o">[</span>loadbalance<span class="o">]</span> 
 gcloud compute instance-groups managed delete <span class="o">[</span>group<span class="o">]</span>
 gcloud compute target-pools delete <span class="o">[</span>pool<span class="o">]</span>
 gcloud compute instance-templates delete <span class="o">[</span>template<span class="o">]</span>
