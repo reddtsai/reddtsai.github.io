@@ -53,6 +53,36 @@
       </item>
       
       <item>
+        <title>快速建立 Compute Engine</title>
+        <link>https://reddtsai.github.io/zh/posts/gcp_computeengine/</link>
+        <pubDate>Thu, 09 Apr 2020 02:15:16 +0800</pubDate>
+        <author>reddtsai@gmail.com (蔡文杰)</author>
+        <atom:modified>Thu, 09 Apr 2020 02:15:16 +0800</atom:modified>
+        <guid>https://reddtsai.github.io/zh/posts/gcp_computeengine/</guid>
+        <description>分享個人如何將雲端虛擬機器結合到開發工作中，例如，當專案需要二台主機，一台用來作使用者測試，另一台給未來營運使用。以下介紹個人的作法給大家參</description>
+        
+        <dc:creator>Redd Tsai</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>GCE</category>
+            
+          
+        
+        
+          
+            
+              <category>GCP</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
         <title>在 Mac 上安裝 dotnet tool</title>
         <link>https://reddtsai.github.io/zh/posts/dotnet_tool/</link>
         <pubDate>Sat, 04 Apr 2020 15:35:18 +0800</pubDate>
