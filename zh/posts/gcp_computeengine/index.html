@@ -1583,7 +1583,8 @@
 <div class="alert alert-success" role="alert" data-dir="ltr">請先準備好你的 Google 帳號和 SDK</div>
 </p>
 <ol>
-<li>設定 VM 所在區域 (Zone)
+<li>
+<p>設定 VM 所在區域 (Zone)</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1599,7 +1600,8 @@ gcloud config <span class="nb">set</span> compute/region <span class="o">[</span
 </code></pre></div>
 
 </li>
-<li>新增一台 VM (Compute Engine)
+<li>
+<p>新增一台 VM (Compute Engine)</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1613,8 +1615,9 @@ gcloud config <span class="nb">set</span> compute/region <span class="o">[</span
 </code></pre></div>
 
 </li>
-<li>設定防火墻 (Firewall)<br />
-Enable port 80 for web site
+<li>
+<p>設定防火墻 (Firewall)<br />
+Enable port 80 for web site</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1624,8 +1627,9 @@ Enable port 80 for web site
 </code></pre></td></tr></table>
 </div>
 </div></li>
-<li>建立負載平衡 (Load balancing)<br />
-如果你需要建立負載平衡，依照 GCP 說明，要使用叢集(cluster)來建立 VM(取代第二步)。
+<li>
+<p>建立負載平衡 (Load balancing)<br />
+如果你需要建立負載平衡，依照 GCP 說明，要使用叢集(cluster)來建立 VM(取代第二步)。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
