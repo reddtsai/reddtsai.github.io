@@ -1580,8 +1580,7 @@
       <p>分享個人如何將雲端虛擬機器結合到開發工作中，例如，當專案需要二台主機，一台用來作使用者測試，另一台給未來營運使用，以下介紹個人的作法給大家參考。未來作持續更新部署(CI/CD)或自動擴展(Auto Scaling)也會使用這個自動化腳本。</p>
 <h3 id="create-a-compute-engine-instance">Create a Compute Engine instance</h3>
 <p>透過 CLI 的方式來介紹如何建立一台虛擬機器，這次使用的是 Google Cloud 提供的虛擬機器 Compute Engine。<br />
-<div class="alert alert-success" role="alert" data-dir="ltr"><pre><code>請先準備好你的 Google 帳號和 SDK
-</code></pre></div>
+<div class="alert alert-success" role="alert" data-dir="ltr">請先準備好你的 Google 帳號和 SDK</div>
 </p>
 <ol>
 <li>設定 VM 所在區域 (Zone)
@@ -1609,20 +1608,59 @@ gcloud config <span class="nb">set</span> compute/region <span class="o">[</span
 <pre class="chroma"><code class="language-bash" data-lang="bash">gcloud compute instances create <span class="o">[</span>instance<span class="o">]</span>
 </code></pre></td></tr></table>
 </div>
+</div><div class="alert alert-info" role="alert" data-dir="ltr"><pre><code>    機器類型：虛擬化硬體規格。ex. --machine-type=g1-small
+    作業系統：Windows, Linux。ex. --image-family=debian-9
+</code></pre></div>
+
+</li>
+<li>設定防火墻 (Firewall)<br />
+Enable port 80 for web site
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">gcloud compute firewall-rules create allow-80 --allow tcp:80
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>建立負載平衡 (Load balancing)<br />
+如果你需要建立負載平衡，依照 GCP 說明，要使用叢集(cluster)來建立 VM(取代第二步)。
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">gcloud compute instance-templates create <span class="o">[</span>template<span class="o">]</span>
+gcloud compute target-pools create <span class="o">[</span>pool<span class="o">]</span>
+gcloud compute instance-groups managed create <span class="o">[</span>group<span class="o">]</span> <span class="se">\
+</span><span class="se"></span>        --base-instance-name <span class="o">[</span>name<span class="o">]</span> <span class="se">\
+</span><span class="se"></span>        --size <span class="m">2</span> <span class="se">\
+</span><span class="se"></span>        --template <span class="o">[</span>template<span class="o">]</span> <span class="se">\
+</span><span class="se"></span>        --target-pool <span class="o">[</span>pool<span class="o">]</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>負載平衡：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">gcloud compute forwarding-rules create <span class="o">[</span>loadbalance<span class="o">]</span> <span class="se">\
+</span><span class="se"></span>        --ports <span class="m">80</span> <span class="se">\
+</span><span class="se"></span>        --target-pool <span class="o">[</span>pool<span class="o">]</span>
+</code></pre></td></tr></table>
+</div>
 </div></li>
 </ol>
-<p><div class="alert alert-info" role="alert" data-dir="ltr"><pre><code>機器類型：虛擬化硬體規格。ex. --machine-type=g1-small
-作業系統：Windows, Linux。ex. --image-family=debian-9
-</code></pre></div>
-<br />
-3. 設定防火墻 (Firewall)<br />
-Enable port 80 for web site<br />
-<code> bash gcloud compute firewall-rules create allow-80 --allow tcp:80</code><br />
-4. 建立負載平衡 (Load balancing)<br />
-如果你需要建立負載平衡，依照 GCP 說明，要使用叢集(cluster)來建立 VM(取代第二步)。<br />
-<code> bash gcloud compute instance-templates create [template] gcloud compute target-pools create [pool] gcloud compute instance-groups managed create [group] \ --base-instance-name [name] \ --size 2 \ --template [template] \ --target-pool [pool]</code><br />
-負載平衡：<br />
-<code> bash gcloud compute forwarding-rules create [loadbalance] \ --ports 80 \ --target-pool [pool]</code></p>
 <p>完成後，你可以試著透過 SSH 登入 VM：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
