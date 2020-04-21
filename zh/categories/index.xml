@@ -14,7 +14,7 @@
     <managingEditor>reddtsai@gmail.com (蔡文杰)</managingEditor>
     <webMaster>reddtsai@gmail.com (蔡文杰)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Sat, 11 Apr 2020 14:20:41 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 15 Apr 2020 13:47:50 +0800</lastBuildDate>
     
         <atom:link href="https://reddtsai.github.io/zh/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -23,12 +23,12 @@
 
       
       <item>
-        <title>Backend</title>
-        <link>https://reddtsai.github.io/zh/categories/backend/</link>
-        <pubDate>Sat, 11 Apr 2020 14:20:41 +0800</pubDate>
+        <title>dotnet</title>
+        <link>https://reddtsai.github.io/zh/categories/dotnet/</link>
+        <pubDate>Wed, 15 Apr 2020 13:47:50 +0800</pubDate>
         <author>reddtsai@gmail.com (蔡文杰)</author>
         
-        <guid>https://reddtsai.github.io/zh/categories/backend/</guid>
+        <guid>https://reddtsai.github.io/zh/categories/dotnet/</guid>
         <description></description>
         
         <dc:creator>蔡文杰</dc:creator>
@@ -43,7 +43,7 @@
       <item>
         <title>GCP</title>
         <link>https://reddtsai.github.io/zh/categories/gcp/</link>
-        <pubDate>Thu, 09 Apr 2020 02:15:16 +0800</pubDate>
+        <pubDate>Wed, 15 Apr 2020 13:47:50 +0800</pubDate>
         <author>reddtsai@gmail.com (蔡文杰)</author>
         
         <guid>https://reddtsai.github.io/zh/categories/gcp/</guid>
@@ -59,12 +59,12 @@
       </item>
       
       <item>
-        <title>dotnet</title>
-        <link>https://reddtsai.github.io/zh/categories/dotnet/</link>
-        <pubDate>Sat, 04 Apr 2020 15:35:18 +0800</pubDate>
+        <title>Backend</title>
+        <link>https://reddtsai.github.io/zh/categories/backend/</link>
+        <pubDate>Sat, 11 Apr 2020 14:20:41 +0800</pubDate>
         <author>reddtsai@gmail.com (蔡文杰)</author>
         
-        <guid>https://reddtsai.github.io/zh/categories/dotnet/</guid>
+        <guid>https://reddtsai.github.io/zh/categories/backend/</guid>
         <description></description>
         
         <dc:creator>蔡文杰</dc:creator>

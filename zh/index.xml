@@ -44,6 +44,48 @@
 
       
       <item>
+        <title>Linux &#43; Nginx &#43; .NET Core API</title>
+        <link>https://reddtsai.github.io/zh/posts/dotnet_hostingce/</link>
+        <pubDate>Wed, 15 Apr 2020 13:47:50 +0800</pubDate>
+        <author>reddtsai@gmail.com (蔡文杰)</author>
+        <atom:modified>Wed, 15 Apr 2020 13:47:50 +0800</atom:modified>
+        <guid>https://reddtsai.github.io/zh/posts/dotnet_hostingce/</guid>
+        <description>主流程式語言大多可以跨平台作業，但對 .NET 來說是個新鮮事，這次就來分享將 API 部署到 Linux。 Create a VM 首先請準備一台 Linux 主機，可參考快速建立 Compute Engi</description>
+        
+        <dc:creator>Redd Tsai</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>GCE</category>
+            
+          
+            
+              <category>dotnet</category>
+            
+          
+            
+              <category>Debian</category>
+            
+          
+        
+        
+          
+            
+              <category>GCP</category>
+            
+          
+            
+              <category>dotnet</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
         <title>快樂上雲端</title>
         <link>https://reddtsai.github.io/zh/posts/gcp/</link>
         <pubDate>Sat, 11 Apr 2020 14:20:41 +0800</pubDate>
