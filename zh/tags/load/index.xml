@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Load on Redd Tsai</title>
+    <link>https://reddtsai.github.io/zh/tags/load/</link>
+    <description>Recent content in Load on Redd Tsai</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <managingEditor>reddtsai@gmail.com (蔡文杰)</managingEditor>
+    <webMaster>reddtsai@gmail.com (蔡文杰)</webMaster>
+    <copyright>©{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Thu, 23 Apr 2020 17:14:58 +0800</lastBuildDate>
+    
+        <atom:link href="https://reddtsai.github.io/zh/tags/load/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>API 性能測試</title>
+        <link>https://reddtsai.github.io/zh/posts/dotnet_wrkloadtest/</link>
+        <pubDate>Thu, 23 Apr 2020 17:14:58 +0800</pubDate>
+        <author>reddtsai@gmail.com (蔡文杰)</author>
+        <atom:modified>Thu, 23 Apr 2020 17:14:58 +0800</atom:modified>
+        <guid>https://reddtsai.github.io/zh/posts/dotnet_wrkloadtest/</guid>
+        <description>介紹一個輕量級性能測試工具 wrk 給後端開發者，它可協助你瞭解 1.為什麼服務掛了?? 2.需不需要 Load Balance?? 3.API 的 QPS 多少?? 等等 &amp;hellip;，來看看怎麼</description>
+        
+        <dc:creator>Redd Tsai</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>Load</category>
+            
+          
+        
+        
+          
+            
+              <category>Test</category>
+            
+          
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

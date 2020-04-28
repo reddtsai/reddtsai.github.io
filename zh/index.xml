@@ -44,6 +44,36 @@
 
       
       <item>
+        <title>API 性能測試</title>
+        <link>https://reddtsai.github.io/zh/posts/dotnet_wrkloadtest/</link>
+        <pubDate>Thu, 23 Apr 2020 17:14:58 +0800</pubDate>
+        <author>reddtsai@gmail.com (蔡文杰)</author>
+        <atom:modified>Thu, 23 Apr 2020 17:14:58 +0800</atom:modified>
+        <guid>https://reddtsai.github.io/zh/posts/dotnet_wrkloadtest/</guid>
+        <description>介紹一個輕量級性能測試工具 wrk 給後端開發者，它可協助你瞭解 1.為什麼服務掛了?? 2.需不需要 Load Balance?? 3.API 的 QPS 多少?? 等等 &amp;hellip;，來看看怎麼</description>
+        
+        <dc:creator>Redd Tsai</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>Load</category>
+            
+          
+        
+        
+          
+            
+              <category>Test</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
         <title>Linux &#43; Nginx &#43; .NET Core API</title>
         <link>https://reddtsai.github.io/zh/posts/dotnet_hostingce/</link>
         <pubDate>Wed, 15 Apr 2020 13:47:50 +0800</pubDate>
