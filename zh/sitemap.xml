@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://reddtsai.github.io/zh/categories/</loc>
-    <lastmod>2020-05-08T14:36:28+08:00</lastmod>
+    <lastmod>2020-05-14T12:24:45+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -19,12 +19,12 @@
   
   <url>
     <loc>https://reddtsai.github.io/zh/posts/</loc>
-    <lastmod>2020-05-08T14:36:28+08:00</lastmod>
+    <lastmod>2020-05-14T12:24:45+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://reddtsai.github.io/zh/tags/</loc>
-    <lastmod>2020-05-08T14:36:28+08:00</lastmod>
+    <lastmod>2020-05-14T12:24:45+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -39,12 +39,17 @@
   
   <url>
     <loc>https://reddtsai.github.io/zh/tags/vue/</loc>
-    <lastmod>2020-05-08T14:36:28+08:00</lastmod>
+    <lastmod>2020-05-14T12:24:45+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://reddtsai.github.io/zh/categories/vue/</loc>
-    <lastmod>2020-05-08T14:36:28+08:00</lastmod>
+    <lastmod>2020-05-14T12:24:45+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://reddtsai.github.io/zh/posts/vue_cors/</loc>
+    <lastmod>2020-05-14T12:24:45+08:00</lastmod>
   </url>
   
   <url>

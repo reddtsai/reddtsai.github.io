@@ -14,13 +14,43 @@
     <managingEditor>reddtsai@gmail.com (蔡文杰)</managingEditor>
     <webMaster>reddtsai@gmail.com (蔡文杰)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Fri, 08 May 2020 14:36:28 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 14 May 2020 12:24:45 +0800</lastBuildDate>
     
         <atom:link href="https://reddtsai.github.io/zh/categories/vue/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>Vue 開發環境請求代理</title>
+        <link>https://reddtsai.github.io/zh/posts/vue_cors/</link>
+        <pubDate>Thu, 14 May 2020 12:24:45 +0800</pubDate>
+        <author>reddtsai@gmail.com (蔡文杰)</author>
+        <atom:modified>Thu, 14 May 2020 12:24:45 +0800</atom:modified>
+        <guid>https://reddtsai.github.io/zh/posts/vue_cors/</guid>
+        <description>在前後端分離的環境下，在前端需要和公司後台或第三方 API 溝通時，因為請求來自於不同網域、通訊協定或通訊埠時，而遇到跨來源資源共用(CORS)的問</description>
+        
+        <dc:creator>Redd Tsai</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>Vue</category>
+            
+          
+        
+        
+          
+            
+              <category>Vue</category>
+            
+          
+        
+        
+      </item>
       
       <item>
         <title>初次見面 Vue</title>
