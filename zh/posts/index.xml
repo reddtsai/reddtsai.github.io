@@ -14,13 +14,43 @@
     <managingEditor>reddtsai@gmail.com (蔡文杰)</managingEditor>
     <webMaster>reddtsai@gmail.com (蔡文杰)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Thu, 23 Apr 2020 17:14:58 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 08 May 2020 14:36:28 +0800</lastBuildDate>
     
         <atom:link href="https://reddtsai.github.io/zh/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>初次見面 Vue</title>
+        <link>https://reddtsai.github.io/zh/posts/vue_hello/</link>
+        <pubDate>Fri, 08 May 2020 14:36:28 +0800</pubDate>
+        <author>reddtsai@gmail.com (蔡文杰)</author>
+        <atom:modified>Fri, 08 May 2020 14:36:28 +0800</atom:modified>
+        <guid>https://reddtsai.github.io/zh/posts/vue_hello/</guid>
+        <description>如果你跟我一樣習慣用 MVC 或是剛踏入前端的新手，需要一個 Front-end frameworks，請先參考下圖。假設你跟我一樣選擇 Vue.js，可以參考以下步驟來</description>
+        
+        <dc:creator>Redd Tsai</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>Vue</category>
+            
+          
+        
+        
+          
+            
+              <category>Vue</category>
+            
+          
+        
+        
+      </item>
       
       <item>
         <title>API 性能測試</title>
