@@ -44,6 +44,36 @@
 
       
       <item>
+        <title>初次見面 Golang</title>
+        <link>https://reddtsai.github.io/zh/posts/go_hello/</link>
+        <pubDate>Fri, 29 May 2020 22:49:38 +0800</pubDate>
+        <author>reddtsai@gmail.com (蔡文杰)</author>
+        <atom:modified>Fri, 29 May 2020 22:49:38 +0800</atom:modified>
+        <guid>https://reddtsai.github.io/zh/posts/go_hello/</guid>
+        <description>第一次發 Golang 的文章，當然要來個 hello world 作為開場。 環境 OS ：Mac Golang：1.14 Editer：Visual Studio Code Installation 安裝 Go。 1 2 3 brew install go@1.14 go version Stable versions</description>
+        
+        <dc:creator>Redd Tsai</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>Go</category>
+            
+          
+        
+        
+          
+            
+              <category>Go</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
         <title>Vue 開發環境請求代理</title>
         <link>https://reddtsai.github.io/zh/posts/vue_cors/</link>
         <pubDate>Thu, 14 May 2020 12:24:45 +0800</pubDate>
