@@ -14,13 +14,47 @@
     <managingEditor>reddtsai@gmail.com (蔡文杰)</managingEditor>
     <webMaster>reddtsai@gmail.com (蔡文杰)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Fri, 29 May 2020 22:49:38 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 14 Jun 2020 15:52:22 +0800</lastBuildDate>
     
         <atom:link href="https://reddtsai.github.io/zh/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>加密貨幣交易所：Bitcoin Implementation 1</title>
+        <link>https://reddtsai.github.io/zh/posts/btc_summary/</link>
+        <pubDate>Sun, 14 Jun 2020 15:52:22 +0800</pubDate>
+        <author>reddtsai@gmail.com (蔡文杰)</author>
+        <atom:modified>Sun, 14 Jun 2020 15:52:22 +0800</atom:modified>
+        <guid>https://reddtsai.github.io/zh/posts/btc_summary/</guid>
+        <description>身為一個加密貨幣交易所的後台工程師，記錄一下我如何與比特幣(Bitcoin)一起工作。 Bitcoin 比特幣(Bitcoin)是一種基於去中心化，採用點對</description>
+        
+        <dc:creator>Redd Tsai</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>Bitcoin</category>
+            
+          
+            
+              <category>Exchange</category>
+            
+          
+        
+        
+          
+            
+              <category>Blockchain</category>
+            
+          
+        
+        
+      </item>
       
       <item>
         <title>初次見面 Golang</title>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Blockchain on Redd Tsai</title>
+    <link>https://reddtsai.github.io/zh/categories/blockchain/</link>
+    <description>Recent content in Blockchain on Redd Tsai</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <managingEditor>reddtsai@gmail.com (蔡文杰)</managingEditor>
+    <webMaster>reddtsai@gmail.com (蔡文杰)</webMaster>
+    <copyright>©{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 14 Jun 2020 15:52:22 +0800</lastBuildDate>
+    
+        <atom:link href="https://reddtsai.github.io/zh/categories/blockchain/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>加密貨幣交易所：Bitcoin Implementation 1</title>
+        <link>https://reddtsai.github.io/zh/posts/btc_summary/</link>
+        <pubDate>Sun, 14 Jun 2020 15:52:22 +0800</pubDate>
+        <author>reddtsai@gmail.com (蔡文杰)</author>
+        <atom:modified>Sun, 14 Jun 2020 15:52:22 +0800</atom:modified>
+        <guid>https://reddtsai.github.io/zh/posts/btc_summary/</guid>
+        <description>身為一個加密貨幣交易所的後台工程師，記錄一下我如何與比特幣(Bitcoin)一起工作。 Bitcoin 比特幣(Bitcoin)是一種基於去中心化，採用點對</description>
+        
+        <dc:creator>Redd Tsai</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>Bitcoin</category>
+            
+          
+            
+              <category>Exchange</category>
+            
+          
+        
+        
+          
+            
+              <category>Blockchain</category>
+            
+          
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>
