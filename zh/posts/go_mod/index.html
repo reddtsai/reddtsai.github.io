@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>golang 套件管理系統 mod – Redd Tsai</title>
+    <title>Golang 套件管理系統 mod – Redd Tsai</title>
     
 
 
@@ -1209,7 +1209,7 @@
 
 
 <meta property="og:site_name" content="Redd Tsai">
-<meta property="og:title" content="golang 套件管理系統 mod">
+<meta property="og:title" content="Golang 套件管理系統 mod">
 <meta property="og:url" content="https://reddtsai.github.io/zh/posts/go_mod/">
 <meta property="og:type" content="article">
 <meta property="og:description" content="using go modules">
@@ -1249,7 +1249,7 @@
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "headline": "golang 套件管理系統 mod",
+    "headline": "Golang 套件管理系統 mod",
     "datePublished": "2020-07-02T14:23:01+08:00",
     "dateModified": "2020-07-02T14:23:01+08:00",
     "url" : "https://reddtsai.github.io/zh/posts/go_mod/",
@@ -1519,7 +1519,7 @@
   
   <li  class="is-active" >
     
-      <span>golang 套件管理系統 mod</span>
+      <span>Golang 套件管理系統 mod</span>
     
   </li>
   
@@ -1531,7 +1531,7 @@
   <div class="single ">
     <div class="single__nojs">Please enable Javascript to view the contents</div>
     <script>document.querySelector('.single').classList.remove('hide'); document.querySelector('.single__nojs').classList.add('hide');</script>
-    <h2 class="single__title" data-ani="true">golang 套件管理系統 mod</h2>
+    <h2 class="single__title" data-ani="true">Golang 套件管理系統 mod</h2>
     <div class="single__meta">
       
 <div class="single__infos">
@@ -1635,8 +1635,7 @@ touch main.go
 <pre class="chroma"><code class="language-bash" data-lang="bash">go mod init api
 </code></pre></td></tr></table>
 </div>
-</div><p>完成後會產生一個 modules 設定檔 go.mod，接下來當你執行 build、run、test 等命令，modules 會自動幫你加入相依套件，當然你還是可以透過 get 來取行套件，下方是這次的範例：<br />
-go.mod</p>
+</div><p>完成後會產生一個 modules 設定檔 go.mod，接下來當你執行 build、run、test 等命令，modules 會自動幫你加入相依套件，當然你還是可以透過 get 來取得套件，下方是這次 go.mod 的內容：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1657,13 +1656,27 @@ go.mod</p>
 
 <h3 id="get">Get</h3>
 <p>可使用以下方法來取得或更新相依套件：</p>
-<ul>
-<li>go mod download<br />
-透過 go.mod 來取得或更新相依套件</li>
-<li>go get [-u]<br />
-使用指令來取得或更新相依套件</li>
-</ul>
-<p>如果有使用到私有套件，需要在 go 環境變數 GOPRIVATE 加入你的私有套件網域名，另外，你會需要透過登入或SSH來取得私有套件的權限。<br />
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 透過 go.mod 來取得或更新相依套件</span>
+go mod download
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 使用指令來取得或更新相依套件</span>
+go get <span class="o">[</span>-u<span class="o">]</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>如果有使用到私有套件，需要在 go 環境變數 GOPRIVATE 加入你的私有套件網域名，另外，你會需要透過登入或SSH來取得私有套件的權限。<br />
 例設一個 private gitlab 套件，gitlab.com/name/repo</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1674,7 +1687,7 @@ go.mod</p>
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="list">List</h3>
-<p>列出目前相依套件：</p>
+<p>列出目前使用到的相依套件：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1756,7 +1769,7 @@ go mod tidy
       
     
       
-        <a href="https://twitter.com/intent/tweet?text=golang%20%e5%a5%97%e4%bb%b6%e7%ae%a1%e7%90%86%e7%b3%bb%e7%b5%b1%20mod&url=https%3a%2f%2freddtsai.github.io%2fzh%2fposts%2fgo_mod%2f&hashtags=Go&via=Redd%20Tsai" title="Twitter" aria-label="Twitter Share Button" class="donation__item" target="_blank" rel="noreferrer" data-type="share">
+        <a href="https://twitter.com/intent/tweet?text=Golang%20%e5%a5%97%e4%bb%b6%e7%ae%a1%e7%90%86%e7%b3%bb%e7%b5%b1%20mod&url=https%3a%2f%2freddtsai.github.io%2fzh%2fposts%2fgo_mod%2f&hashtags=Go&via=Redd%20Tsai" title="Twitter" aria-label="Twitter Share Button" class="donation__item" target="_blank" rel="noreferrer" data-type="share">
           <svg data-name="twitter" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="35" height="35" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m21.534 7.113c.976-.693 1.797-1.558 2.466-2.554v-.001c-.893.391-1.843.651-2.835.777 1.02-.609 1.799-1.566 2.165-2.719-.951.567-2.001.967-3.12 1.191-.903-.962-2.19-1.557-3.594-1.557-2.724 0-4.917 2.211-4.917 4.921 0 .39.033.765.114 1.122-4.09-.2-7.71-2.16-10.142-5.147-.424.737-.674 1.58-.674 2.487 0 1.704.877 3.214 2.186 4.089-.791-.015-1.566-.245-2.223-.606v.054c0 2.391 1.705 4.377 3.942 4.835-.401.11-.837.162-1.29.162-.315 0-.633-.018-.931-.084.637 1.948 2.447 3.381 4.597 3.428-1.674 1.309-3.8 2.098-6.101 2.098-.403 0-.79-.018-1.177-.067 2.18 1.405 4.762 2.208 7.548 2.208 8.683 0 14.342-7.244 13.986-14.637z"/></svg>
         </a>
       
