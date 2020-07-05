@@ -3,18 +3,8 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://reddtsai.github.io/zh/tags/bitcoin/</loc>
-    <lastmod>2020-06-14T15:52:22+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://reddtsai.github.io/zh/categories/blockchain/</loc>
-    <lastmod>2020-06-14T15:52:22+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://reddtsai.github.io/zh/categories/</loc>
-    <lastmod>2020-06-14T15:52:22+08:00</lastmod>
+    <lastmod>2020-07-02T14:23:01+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -28,18 +18,28 @@
   </url>
   
   <url>
-    <loc>https://reddtsai.github.io/zh/tags/exchange/</loc>
-    <lastmod>2020-06-14T15:52:22+08:00</lastmod>
+    <loc>https://reddtsai.github.io/zh/tags/go/</loc>
+    <lastmod>2020-07-02T14:23:01+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://reddtsai.github.io/zh/categories/go/</loc>
+    <lastmod>2020-07-02T14:23:01+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://reddtsai.github.io/zh/posts/go_mod/</loc>
+    <lastmod>2020-07-02T14:23:01+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://reddtsai.github.io/zh/posts/</loc>
-    <lastmod>2020-06-14T15:52:22+08:00</lastmod>
+    <lastmod>2020-07-02T14:23:01+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://reddtsai.github.io/zh/tags/</loc>
-    <lastmod>2020-06-14T15:52:22+08:00</lastmod>
+    <lastmod>2020-07-02T14:23:01+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -53,18 +53,23 @@
   </url>
   
   <url>
-    <loc>https://reddtsai.github.io/zh/posts/btc_summary/</loc>
+    <loc>https://reddtsai.github.io/zh/tags/bitcoin/</loc>
     <lastmod>2020-06-14T15:52:22+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://reddtsai.github.io/zh/tags/go/</loc>
-    <lastmod>2020-05-29T22:49:38+08:00</lastmod>
+    <loc>https://reddtsai.github.io/zh/categories/blockchain/</loc>
+    <lastmod>2020-06-14T15:52:22+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://reddtsai.github.io/zh/categories/go/</loc>
-    <lastmod>2020-05-29T22:49:38+08:00</lastmod>
+    <loc>https://reddtsai.github.io/zh/tags/exchange/</loc>
+    <lastmod>2020-06-14T15:52:22+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://reddtsai.github.io/zh/posts/btc_summary/</loc>
+    <lastmod>2020-06-14T15:52:22+08:00</lastmod>
   </url>
   
   <url>

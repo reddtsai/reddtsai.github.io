@@ -14,7 +14,7 @@
     <managingEditor>reddtsai@gmail.com (蔡文杰)</managingEditor>
     <webMaster>reddtsai@gmail.com (蔡文杰)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Sun, 14 Jun 2020 15:52:22 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 02 Jul 2020 14:23:01 +0800</lastBuildDate>
     
         <atom:link href="https://reddtsai.github.io/zh/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -23,12 +23,12 @@
 
       
       <item>
-        <title>Blockchain</title>
-        <link>https://reddtsai.github.io/zh/categories/blockchain/</link>
-        <pubDate>Sun, 14 Jun 2020 15:52:22 +0800</pubDate>
+        <title>Go</title>
+        <link>https://reddtsai.github.io/zh/categories/go/</link>
+        <pubDate>Thu, 02 Jul 2020 14:23:01 +0800</pubDate>
         <author>reddtsai@gmail.com (蔡文杰)</author>
         
-        <guid>https://reddtsai.github.io/zh/categories/blockchain/</guid>
+        <guid>https://reddtsai.github.io/zh/categories/go/</guid>
         <description></description>
         
         <dc:creator>蔡文杰</dc:creator>
@@ -41,12 +41,12 @@
       </item>
       
       <item>
-        <title>Go</title>
-        <link>https://reddtsai.github.io/zh/categories/go/</link>
-        <pubDate>Fri, 29 May 2020 22:49:38 +0800</pubDate>
+        <title>Blockchain</title>
+        <link>https://reddtsai.github.io/zh/categories/blockchain/</link>
+        <pubDate>Sun, 14 Jun 2020 15:52:22 +0800</pubDate>
         <author>reddtsai@gmail.com (蔡文杰)</author>
         
-        <guid>https://reddtsai.github.io/zh/categories/go/</guid>
+        <guid>https://reddtsai.github.io/zh/categories/blockchain/</guid>
         <description></description>
         
         <dc:creator>蔡文杰</dc:creator>

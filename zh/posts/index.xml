@@ -14,13 +14,43 @@
     <managingEditor>reddtsai@gmail.com (蔡文杰)</managingEditor>
     <webMaster>reddtsai@gmail.com (蔡文杰)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Sun, 14 Jun 2020 15:52:22 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 02 Jul 2020 14:23:01 +0800</lastBuildDate>
     
         <atom:link href="https://reddtsai.github.io/zh/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>golang 套件管理系統 mod</title>
+        <link>https://reddtsai.github.io/zh/posts/go_mod/</link>
+        <pubDate>Thu, 02 Jul 2020 14:23:01 +0800</pubDate>
+        <author>reddtsai@gmail.com (蔡文杰)</author>
+        <atom:modified>Thu, 02 Jul 2020 14:23:01 +0800</atom:modified>
+        <guid>https://reddtsai.github.io/zh/posts/go_mod/</guid>
+        <description>Golang 官方在 1.11 版推出了 Go modules，讓開發者透過 go mod 來管理 project 或 package 中所使用的套件。 Init 假設今天需要建立一個 RESTful 專案，內容如下： 1 2 3 mkdir api cd api touch main.go main.go</description>
+        
+        <dc:creator>Redd Tsai</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>Go</category>
+            
+          
+        
+        
+          
+            
+              <category>Go</category>
+            
+          
+        
+        
+      </item>
       
       <item>
         <title>加密貨幣交易所：Bitcoin Implementation 1</title>
