@@ -14,13 +14,43 @@
     <managingEditor>reddtsai@gmail.com (蔡文杰)</managingEditor>
     <webMaster>reddtsai@gmail.com (蔡文杰)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Thu, 02 Jul 2020 14:23:01 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 12 Jul 2020 21:24:38 +0800</lastBuildDate>
     
         <atom:link href="https://reddtsai.github.io/zh/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>認識運動彩卷賠率</title>
+        <link>https://reddtsai.github.io/zh/posts/bet_margin/</link>
+        <pubDate>Sun, 12 Jul 2020 21:24:38 +0800</pubDate>
+        <author>reddtsai@gmail.com (蔡文杰)</author>
+        <atom:modified>Sun, 12 Jul 2020 21:24:38 +0800</atom:modified>
+        <guid>https://reddtsai.github.io/zh/posts/bet_margin/</guid>
+        <description>Odds(賠率) 假設籃球A隊和B隊他們的對戰記錄如下表： |對戰|A|B| |-|-|-| |1|勝|負| |2|勝|負| |3|勝|負| |4|負|勝| |5|勝|</description>
+        
+        <dc:creator>Redd Tsai</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>Margin</category>
+            
+          
+        
+        
+          
+            
+              <category>Bet</category>
+            
+          
+        
+        
+      </item>
       
       <item>
         <title>Golang 套件管理系統 mod</title>
