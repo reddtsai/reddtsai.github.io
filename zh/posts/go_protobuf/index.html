@@ -1627,7 +1627,7 @@ go get -u -v github.com/golang/protobuf/protoc-gen-go
 </div></li>
 </ol>
 <h3 id="proto">.proto</h3>
-<p>Protocol Buffers 定義檔的副檔名為 .proto，安裝完 Protocol Buffers 後，接著建立一個 user.proto</p>
+<p>安裝完 Protocol Buffers 後，接著建立一個 user.proto，Protocol Buffers 定義檔的副檔名為 .proto。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1745,8 +1745,6 @@ message user <span class="o">{</span>
 </span><span class="lnt">18
 </span><span class="lnt">19
 </span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-go" data-lang="go"><span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
@@ -1757,13 +1755,11 @@ message user <span class="o">{</span>
 		<span class="nx">Addr</span><span class="p">:</span>  <span class="s">&#34;taipei&#34;</span><span class="p">,</span>
 		<span class="nx">Phone</span><span class="p">:</span> <span class="s">&#34;0212348765&#34;</span><span class="p">,</span>
 	<span class="p">}</span>
-
 	<span class="nx">buf</span><span class="p">,</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">proto</span><span class="p">.</span><span class="nf">Marshal</span><span class="p">(</span><span class="nx">user</span><span class="p">)</span>
 	<span class="k">if</span> <span class="nx">err</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
 		<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span>
 	<span class="p">}</span>
     <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nx">buf</span><span class="p">)</span>
-    
     <span class="nx">newUser</span> <span class="o">:=</span> <span class="o">&amp;</span><span class="nx">model</span><span class="p">.</span><span class="nx">User</span><span class="p">{}</span>
 	<span class="nx">err</span> <span class="p">=</span> <span class="nx">proto</span><span class="p">.</span><span class="nf">Unmarshal</span><span class="p">(</span><span class="nx">buf</span><span class="p">,</span> <span class="nx">newUser</span><span class="p">)</span>
 	<span class="k">if</span> <span class="nx">err</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
