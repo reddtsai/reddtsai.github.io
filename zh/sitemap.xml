@@ -3,13 +3,8 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://reddtsai.github.io/zh/categories/bet/</loc>
-    <lastmod>2020-07-12T21:24:38+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://reddtsai.github.io/zh/categories/</loc>
-    <lastmod>2020-07-12T21:24:38+08:00</lastmod>
+    <lastmod>2020-07-19T23:37:24+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -23,18 +18,23 @@
   </url>
   
   <url>
-    <loc>https://reddtsai.github.io/zh/tags/margin/</loc>
-    <lastmod>2020-07-12T21:24:38+08:00</lastmod>
+    <loc>https://reddtsai.github.io/zh/tags/go/</loc>
+    <lastmod>2020-07-19T23:37:24+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://reddtsai.github.io/zh/categories/go/</loc>
+    <lastmod>2020-07-19T23:37:24+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://reddtsai.github.io/zh/posts/</loc>
-    <lastmod>2020-07-12T21:24:38+08:00</lastmod>
+    <lastmod>2020-07-19T23:37:24+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://reddtsai.github.io/zh/tags/</loc>
-    <lastmod>2020-07-12T21:24:38+08:00</lastmod>
+    <lastmod>2020-07-19T23:37:24+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -48,18 +48,23 @@
   </url>
   
   <url>
-    <loc>https://reddtsai.github.io/zh/posts/bet_margin/</loc>
+    <loc>https://reddtsai.github.io/zh/posts/go_protobuf/</loc>
+    <lastmod>2020-07-19T23:37:24+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://reddtsai.github.io/zh/categories/bet/</loc>
     <lastmod>2020-07-12T21:24:38+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://reddtsai.github.io/zh/tags/go/</loc>
-    <lastmod>2020-07-02T14:23:01+08:00</lastmod>
+    <loc>https://reddtsai.github.io/zh/tags/margin/</loc>
+    <lastmod>2020-07-12T21:24:38+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://reddtsai.github.io/zh/categories/go/</loc>
-    <lastmod>2020-07-02T14:23:01+08:00</lastmod>
+    <loc>https://reddtsai.github.io/zh/posts/bet_margin/</loc>
+    <lastmod>2020-07-12T21:24:38+08:00</lastmod>
   </url>
   
   <url>
