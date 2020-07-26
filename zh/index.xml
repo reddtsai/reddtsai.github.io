@@ -74,6 +74,36 @@
       </item>
       
       <item>
+        <title>Git 常用指令</title>
+        <link>https://reddtsai.github.io/zh/posts/git/</link>
+        <pubDate>Sat, 25 Jul 2020 22:45:50 +0800</pubDate>
+        <author>reddtsai@gmail.com (蔡文杰)</author>
+        <atom:modified>Sat, 25 Jul 2020 22:45:50 +0800</atom:modified>
+        <guid>https://reddtsai.github.io/zh/posts/git/</guid>
+        <description>1 git clone branch 1 git branch 1 git branch -a 1 git branch -d checkout 1 git checkout 1 git checkout -b 1 git checkout --track log 1 git log 1 git log --oneline -5 1 git reflog revert 1 git revert reset 1 git reset</description>
+        
+        <dc:creator>Redd Tsai</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>Git</category>
+            
+          
+        
+        
+          
+            
+              <category>Git</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
         <title>使用 Protocol Buffers 結構化資料</title>
         <link>https://reddtsai.github.io/zh/posts/go_protobuf/</link>
         <pubDate>Sun, 19 Jul 2020 23:37:24 +0800</pubDate>
