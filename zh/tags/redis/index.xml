@@ -14,13 +14,43 @@
     <managingEditor>reddtsai@gmail.com (蔡文杰)</managingEditor>
     <webMaster>reddtsai@gmail.com (蔡文杰)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Sat, 25 Jul 2020 23:37:24 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 02 Aug 2020 16:58:13 +0800</lastBuildDate>
     
         <atom:link href="https://reddtsai.github.io/zh/tags/redis/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>Redis 資料匯出匯入</title>
+        <link>https://reddtsai.github.io/zh/posts/redis_dump/</link>
+        <pubDate>Sun, 02 Aug 2020 16:58:13 +0800</pubDate>
+        <author>reddtsai@gmail.com (蔡文杰)</author>
+        <atom:modified>Sun, 02 Aug 2020 16:58:13 +0800</atom:modified>
+        <guid>https://reddtsai.github.io/zh/posts/redis_dump/</guid>
+        <description>Install 安裝 redis client 1 2 brew install redis redis-cli --version 安裝 redis dump tool 1 2 npm install redis-dump -g redis-dump --help OS：Mac Package Manager：npm, Homebrew Export 使用 redis-dump 匯出資料至檔案： 1 redis-dump -h 0.0.0.0 -d 0 &amp;gt; data.dump redis-dump optino h - hostname</description>
+        
+        <dc:creator>Redd Tsai</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>Redis</category>
+            
+          
+        
+        
+          
+            
+              <category>Database</category>
+            
+          
+        
+        
+      </item>
       
       <item>
         <title>Redis 有序集合</title>
