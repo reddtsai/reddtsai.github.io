@@ -1666,7 +1666,7 @@ message HelloReply <span class="o">{</span>
 </span></code></pre></td></tr></table>
 </div>
 </div><div class="alert alert-warning" role="alert" data-dir="ltr">這裡特別需注意 grpc，protobuf 和 protoc-gen-go 版本是否相容。<br />
-例如 grpc 的版本較高，可能會有找不到方法的問題 proto.Marshal: missing method ProtoReflect。</div>
+假設當中某一個的版本較高，可能會有找不到方法的問題 proto.Marshal: missing method ProtoReflect。</div>
 
 <h3 id="server">Server</h3>
 <p>接著透過 sample.pb.go 來實作 grpc server，這裡定義一個 server 來繼承 SampleService 接口，並實作 SayHello 的內容：</p>

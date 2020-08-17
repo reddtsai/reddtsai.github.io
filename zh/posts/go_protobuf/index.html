@@ -1770,7 +1770,7 @@ message user <span class="o">{</span>
 </code></pre></td></tr></table>
 </div>
 </div><div class="alert alert-warning" role="alert" data-dir="ltr">這裡特別需注意 grpc，protobuf 和 protoc-gen-go 版本是否相容。<br />
-例如 grpc 的版本較高，可能會有找不到方法的問題 proto.Marshal: missing method ProtoReflect。</div>
+假設當中某一個的版本較高，可能會有找不到方法的問題 proto.Marshal: missing method ProtoReflect。</div>
 
 <h3 id="polymorphism">Polymorphism</h3>
 <p>接著說說 Protocol Buffers 的進階用法，例如你回應內容可能會有多種類型，Protocol Buffers 也提供了 any 的類型，比如：</p>
