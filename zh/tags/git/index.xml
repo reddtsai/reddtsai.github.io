@@ -29,7 +29,7 @@
         <author>reddtsai@gmail.com (蔡文杰)</author>
         <atom:modified>Sat, 25 Jul 2020 22:45:50 +0800</atom:modified>
         <guid>https://reddtsai.github.io/zh/posts/git/</guid>
-        <description>1 git clone branch 1 git branch 1 git branch -a 1 git branch -d checkout 1 git checkout 1 git checkout -b 1 git checkout --track log 1 git log 1 git log --oneline -5 1 git reflog revert 1 git revert reset 1 git reset</description>
+        <description>1 git clone remote 1 git remote show origin branch 1 git branch 1 git branch -a 1 git branch -d checkout 1 git checkout 1 git checkout -b 1 git checkout --track fetch 1 git fetch origin log 1 git log 1 git log --oneline -5 1 git reflog revert 1 git revert reset 1 git reset</description>
         
         <dc:creator>Redd Tsai</dc:creator>
         

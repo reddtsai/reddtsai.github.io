@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>使用 Protocol Buffers 結構化資料 – Redd Tsai</title>
+    <title>使用 Protocol Buffers 結構化資料 In Go – Redd Tsai</title>
     
 
 
@@ -1209,7 +1209,7 @@
 
 
 <meta property="og:site_name" content="Redd Tsai">
-<meta property="og:title" content="使用 Protocol Buffers 結構化資料">
+<meta property="og:title" content="使用 Protocol Buffers 結構化資料 In Go">
 <meta property="og:url" content="https://reddtsai.github.io/zh/posts/go_protobuf/">
 <meta property="og:type" content="article">
 <meta property="og:description" content="how to use protocol buffers with go">
@@ -1249,7 +1249,7 @@
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "headline": "使用 Protocol Buffers 結構化資料",
+    "headline": "使用 Protocol Buffers 結構化資料 In Go",
     "datePublished": "2020-07-19T23:37:24+08:00",
     "dateModified": "2020-07-19T23:37:24+08:00",
     "url" : "https://reddtsai.github.io/zh/posts/go_protobuf/",
@@ -1519,7 +1519,7 @@
   
   <li  class="is-active" >
     
-      <span>使用 Protocol Buffers 結構化資料</span>
+      <span>使用 Protocol Buffers 結構化資料 In Go</span>
     
   </li>
   
@@ -1531,7 +1531,7 @@
   <div class="single ">
     <div class="single__nojs">Please enable Javascript to view the contents</div>
     <script>document.querySelector('.single').classList.remove('hide'); document.querySelector('.single__nojs').classList.add('hide');</script>
-    <h2 class="single__title" data-ani="true">使用 Protocol Buffers 結構化資料</h2>
+    <h2 class="single__title" data-ani="true">使用 Protocol Buffers 結構化資料 In Go</h2>
     <div class="single__meta">
       
 <div class="single__infos">
@@ -1769,7 +1769,10 @@ message user <span class="o">{</span>
 <span class="p">}</span>
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="polymorphism">Polymorphism</h3>
+</div><div class="alert alert-warning" role="alert" data-dir="ltr">這裡特別需注意 grpc，protobuf 和 protoc-gen-go 版本是否相容。<br />
+例如 grpc 的版本較高，可能會有找不到方法的問題 proto.Marshal: missing method ProtoReflect。</div>
+
+<h3 id="polymorphism">Polymorphism</h3>
 <p>接著說說 Protocol Buffers 的進階用法，例如你回應內容可能會有多種類型，Protocol Buffers 也提供了 any 的類型，比如：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1971,7 +1974,7 @@ message Response <span class="o">{</span>
       
     
       
-        <a href="https://twitter.com/intent/tweet?text=%e4%bd%bf%e7%94%a8%20Protocol%20Buffers%20%e7%b5%90%e6%a7%8b%e5%8c%96%e8%b3%87%e6%96%99&url=https%3a%2f%2freddtsai.github.io%2fzh%2fposts%2fgo_protobuf%2f&hashtags=Go&via=Redd%20Tsai" title="Twitter" aria-label="Twitter Share Button" class="donation__item" target="_blank" rel="noreferrer" data-type="share">
+        <a href="https://twitter.com/intent/tweet?text=%e4%bd%bf%e7%94%a8%20Protocol%20Buffers%20%e7%b5%90%e6%a7%8b%e5%8c%96%e8%b3%87%e6%96%99%20In%20Go&url=https%3a%2f%2freddtsai.github.io%2fzh%2fposts%2fgo_protobuf%2f&hashtags=Go&via=Redd%20Tsai" title="Twitter" aria-label="Twitter Share Button" class="donation__item" target="_blank" rel="noreferrer" data-type="share">
           <svg data-name="twitter" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="35" height="35" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m21.534 7.113c.976-.693 1.797-1.558 2.466-2.554v-.001c-.893.391-1.843.651-2.835.777 1.02-.609 1.799-1.566 2.165-2.719-.951.567-2.001.967-3.12 1.191-.903-.962-2.19-1.557-3.594-1.557-2.724 0-4.917 2.211-4.917 4.921 0 .39.033.765.114 1.122-4.09-.2-7.71-2.16-10.142-5.147-.424.737-.674 1.58-.674 2.487 0 1.704.877 3.214 2.186 4.089-.791-.015-1.566-.245-2.223-.606v.054c0 2.391 1.705 4.377 3.942 4.835-.401.11-.837.162-1.29.162-.315 0-.633-.018-.931-.084.637 1.948 2.447 3.381 4.597 3.428-1.674 1.309-3.8 2.098-6.101 2.098-.403 0-.79-.018-1.177-.067 2.18 1.405 4.762 2.208 7.548 2.208 8.683 0 14.342-7.244 13.986-14.637z"/></svg>
         </a>
       

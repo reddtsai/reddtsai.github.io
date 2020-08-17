@@ -14,7 +14,7 @@
     <managingEditor>reddtsai@gmail.com (蔡文杰)</managingEditor>
     <webMaster>reddtsai@gmail.com (蔡文杰)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Sun, 19 Jul 2020 23:37:24 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 16 Aug 2020 23:26:44 +0800</lastBuildDate>
     
         <atom:link href="https://reddtsai.github.io/zh/tags/go/index.xml" rel="self" type="application/rss+xml" />
     
@@ -23,7 +23,37 @@
 
       
       <item>
-        <title>使用 Protocol Buffers 結構化資料</title>
+        <title>使用 gRPC In Go</title>
+        <link>https://reddtsai.github.io/zh/posts/go_grpcprotobuf/</link>
+        <pubDate>Sun, 16 Aug 2020 23:26:44 +0800</pubDate>
+        <author>reddtsai@gmail.com (蔡文杰)</author>
+        <atom:modified>Sun, 16 Aug 2020 23:26:44 +0800</atom:modified>
+        <guid>https://reddtsai.github.io/zh/posts/go_grpcprotobuf/</guid>
+        <description>RPC(Remote Procedure Call) 是一個電腦通訊協定，最早用在網路檔案系統上，透過該協定允許系統上的程式存取其它系統上的檔案。如今，如果你有接觸微服務，也常使用 RPC 來建立</description>
+        
+        <dc:creator>Redd Tsai</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>Go</category>
+            
+          
+        
+        
+          
+            
+              <category>Go</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
+        <title>使用 Protocol Buffers 結構化資料 In Go</title>
         <link>https://reddtsai.github.io/zh/posts/go_protobuf/</link>
         <pubDate>Sun, 19 Jul 2020 23:37:24 +0800</pubDate>
         <author>reddtsai@gmail.com (蔡文杰)</author>
