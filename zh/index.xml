@@ -44,6 +44,36 @@
 
       
       <item>
+        <title>Go 分析工具 Trace</title>
+        <link>https://reddtsai.github.io/zh/posts/go_trace/</link>
+        <pubDate>Sun, 23 Aug 2020 21:11:40 +0800</pubDate>
+        <author>reddtsai@gmail.com (蔡文杰)</author>
+        <atom:modified>Sun, 23 Aug 2020 21:11:40 +0800</atom:modified>
+        <guid>https://reddtsai.github.io/zh/posts/go_trace/</guid>
+        <description>程式開發的過程中，你可能需要解決效能瓶頸的問題(Bottleneck)或分析程式內部調用的狀況，Golang 也提供了這方面的工具來幫助你分析</description>
+        
+        <dc:creator>Redd Tsai</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>Go</category>
+            
+          
+        
+        
+          
+            
+              <category>Go</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
         <title>使用 gRPC In Go</title>
         <link>https://reddtsai.github.io/zh/posts/go_grpcprotobuf/</link>
         <pubDate>Sun, 16 Aug 2020 23:26:44 +0800</pubDate>
