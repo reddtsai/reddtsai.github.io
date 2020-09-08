@@ -14,13 +14,43 @@
     <managingEditor>reddtsai@gmail.com (蔡文杰)</managingEditor>
     <webMaster>reddtsai@gmail.com (蔡文杰)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Sun, 23 Aug 2020 21:11:40 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 08 Sep 2020 22:13:25 +0800</lastBuildDate>
     
         <atom:link href="https://reddtsai.github.io/zh/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>Go 1.15</title>
+        <link>https://reddtsai.github.io/zh/posts/go_115/</link>
+        <pubDate>Tue, 08 Sep 2020 22:13:25 +0800</pubDate>
+        <author>reddtsai@gmail.com (蔡文杰)</author>
+        <atom:modified>Tue, 08 Sep 2020 22:13:25 +0800</atom:modified>
+        <guid>https://reddtsai.github.io/zh/posts/go_115/</guid>
+        <description>Go 在 8月11號發布了 1.15 版，今天就當個搬運工，來看看有那些新的變化。 Ports 在移植的支援和限制： Darwin macOS Sierra 要求 10.12 版或更新的版本。 不再更新 32-bit binaries on macOS, iOS, iPadOS, watchOS, and</description>
+        
+        <dc:creator>Redd Tsai</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>Go</category>
+            
+          
+        
+        
+          
+            
+              <category>Go</category>
+            
+          
+        
+        
+      </item>
       
       <item>
         <title>Go 分析工具 Trace</title>
